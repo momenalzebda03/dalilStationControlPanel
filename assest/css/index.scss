@@ -90,8 +90,63 @@ body nav div div .beforePoint::before {
 
 // end navbar
 // start cards
-.divCards {
+body .divCards {
     padding-top: 120px;
 }
 
+body .divCards div div div .styleCard div div .spanColorCard {
+    color: $colorText;
+}
+
+body .divCards div div div .styleCard div div .spanCardBlue {
+    color: $colorBlue;
+}
+
+body .divCards div div div .styleCard {
+    box-shadow: 0 8px 15px 3px $colorShdow;
+    height: 170px;
+    transition: 0.3s;
+}
+
+body .divCards div div div .styleCard:hover {
+    color: $colorwhite;
+    margin-top: -10px;
+    transition: 0.3s;
+
+    div {
+        div {
+            span {
+                color: $colorwhite;
+            }
+
+            img {
+                filter: invert(1) brightness(1000%) grayscale(10000%);
+            }
+        }
+    }
+}
+
+body .divCards div div div .styleCard::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-color: $colorBlue;
+    transition: 0.3s;
+}
+
+body .divCards div div div .styleCard:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
 // end cards
+// start media
+// @media (max-width: 990px) {
+
+// }
+
+// end media
