@@ -1,0 +1,84 @@
+body {
+  font-family: "Kanit", sans-serif !important;
+  font-weight: 100 !important;
+  font-style: normal !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursorMouse {
+  cursor: pointer;
+}
+
+select:focus-visible {
+  outline: 0 !important;
+}
+
+body nav {
+  top: 48px;
+}
+
+body nav div div div .divBeforeBell {
+  background-color: #FF0000;
+  width: 7px;
+  height: 7px;
+  top: 6px;
+}
+
+.buttonNavbarlanguage {
+  background: -webkit-linear-gradient(#ff6347, #00bfff);
+  width: 108px;
+  height: 40px;
+  border-radius: 1000px;
+  padding: 2px;
+}
+.buttonNavbarlanguage .divBoxArrow::before {
+  content: "";
+  background-image: url("/assest/images/iconArrow.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 13.5px;
+  transition: transform 0.3s ease;
+  width: 15px;
+  height: 15px;
+}
+.buttonNavbarlanguage .divBoxArrow.open::before {
+  transform: rotate(180deg);
+}
+.buttonNavbarlanguage .divBoxArrow .boxButton {
+  top: 0.2px;
+  border: 0;
+  border-radius: 1000px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body nav div div div .spanColorUser {
+  color: #4F2396;
+}
+
+body nav div div .beforePoint {
+  color: #A391C0;
+}
+
+body nav div div .beforePoint::before {
+  content: "";
+  position: absolute;
+  background-color: #2EFF73;
+  width: 10px;
+  height: 10px;
+  right: 0;
+  bottom: 13px;
+  border-radius: 50px;
+}
+
+.divCards {
+  padding-top: 120px;
+}/*# sourceMappingURL=index.css.map */
