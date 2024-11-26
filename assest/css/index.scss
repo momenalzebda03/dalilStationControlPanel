@@ -144,6 +144,20 @@ body .divCards div div div .styleCard:hover::before {
 }
 
 // end cards
+// start containt
+.listRight {
+    background-color: rgba(113, 113, 227, 0.105);
+}
+
+.spanPublids {
+    color: $colorListPublis;
+}
+
+.listChild li:last-child .spanPublids {
+    color: $colorBlue;
+}
+
+// end containt
 // start media
 // @media (max-width: 990px) {
 
