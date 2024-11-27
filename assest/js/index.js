@@ -1,51 +1,71 @@
-function toggleDropdown() {
-  const dropdown = document.querySelector(".divBoxArrow");
-  const options = document.querySelector(".boxButton");
-  dropdown.classList.toggle("open");
-  options.classList.toggle("open");
+function toggleDropdown(elementPrefix) {
+  const dropdown = $(`.${elementPrefix}`);
+  dropdown.toggleClass("open");
 }
 
-function selectOption(language) {
-  const dropdown = document.querySelector(".divBoxArrow");
-  dropdown.textContent = language;
-  toggleDropdown();
-}
+$("#toogleDropDown").on("click", function () {
+  const elementPrefix = "divDropDwon";
+  toggleDropdown(elementPrefix);
+});
 
-function toggleDropdownMonth() {
-  const dropdown = document.querySelector(".divBoxArrowOverflow");
-  const options = document.querySelector(".boxButtonOverflow");
-  dropdown.classList.toggle("open");
-  options.classList.toggle("open");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("txtdate");
+  const calendarIcon = document.getElementById("calendarIcon");
+  const dateInput1 = document.getElementById("txtdate1");
+  const calendarIcon1 = document.getElementById("calendarIcon1");
+  const dateInput2 = document.getElementById("txtdate2");
+  const calendarIcon2 = document.getElementById("calendarIcon2");
 
-function selectOptionMonth(language) {
-  const dropdown = document.querySelector(".divBoxArrowOverflow");
-  dropdown.textContent = language;
-  toggleDropdownMonth();
-}
+  const datepicker = flatpickr(dateInput, {
+    dateFormat: "d/m/Y",
+    allowInput: true,
+    onClose: function () {
+      toggleDropdown("divBoxArrowOverflow");
+    },
+  });
 
-function toggleDropdownMonthNumber() {
-  const dropdown = document.querySelector(".divBoxArrowNumber");
-  const options = document.querySelector(".boxButtonNumber");
-  dropdown.classList.toggle("open");
-  options.classList.toggle("open");
-}
+  const datepicker1 = flatpickr(dateInput1, {
+    dateFormat: "d/m/Y",
+    allowInput: true,
+    onClose: function () {
+      toggleDropdown("divBoxArrowNumber");
+    },
+  });
 
-function selectOptionsalary(language) {
-  const dropdown = document.querySelector(".divBoxArrowNumber");
-  dropdown.textContent = language;
-  toggleDropdownMonthNumber();
-}
+  const datepicker2 = flatpickr(dateInput2, {
+    dateFormat: "d/m/Y",
+    allowInput: true,
+    onClose: function () {
+      toggleDropdown("divBoxArrowSalary");
+    },
+  });
 
-function toggleDropdownMonthSalary() {
-  const dropdown = document.querySelector(".divBoxArrowSalary");
-  const options = document.querySelector(".boxButtonSalay");
-  dropdown.classList.toggle("open");
-  options.classList.toggle("open");
-}
+  calendarIcon.addEventListener("click", function () {
+    datepicker.open();
+  });
 
-function selectOptionsalary(language) {
-  const dropdown = document.querySelector(".divBoxArrowSalary");
-  dropdown.textContent = language;
-  toggleDropdownMonthSalary();
-}
+  calendarIcon1.addEventListener("click", function () {
+    datepicker1.open();
+  });
+
+  calendarIcon2.addEventListener("click", function () {
+    datepicker2.open();
+  });
+});
+
+var ctx2 = document.getElementById("chart2").getContext("2d");
+var chart2 = new Chart(ctx2, {
+  type: "line",
+  data: {
+    labels: ["January", "February", "March", "April", "May"],
+    datasets: [
+      {
+        label: "Sales",
+        data: [2500, 2000, 2500, 2000, 2500],
+        backgroundColor: "#005DBA",
+        borderColor: "#",
+        borderWidth: 1,
+      },
+    ],
+  },
+});
