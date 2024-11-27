@@ -257,14 +257,14 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
   background-color: #967EBD;
   width: 23px;
   height: 40px;
-  bottom: 67px;
+  bottom: 50px;
   z-index: -1;
 }
 body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(1) div .lineBox::after {
   background-color: #A391C0;
   width: 23px;
   height: 48px;
-  bottom: 80px;
+  bottom: 50px;
   z-index: -2;
 }
 body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(2) div .divLineBlue::before {
@@ -436,7 +436,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
 }
 
 .shadowHeight {
-  max-height: 67vh;
+  max-height: 630px;
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 10px 10px 0 0;
@@ -556,7 +556,7 @@ body div .widthSignIn div .widthForm {
     overflow: auto;
   }
   body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
-    padding-top: 150px;
+    padding-top: 100px;
     overflow: auto;
   }
   .paddingShadow {
