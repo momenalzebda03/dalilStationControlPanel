@@ -114,7 +114,7 @@ body div div div div div div .buttonNavbarlanguageOverflow {
 
 // start navbar
 body nav {
-    top: 48px;
+    top: 10px;
 }
 
 body nav div div div .divBeforeBell {
@@ -145,10 +145,6 @@ body nav div div .beforePoint::before {
 
 // end navbar
 // start cards
-body .divCards {
-    padding-top: 120px;
-}
-
 body .divCards div div div .styleCard div div .spanColorCard {
     color: $colorText;
 }
@@ -159,7 +155,7 @@ body .divCards div div div .styleCard div div .spanCardBlue {
 
 body .divCards div div div .styleCard {
     box-shadow: 0 8px 15px 3px $colorShdow;
-    min-height: 170px;
+    min-height: 130px;
     transition: 0.3s;
 }
 
@@ -199,7 +195,7 @@ body .divCards div div div .styleCard:hover::before {
 // end cards
 // start containt
 .paddingShadow {
-    padding: 55px !important;
+    padding: 10px 55px !important;
 }
 
 .listRight {
@@ -242,7 +238,7 @@ body div div div div div div div .childBuilds .beforeBuilds::before {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 10px;
+    top: 7px;
     right: -22px;
     background-color: $colorShdow;
 }
@@ -263,7 +259,7 @@ body div div div div div div .paddingShadow div div .stylelist {
 body div div div div div div .paddingShadow div div .stylelist .listLine::before {
     content: "";
     position: absolute;
-    width: 800px;
+    width: 650px;
     height: 2px;
     left: 60px;
     top: 14px;
@@ -294,7 +290,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
             .lineBox::before {
                 background-color: $blueNormal;
                 width: 23px;
-                height: 60px;
+                height: 40px;
                 bottom: 67px;
                 z-index: -1;
             }
@@ -303,7 +299,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
                 background-color: $colorEsay;
                 width: 23px;
                 height: 48px;
-                bottom: 120px;
+                bottom: 80px;
                 z-index: -2;
             }
         }
@@ -312,18 +308,18 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     div:nth-child(2) {
         div {
             .divLineBlue::before {
-                min-height: 58px;
-                bottom: 30px;
+                min-height: 65px;
+                bottom: 25px;
             }
 
             .lineBox::before {
-                height: 60px;
-                bottom: 85px;
+                height: 50px;
+                bottom: 65px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 142px;
+                bottom: 75px;
             }
         }
     }
@@ -335,13 +331,13 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
             }
 
             .lineBox::before {
-                height: 60px;
+                height: 40px;
                 bottom: 43px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 90px;
+                bottom: 70px;
             }
         }
     }
@@ -354,12 +350,12 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
 
             .lineBox::before {
                 height: 60px;
-                bottom: 53px;
+                bottom: 43px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 105px;
+                bottom: 78px;
             }
         }
     }
@@ -372,7 +368,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
 
             .lineBox::before {
                 height: 33px;
-                bottom: 53px;
+                bottom: 50px;
             }
 
             .lineBox::after {
@@ -386,17 +382,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 58px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 85px;
+                bottom: 75px;
             }
 
             .lineBox::after {
-                height: 53px;
-                bottom: 138px;
+                height: 50px;
+                bottom: 80px;
             }
         }
     }
@@ -405,17 +401,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 40px;
-                bottom: 30px;
+                bottom: 25;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 55px;
+                bottom: 50px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 108px;
+                bottom: 83px;
             }
         }
     }
@@ -424,17 +420,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 50px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 63px;
+                bottom: 67px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 118px;
+                bottom: 80px;
             }
         }
     }
@@ -443,17 +439,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 40px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 63px;
+                bottom: 60px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 105px;
+                bottom: 73px;
             }
         }
     }
@@ -462,17 +458,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 55px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 63px;
+                bottom: 53px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 115px;
+                bottom: 70px;
             }
         }
     }
@@ -481,17 +477,17 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 35px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
                 height: 60px;
-                bottom: 40px;
+                bottom: 35px;
             }
 
             .lineBox::after {
                 height: 53px;
-                bottom: 90px;
+                bottom: 75px;
             }
         }
     }
@@ -500,7 +496,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
         div {
             .divLineBlue::before {
                 min-height: 35px;
-                bottom: 30px;
+                bottom: 25px;
             }
 
             .lineBox::before {
@@ -510,7 +506,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
 
             .lineBox::after {
                 height: 53px;
-                bottom: 90px;
+                bottom: 74px;
             }
         }
     }
@@ -533,7 +529,7 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     position: absolute;
     background-color: $colorBlue;
     width: 23px;
-    bottom: 30px;
+    bottom: 25px;
     left: 7px;
     border-radius: 5px 5px 0 0;
 }
@@ -546,16 +542,35 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     border-radius: 5px 5px 0 0;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
-    overflow: hidden;
-}
-
 .chart {
     width: 48%;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadowHeight {
+    max-height: 67vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+body div div div div div div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar,
+.shadowHeight::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+body div div div div div div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar-thumb,
+.shadowHeight::-webkit-scrollbar-thumb {
+    background: $colorBlue;
+}
+
+body div div div div div div .paddingShadow .containerOverflowMobeile {
+    width: 60%;
+    overflow: auto;
 }
 
 // end containt
