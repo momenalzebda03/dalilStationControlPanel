@@ -13,12 +13,90 @@ body {
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorBlue;
+}
+
 .cursorMouse {
     cursor: pointer;
 }
 
 select:focus-visible {
     outline: 0 !important;
+}
+
+.buttonNavbarlanguage {
+    background: -webkit-linear-gradient(#ff6347, #00bfff);
+    width: 118px;
+    height: 38px;
+    padding: 2px;
+
+    .boxButton {
+        display: none;
+        top: 120%;
+        max-height: 200px;
+        z-index: 1;
+    }
+
+    .boxButton::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 8px solid $colorShdow;
+        top: -8px;
+        left: 19%;
+        transform: translateX(-50%);
+    }
+
+    .boxButton .option:hover {
+        background-color: #f0f0f0;
+    }
+
+    .divBoxArrow {
+        height: 98%;
+        padding-left: 18px;
+        padding-bottom: 2px;
+    }
+
+    .divBoxArrow::before {
+        content: "";
+        background-image: url("/assest/images/iconArrow.svg");
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 30px;
+        top: 12.5px;
+        transition: transform 0.3s ease;
+        width: 15px;
+        height: 15px;
+    }
+
+    .divBoxArrow.open+.boxButton {
+        display: block;
+    }
+
+    .divBoxArrow.open::before {
+        transform: rotate(180deg);
+    }
+
+    .divBoxArrowOverflow {
+        background-color: $colorOrange;
+    }
+
+    .divBoxArrowOverflow::before {
+        filter: invert(1) brightness(1000%) grayscale(10000%);
+    }
+}
+
+body div div div div div div .buttonNavbarlanguageOverflow {
+    background: transparent;
 }
 
 // end General Code
@@ -33,40 +111,6 @@ body nav div div div .divBeforeBell {
     width: 7px;
     height: 7px;
     top: 6px;
-}
-
-.buttonNavbarlanguage {
-    background: -webkit-linear-gradient(#ff6347, #00bfff);
-    width: 108px;
-    height: 40px;
-    border-radius: 1000px;
-    padding: 2px;
-
-    .divBoxArrow::before {
-        content: "";
-        background-image: url("/assest/images/iconArrow.svg");
-        background-size: 15px 15px;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 20px;
-        top: 13.5px;
-        transition: transform 0.3s ease;
-        width: 15px;
-        height: 15px;
-    }
-
-    .divBoxArrow.open::before {
-        transform: rotate(180deg);
-    }
-
-    .divBoxArrow {
-        .boxButton {
-            top: 0.2px;
-            border: 0;
-            border-radius: 1000px;
-            appearance: none;
-        }
-    }
 }
 
 body nav div div div .spanColorUser {
@@ -104,7 +148,7 @@ body .divCards div div div .styleCard div div .spanCardBlue {
 
 body .divCards div div div .styleCard {
     box-shadow: 0 8px 15px 3px $colorShdow;
-    height: 170px;
+    min-height: 170px;
     transition: 0.3s;
 }
 
@@ -131,8 +175,6 @@ body .divCards div div div .styleCard::before {
     position: absolute;
     width: 0;
     height: 0;
-    left: 0;
-    top: 0;
     border-radius: 20px;
     background-color: $colorBlue;
     transition: 0.3s;
@@ -145,8 +187,12 @@ body .divCards div div div .styleCard:hover::before {
 
 // end cards
 // start containt
+.paddingShadow {
+    padding: 55px !important;
+}
+
 .listRight {
-    background-color: rgba(113, 113, 227, 0.105);
+    background-color: rgba(98, 98, 104, 0.118);
 }
 
 .spanPublids {
@@ -155,6 +201,63 @@ body .divCards div div div .styleCard:hover::before {
 
 .listChild li:last-child .spanPublids {
     color: $colorBlue;
+}
+
+body div div div div ul .listRight div .listChild li .imageStar {
+    width: 12px;
+}
+
+body div div div div div div div .divCountsBefore {
+    width: 250px;
+    height: 250px;
+    background-color: $colorBlue;
+}
+
+body div div div div div div div .divCountsBeforeTrue {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cccccc66;
+}
+
+body div div div div div div div .childBuilds .beforeBuilds {
+    span {
+        color: $colorListPublis;
+    }
+}
+
+body div div div div div div div .childBuilds .beforeBuilds::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 10px;
+    right: -22px;
+    background-color: $colorShdow;
+}
+
+body div div div div div div div .childBuilds .beforeBuilds:last-child::before {
+    background-color: $colorBlue;
+}
+
+.stylelist {
+    list-style: none;
+
+    li {
+        font-size: 20px;
+        color: $colorShdow;
+    }
+}
+
+.listLine::before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    left: 60px;
+    top: 14px;
+    background-color: $colorShdow;
 }
 
 // end containt

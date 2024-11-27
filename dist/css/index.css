@@ -10,12 +10,81 @@ body {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4F2396;
+}
+
 .cursorMouse {
   cursor: pointer;
 }
 
 select:focus-visible {
   outline: 0 !important;
+}
+
+.buttonNavbarlanguage {
+  background: -webkit-linear-gradient(#ff6347, #00bfff);
+  width: 118px;
+  height: 38px;
+  padding: 2px;
+}
+.buttonNavbarlanguage .boxButton {
+  display: none;
+  top: 120%;
+  max-height: 200px;
+  z-index: 1;
+}
+.buttonNavbarlanguage .boxButton::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 8px solid #ccc;
+  top: -8px;
+  left: 19%;
+  transform: translateX(-50%);
+}
+.buttonNavbarlanguage .boxButton .option:hover {
+  background-color: #f0f0f0;
+}
+.buttonNavbarlanguage .divBoxArrow {
+  height: 98%;
+  padding-left: 18px;
+  padding-bottom: 2px;
+}
+.buttonNavbarlanguage .divBoxArrow::before {
+  content: "";
+  background-image: url("/assest/images/iconArrow.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  top: 12.5px;
+  transition: transform 0.3s ease;
+  width: 15px;
+  height: 15px;
+}
+.buttonNavbarlanguage .divBoxArrow.open + .boxButton {
+  display: block;
+}
+.buttonNavbarlanguage .divBoxArrow.open::before {
+  transform: rotate(180deg);
+}
+.buttonNavbarlanguage .divBoxArrowOverflow {
+  background-color: #F69554;
+}
+.buttonNavbarlanguage .divBoxArrowOverflow::before {
+  filter: invert(1) brightness(1000%) grayscale(10000%);
+}
+
+body div div div div div div .buttonNavbarlanguageOverflow {
+  background: transparent;
 }
 
 body nav {
@@ -27,37 +96,6 @@ body nav div div div .divBeforeBell {
   width: 7px;
   height: 7px;
   top: 6px;
-}
-
-.buttonNavbarlanguage {
-  background: -webkit-linear-gradient(#ff6347, #00bfff);
-  width: 108px;
-  height: 40px;
-  border-radius: 1000px;
-  padding: 2px;
-}
-.buttonNavbarlanguage .divBoxArrow::before {
-  content: "";
-  background-image: url("/assest/images/iconArrow.svg");
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 20px;
-  top: 13.5px;
-  transition: transform 0.3s ease;
-  width: 15px;
-  height: 15px;
-}
-.buttonNavbarlanguage .divBoxArrow.open::before {
-  transform: rotate(180deg);
-}
-.buttonNavbarlanguage .divBoxArrow .boxButton {
-  top: 0.2px;
-  border: 0;
-  border-radius: 1000px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 body nav div div div .spanColorUser {
@@ -93,7 +131,7 @@ body .divCards div div div .styleCard div div .spanCardBlue {
 
 body .divCards div div div .styleCard {
   box-shadow: 0 8px 15px 3px #ccc;
-  height: 170px;
+  min-height: 170px;
   transition: 0.3s;
 }
 
@@ -114,8 +152,6 @@ body .divCards div div div .styleCard::before {
   position: absolute;
   width: 0;
   height: 0;
-  left: 0;
-  top: 0;
   border-radius: 20px;
   background-color: #4F2396;
   transition: 0.3s;
@@ -126,8 +162,12 @@ body .divCards div div div .styleCard:hover::before {
   height: 100%;
 }
 
+.paddingShadow {
+  padding: 55px !important;
+}
+
 .listRight {
-  background-color: rgba(113, 113, 227, 0.105);
+  background-color: rgba(98, 98, 104, 0.118);
 }
 
 .spanPublids {
@@ -136,4 +176,58 @@ body .divCards div div div .styleCard:hover::before {
 
 .listChild li:last-child .spanPublids {
   color: #4F2396;
+}
+
+body div div div div ul .listRight div .listChild li .imageStar {
+  width: 12px;
+}
+
+body div div div div div div div .divCountsBefore {
+  width: 250px;
+  height: 250px;
+  background-color: #4F2396;
+}
+
+body div div div div div div div .divCountsBeforeTrue {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(204, 204, 204, 0.4);
+}
+
+body div div div div div div div .childBuilds .beforeBuilds span {
+  color: #5C5C5C;
+}
+
+body div div div div div div div .childBuilds .beforeBuilds::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  right: -22px;
+  background-color: #ccc;
+}
+
+body div div div div div div div .childBuilds .beforeBuilds:last-child::before {
+  background-color: #4F2396;
+}
+
+.stylelist {
+  list-style: none;
+}
+.stylelist li {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.listLine::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 2px;
+  left: 60px;
+  top: 14px;
+  background-color: #ccc;
 }/*# sourceMappingURL=index.css.map */

@@ -15,45 +15,51 @@
 </head>
 
 <body>
-    <!-- start footer -->
-    <nav class="position-relative navbar navbar-expand-lg navbar-light py-2 rounded-4 bg-light container">
-        <div class="cursorMouse d-none d-md-block">
-            <img src="assest/images/iconSun.svg" alt="">
-        </div>
-        <div class="d-flex justify-content-between ms-3 collapse navbar-collapse">
-            <div class="d-flex flex-row gap-3 navbar-nav me-md-auto gap-md-4 align-items-start align-items-md-center">
-                <span class="d-none d-md-block nav-link active">الساعة الاَن : 8:55 صباحاً</span>
-                <div class="cursorMouse d-md-none">
-                    <img src="assest/images/iconSun.svg" alt="">
-                </div>
-                <div class="position-relative">
-                    <div class="divBeforeBell position-absolute rounded-circle end-0"></div>
-                    <img src="assest/images/bell.svg" alt="">
-                </div>
-                <div class="buttonNavbarlanguage position-relative">
-                    <div class="divBoxArrow w-100 h-100" id="selectBox">
-                        <select id="languageSelect"
-                            class="d-flex justify-content-between align-items-center boxButton w-100 h-100 px-3">
-                            <option value="1">العربية</option>
-                            <option value="2">English</option>
-                        </select>
-                    </div>
-                </div>
+    <!-- start navbar -->
+    <nav class="container position-relative px-4 px-md-0 py-2 rounded-4">
+        <div class="d-flex align-items-center">
+            <div class="cursorMouse d-none d-md-block">
+                <img src="assest/images/iconSun.svg" alt="">
             </div>
-            <div class="d-flex gap-3 align-items-center">
-                <div class="d-none d-md-block text-end position-relative">
-                    <h1 class="mb-0 fs-3">أهلاً وسهلاً,<span class="spanColorUser">راشد</span></h1>
-                    <div class="beforePoint me-4">
-                        <span class="fs-4">نشط الأن</span>
+            <div class="d-flex justify-content-between ms-3 w-100">
+                <div class="d-flex flex-row gap-3 me-md-auto gap-md-4 align-items-start align-items-center">
+                    <div class="d-none d-md-block">
+                        <span>الساعة الاَن : 8:55 صباحاً</span>
+                    </div>
+                    <div class="cursorMouse d-md-none">
+                        <img src="assest/images/iconSun.svg" alt="">
+                    </div>
+                    <div class="position-relative">
+                        <div class="divBeforeBell position-absolute rounded-circle end-0"></div>
+                        <img src="assest/images/bell.svg" alt="">
+                    </div>
+                    <div class="position-relative buttonNavbarlanguage rounded-5">
+                        <div class="pt-1 divBoxArrow rounded-5 bg-white w-100 d-flex align-items-center"
+                            onclick="toggleDropdown()">
+                            العربية
+                        </div>
+                        <div
+                            class="text-end boxButton position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                            <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">العربية</div>
+                            <div class="option p-2 cursorMouse" onclick="selectOption('English')">English</div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="assest/images/user.svg" alt="" class="w-100">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="d-none d-md-block text-end position-relative">
+                        <h1 class="mb-0 fs-3">أهلاً وسهلاً,<span class="spanColorUser">راشد</span></h1>
+                        <div class="beforePoint me-4">
+                            <span class="fs-4">نشط الأن</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assest/images/user.svg" alt="" class="w-100">
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- end footer -->
+    <!-- end navbar -->
     <!-- start cards -->
     <div class="divCards">
         <div class="container">
@@ -61,10 +67,10 @@
                 <div class="col">
                     <div
                         class="styleCard overflow-hidden position-relative d-flex align-items-center justify-content-center rounded-4 text-center">
-                        <div class="d-flex flex-column gap-4 position-relative">
+                        <div class="d-flex flex-column gap-3 position-relative">
                             <div>
                                 <h2>المدفوعات</h2>
-                                <span class="fs-4 spanColorCard text-nowrap">المدفوعات داخل المنصة</span>
+                                <span class="fs-4 spanColorCard text-center text-nowrap">المدفوعات داخل المنصة</span>
                             </div>
                             <div class="d-flex gap-3 align-items-center justify-content-center">
                                 <span class="fs-5 fw-bold spanCardBlue">12,000 ر.س</span>
@@ -76,10 +82,10 @@
                 <div class="col">
                     <div
                         class="styleCard overflow-hidden position-relative d-flex align-items-center justify-content-center rounded-4 text-center">
-                        <div class="d-flex flex-column gap-4 position-relative">
+                        <div class="d-flex flex-column gap-3 position-relative">
                             <div>
                                 <h2>الاشتراكات</h2>
-                                <span class="fs-4 spanColorCard text-nowrap">عدد الاشتراكات في المنصة</span>
+                                <span class="fs-4 spanColorCard text-center text-nowrap">عدد الاشتراكات في المنصة</span>
                             </div>
                             <div class="d-flex gap-3 align-items-center justify-content-center">
                                 <span class="fs-5 fw-bold spanCardBlue">30</span>
@@ -91,10 +97,11 @@
                 <div class="col">
                     <div
                         class="styleCard overflow-hidden position-relative d-flex align-items-center justify-content-center rounded-4 text-center">
-                        <div class="d-flex flex-column gap-4 position-relative">
+                        <div class="d-flex flex-column gap-3 position-relative">
                             <div>
                                 <h2>الاعلانات</h2>
-                                <span class="fs-4 spanColorCard text-nowrap">الاعلانات المعروضة بالمنصة</span>
+                                <span class="fs-4 spanColorCard text-center text-nowrap">الاعلانات المعروضة
+                                    بالمنصة</span>
                             </div>
                             <div class="d-flex gap-3 align-items-center justify-content-center">
                                 <span class="fs-5 fw-bold spanCardBlue">5</span>
@@ -106,10 +113,10 @@
                 <div class="col">
                     <div
                         class="styleCard overflow-hidden position-relative d-flex align-items-center justify-content-center rounded-4 text-center">
-                        <div class="d-flex flex-column gap-4 position-relative">
+                        <div class="d-flex flex-column gap-3 position-relative">
                             <div>
                                 <h2>المنشاَت</h2>
-                                <span class="fs-4 spanColorCard text-nowrap">عدد المنشاَت المسجلة </span>
+                                <span class="fs-4 spanColorCard text-center text-nowrap">عدد المنشاَت المسجلة </span>
                             </div>
                             <div class="d-flex gap-3 align-items-center justify-content-center">
                                 <span class="fs-5 fw-bold spanCardBlue">120</span>
@@ -121,10 +128,10 @@
                 <div class="col">
                     <div
                         class="styleCard overflow-hidden position-relative d-flex align-items-center justify-content-center rounded-4 text-center">
-                        <div class="d-flex flex-column gap-4 position-relative">
+                        <div class="d-flex flex-column gap-3 position-relative">
                             <div>
                                 <h2>المستخدمين</h2>
-                                <span class="fs-4 spanColorCard text-nowrap">عدد المستخدمين في الظام</span>
+                                <span class="fs-4 spanColorCard text-center text-nowrap">عدد المستخدمين في الظام</span>
                             </div>
                             <div class="d-flex gap-3 align-items-center justify-content-center">
                                 <span class="fs-5 fw-bold spanCardBlue">120</span>
@@ -141,11 +148,11 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3">
-                <div class="shadow p-4 rounded-3 text-center">
+                <div class="shadow p-4 rounded-5 text-center">
                     <h2 class="fw-bold">اخر المنشأت المسجله</h2>
-                    <ul class="mt-4 px-0 d-flex flex-column gap-3">
-                        <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
-                            <div>
+                    <ul class="mt-3 px-0 d-flex flex-column gap-3">
+                        <li class="d-flex p-3 gap-3 rounded-4 justify-content-end listRight">
+                            <div class="text-end">
                                 <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
                                 <ul class="listChild d-flex flex-column gap-1 justify-content-end">
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
@@ -158,7 +165,7 @@
                                     </li>
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">5.0</span>
-                                        <img src="assest/images/map.svg" alt="">
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -167,8 +174,8 @@
                             </div>
                         </li>
                         <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
-                            <div>
-                                <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
+                            <div class="text-end">
+                                <a class="fw-bold fs-5 text-decoration-none" href="#">LC مؤسسة</a>
                                 <ul class="listChild d-flex flex-column gap-1 justify-content-end">
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">2223367555</span>
@@ -180,17 +187,17 @@
                                     </li>
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">5.0</span>
-                                        <img src="assest/images/map.svg" alt="">
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <img src="assest/images/AnotherBuilds1.svg" alt="">
+                                <img src="assest/images/AnotherBuilds2.svg" alt="">
                             </div>
                         </li>
                         <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
-                            <div>
-                                <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
+                            <div class="text-end">
+                                <a class="fw-bold fs-5 text-decoration-none" href="#">شركة النخبة</a>
                                 <ul class="listChild d-flex flex-column gap-1 justify-content-end">
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">2223367555</span>
@@ -202,17 +209,17 @@
                                     </li>
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">5.0</span>
-                                        <img src="assest/images/map.svg" alt="">
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <img src="assest/images/AnotherBuilds1.svg" alt="">
+                                <img src="assest/images/AnotherBuilds3.svg" alt="">
                             </div>
                         </li>
                         <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
-                            <div>
-                                <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
+                            <div class="text-end">
+                                <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
                                 <ul class="listChild d-flex flex-column gap-1 justify-content-end">
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">2223367555</span>
@@ -224,17 +231,17 @@
                                     </li>
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">5.0</span>
-                                        <img src="assest/images/map.svg" alt="">
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <img src="assest/images/AnotherBuilds1.svg" alt="">
+                                <img src="assest/images/AnotherBuilds4.svg" alt="">
                             </div>
                         </li>
                         <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
-                            <div>
-                                <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
+                            <div class="text-end">
+                                <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
                                 <ul class="listChild d-flex flex-column gap-1 justify-content-end">
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">2223367555</span>
@@ -246,20 +253,146 @@
                                     </li>
                                     <li class="d-flex gap-2 align-items-center justify-content-end">
                                         <span class="spanPublids">5.0</span>
-                                        <img src="assest/images/map.svg" alt="">
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <img src="assest/images/AnotherBuilds1.svg" alt="">
+                                <img src="assest/images/AnotherBuilds4.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="d-flex p-3 gap-3 rounded-3 justify-content-end listRight">
+                            <div class="text-end">
+                                <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
+                                <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                    <li class="d-flex gap-2 align-items-center justify-content-end">
+                                        <span class="spanPublids">2223367555</span>
+                                        <img src="assest/images/phone.svg" alt="">
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center justify-content-end">
+                                        <span class="spanPublids">السعوديه ,جده</span>
+                                        <img src="assest/images/map.svg" alt="">
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center justify-content-end">
+                                        <span class="spanPublids">5.0</span>
+                                        <img src="assest/images/star.svg" class="imageStar" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="assest/images/AnotherBuilds4.svg" alt="">
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="shadow p-3 rounded-3">
-                    <p>welcome</p>
+                <div class="d-flex flex-column gap-5">
+                    <div class="shadow paddingShadow rounded-5">
+                        <div class="d-flex justify-content-between">
+                            <div class="position-relative buttonNavbarlanguage rounded-5 p-0">
+                                <div class="text-white pt-1 divBoxArrow divBoxArrowOverflow rounded-5 w-100 d-flex align-items-center"
+                                    onclick="toggleDropdownMonth()">
+                                    <span class="fw-bold fs-5">الشهر</span>
+                                    <!-- <input type="date"> -->
+                                </div>
+                                <div
+                                    class="text-end boxButton boxButtonOverflow position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionMonth('العربية')">العربية
+                                    </div>
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionMonth('English')">English
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <p>hello world</p>
+                            </div>
+                            <div>
+                                <h2 class="fw-bold">الايرادات</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow paddingShadow rounded-5">
+                        <div class="d-flex justify-content-between">
+                            <div
+                                class="position-relative buttonNavbarlanguage buttonNavbarlanguageOverflow rounded-5 p-0">
+                                <div class="text-black pt-1 divBoxArrow divBoxArrowNumber rounded-5 w-100 d-flex align-items-center"
+                                    onclick="toggleDropdownMonthNumber()">
+                                    <span class="fw-bold fs-5 spanPublids">الشهر</span>
+                                    <!-- <input type="date"> -->
+                                </div>
+                                <div
+                                    class="text-end boxButton boxButtonNumber position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionNumber('العربية')">
+                                        العربية
+                                    </div>
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionNumber('English')">
+                                        English
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="fw-bold">عدد المنشأت</h2>
+                            </div>
+                        </div>
+                        <div class="mt-4 container">
+                            <div class="d-flex gap-5 align-items-end">
+                                <ul class="fw-bold px-0 stylelist d-flex flex-column gap-4">
+                                    <li class="position-relative listLine">200</li>
+                                    <li class="position-relative listLine">100</li>
+                                    <li class="position-relative listLine">50</li>
+                                    <li class="position-relative listLine">0</li>
+                                </ul>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <span>hello world</span>
+                                            </div>
+                                            <div>
+                                                <span>number one</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow paddingShadow rounded-5">
+                        <div class="d-flex justify-content-between">
+                            <div
+                                class="position-relative buttonNavbarlanguage buttonNavbarlanguageOverflow rounded-5 p-0">
+                                <div class="text-black pt-1 divBoxArrow divBoxArrowSalary rounded-5 w-100 d-flex align-items-center"
+                                    onclick="toggleDropdownMonthSalary()">
+                                    <span class="fw-bold fs-5 spanPublids">الشهر</span>
+                                    <!-- <input type="date"> -->
+                                </div>
+                                <div
+                                    class="text-end boxButton boxButtonSalay position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionsalary('العربية')">العربية
+                                    </div>
+                                    <div class="option p-1 cursorMouse" onclick="selectOptionsalary('English')">English
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center gap-5">
+                                <div class="childBuilds">
+                                    <div class="position-relative beforeBuilds rounded-3">
+                                        <span class="fs-4">المنشأت التي سددت</span>
+                                    </div>
+                                    <div class="position-relative beforeBuilds rounded-3">
+                                        <span class="fs-4">المنشأت التي لم تسدد</span>
+                                    </div>
+                                </div>
+                                <div class="divCountsBefore position-relative rounded-circle overflow-hidden">
+                                    <div class="divCountsBefore divCountsBeforeTrue position-absolute"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="fw-bold">احصائيات المديونيه</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
