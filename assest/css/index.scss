@@ -169,22 +169,47 @@ body div div .navbarDetails div div .divHoverImage:hover {
     }
 }
 
+.rotateImage {
+    transition: 0.7s;
+}
+
+.rotateImage:hover {
+    transform: rotate(362deg);
+}
+
 // end navbar defails
 // start data
 body div div section ul .divDataCol {
-    height: 45px;
+    height: 45px;    
     background-color: $colordata;
+    transition: 0.3;
 }
 
-body div div section ul .divDataCol .backgroundDataBox {
-    background-color: $colorwhite;
+body div div section ul .divDataCol::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 50%;
+    border-radius: 20px;
+    background-color: $colorBlue;
+    transition: 0.3s;
+}
+
+body div div section ul .divDataCol:hover::before {
+    width: 570px;
+    height: 170px;
+    right: 0;
 }
 
 body div div section ul .divDataCol:hover {
-    background-color: #f6955466;
+    margin-top: -10px;
+    transition: 0.3s;
 
-    .backgroundDataBox {
-        background-color: $colorHoverArraw;
+    div {
+        span {
+            color: $colorwhite;
+        }
     }
 }
 

@@ -149,20 +149,43 @@ body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
   left: -5px;
 }
 
+.rotateImage {
+  transition: 0.7s;
+}
+
+.rotateImage:hover {
+  transform: rotate(362deg);
+}
+
 body div div section ul .divDataCol {
   height: 45px;
   background-color: rgba(246, 149, 84, 0.5019607843);
+  transition: 0.3;
 }
 
-body div div section ul .divDataCol .backgroundDataBox {
-  background-color: white;
+body div div section ul .divDataCol::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 50%;
+  border-radius: 20px;
+  background-color: #4F2396;
+  transition: 0.3s;
+}
+
+body div div section ul .divDataCol:hover::before {
+  width: 570px;
+  height: 170px;
+  right: 0;
 }
 
 body div div section ul .divDataCol:hover {
-  background-color: rgba(246, 149, 84, 0.4);
+  margin-top: -10px;
+  transition: 0.3s;
 }
-body div div section ul .divDataCol:hover .backgroundDataBox {
-  background-color: #eee;
+body div div section ul .divDataCol:hover div span {
+  color: white;
 }
 
 body .divCards div div div .styleCard div div .spanCardBlue {
