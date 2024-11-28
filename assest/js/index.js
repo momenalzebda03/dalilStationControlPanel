@@ -27,6 +27,23 @@ function selectOption(language) {
   toggleDropdown(elementPrefix);
 }
 
+$(document).ready(function () {
+  $("#toogleDropDownStor").click(function (e) {
+    e.stopPropagation();
+    $(".boxButtonStor").toggle();
+  });
+
+  $(document).click(function (e) {
+    if (!$(e.target).closest("#toogleDropDownStor").length) {
+      $(".boxButtonStor").hide();
+    }
+  });
+});
+
+function selectOptionStor(option) {
+  document.getElementById("selectedOption").textContent = option;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const dateInput = document.getElementById("txtdate");
   const calendarIcon = document.getElementById("calendarIcon");

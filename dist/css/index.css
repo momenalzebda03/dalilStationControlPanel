@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Kanit", sans-serif !important;
   font-weight: 100 !important;
@@ -28,7 +29,10 @@ select:focus-visible {
 }
 
 .buttonNavbarlanguage {
-  background: -webkit-linear-gradient(#ff6347, #00bfff);
+  border-top: 2px solid #ff6347;
+  border-left: 2px solid #ff6347;
+  border-right: 2px solid #00bfff;
+  border-bottom: 2px solid #00bfff;
   width: 118px;
   height: 38px;
   padding: 2px;
@@ -78,6 +82,9 @@ select:focus-visible {
 .buttonNavbarlanguage .divDropDwon.open::before {
   transform: rotate(180deg);
 }
+.buttonNavbarlanguage .divDropDwonSort.open::before {
+  transform: rotate(180deg);
+}
 .buttonNavbarlanguage .divBoxArrowOverflow {
   background-color: #F69554;
 }
@@ -104,6 +111,14 @@ select:focus-visible {
 
 .sizeSpan {
   font-size: 14px;
+}
+
+.checkEmail {
+  color: #F69554;
+}
+
+.backgroundRightSignIn {
+  background-color: #4F2396;
 }
 
 body nav {
@@ -519,10 +534,6 @@ body div .widthSignIn {
   width: 50%;
 }
 
-body div .backgroundRightSignIn {
-  background-color: #4F2396;
-}
-
 body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
   width: 450px;
   z-index: 1;
@@ -604,10 +615,6 @@ body div .widthSignIn div .widthForm {
   width: 450px;
 }
 
-body div .heightFull div .checkEmail {
-  color: #F69554;
-}
-
 body div div section .gapRow {
   row-gap: 20px;
 }
@@ -681,6 +688,85 @@ body div div section div ul li div .widthDiv:hover::before {
   height: 50px;
 }
 
+body div div section div div div div .divImageSearch {
+  top: 15px;
+  right: 22px;
+}
+
+body div div section div div .buttonAdd {
+  background-color: #F69554;
+}
+
+body div div section div div .buttonAdd::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40%;
+  border-radius: 50px;
+  background-color: #4F2396;
+  transition: 0.3s;
+}
+
+body div div section div div .buttonAdd:hover::before {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 50px;
+}
+
+body div div section div div div div .boxButtonStor {
+  top: 60px;
+  display: none;
+}
+
+.tableScroll::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+.thPadding {
+  padding: 20px;
+}
+
+.divTable {
+  height: 70px;
+  width: 100%;
+  z-index: -1;
+}
+
+.hoverTr:hover {
+  background-color: #eee;
+}
+
+.doubleBorderCheckbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 25px;
+  height: 25px;
+}
+
+.doubleBorderCheckbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #F69554;
+  border-left: 2px solid #F69554;
+  border-top: 2px solid rgba(246, 149, 84, 0.8);
+  border-bottom: 2px solid rgba(246, 149, 84, 0.8);
+  border-radius: 6px;
+}
+
+.doubleBorderCheckbox:checked::before {
+  content: "✓";
+  font-size: 18px;
+  color: #4F2396;
+  text-align: center;
+}
+
 @media (max-width: 990px) {
   body div div section section div .paddingShadow .containerOverflowMobeile {
     overflow: auto;
@@ -705,5 +791,15 @@ body div div section div ul li div .widthDiv:hover::before {
   }
   .sizeSpan {
     font-size: 10px;
+  }
+  .divTable {
+    width: 900px;
+    top: 23px;
+  }
+  .divHiddenModile {
+    overflow: auto;
+  }
+  .thPadding {
+    padding: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
