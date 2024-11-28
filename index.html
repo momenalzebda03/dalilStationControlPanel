@@ -38,15 +38,16 @@
                                 <img src="assest/images/bell.svg" alt="">
                             </div>
                             <div class="position-relative buttonNavbarlanguage rounded-5" data-aos="flip-down">
-                                <div class="pt-1 divBoxArrow divDropDwon rounded-5 bg-white w-100 d-flex align-items-center"
-                                    id="toogleDropDown">
-                                    العربية
+                                <div class="pt-1 divBoxArrow divDropDwon" id="toogleDropDown">
+                                    <span>العربية</span>
                                 </div>
                                 <div
-                                    class="bg-white text-end boxButton position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
-                                    <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">العربية
+                                    class="bg-white text-end boxButton position-absolute start-0 w-100 border border-2 rounded-3 pt-2">
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">
+                                        <span>العربية</span>
                                     </div>
-                                    <div class="option p-2 cursorMouse" onclick="selectOption('English')">English
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('English')">
+                                        <span>English</span>
                                     </div>
                                 </div>
                             </div>
@@ -156,15 +157,15 @@
             <!-- end cards -->
             <!-- start containt -->
             <section class="container mt-4">
-                <div class="row overflow-hidden">
+                <div class="row gap-3 gap-md-0 overflow-hidden">
                     <section class="col-lg-3" data-aos="fade-right">
-                        <div class="shadowHeight shadow py-4 px-3 pb-0 text-center">
+                        <div class="shadowHeight overflow-auto shadow py-4 px-3 pb-0 text-center">
                             <h2 class="fw-bold fs-4">اخر المنشأت المسجله</h2>
                             <ul class="mt-3 px-0 d-flex flex-column gap-2">
                                 <li class="d-flex p-2 gap-3 rounded-4 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">شركة سمارت تاتش</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -186,7 +187,7 @@
                                 <li class="d-flex p-2 gap-3 rounded-3 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">LC مؤسسة</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -208,7 +209,7 @@
                                 <li class="d-flex p-2 gap-3 rounded-3 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">شركة النخبة</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -230,7 +231,7 @@
                                 <li class="d-flex p-2 gap-3 rounded-3 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -252,7 +253,7 @@
                                 <li class="d-flex p-2 gap-3 rounded-3 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -274,7 +275,7 @@
                                 <li class="d-flex p-2 gap-3 rounded-3 justify-content-end listRight">
                                     <div class="text-end">
                                         <a class="fw-bold fs-5 text-decoration-none" href="#">مؤسسة الحياة</a>
-                                        <ul class="listChild d-flex flex-column gap-1 justify-content-end">
+                                        <ul class="listChild d-flex flex-column gap-1">
                                             <li class="d-flex gap-2 align-items-center justify-content-end">
                                                 <span class="spanPublids">2223367555</span>
                                                 <img src="assest/images/phone.svg" alt="">
@@ -298,39 +299,48 @@
                     </section>
                     <section class="col-lg-9" data-aos="fade-left">
                         <div class="mt-md-0 d-flex flex-column gap-4">
-                            <section class="shadow paddingShadow rounded-5 overflow-hidden mt-4 mt-md-0">
-                                <div
-                                    class="overflow-auto d-flex flex-column-reverse flex-md-row align-items-center align-items-md-start gap-3 gap-md-0 justify-content-between">
-                                    <div class="position-relative buttonNavbarlanguage rounded-5 p-0">
-                                        <div id="calendarIcon"
-                                            class="text-white pt-1 divBoxArrow divBoxArrowOverflow rounded-5 w-100 d-flex align-items-center">
-                                            <span class="fw-bold fs-5">الشهر</span>
+                            <section class="shadow paddingShadow rounded-5 mt-4 mt-md-0">
+                                <div class="row">
+                                    <div class="mt-1 mt-md-0 col col-lg-2 d-block d-md-none">
+                                        <div class="text-end">
+                                            <h2 class="fs-4 fw-bold">الايرادات</h2>
                                         </div>
-                                        <input id="txtdate" type="text" class="formControl border border-0">
                                     </div>
-                                    <section class="charts">
-                                        <div class="chart w-100">
-                                            <canvas id="chart2"></canvas>
+                                    <div class="col col-lg-2">
+                                        <div class="position-relative buttonNavbarlanguage border border-0 rounded-5">
+                                            <div id="calendarIcon"
+                                                class="text-white pt-1 divBoxArrow divBoxArrowOverflow rounded-5">
+                                                <span class="fw-bold fs-5">الشهر</span>
+                                            </div>
+                                            <input id="txtdate" type="text" class="formControl border border-0">
                                         </div>
-                                    </section>
-                                    <div>
-                                        <h2 class="fs-4 fw-bold">الايرادات</h2>
+                                    </div>
+                                    <div class="col col-lg-8">
+                                        <section class="charts">
+                                            <div class="chart w-100">
+                                                <canvas id="chart2"></canvas>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="col col-lg-2 d-none d-md-block">
+                                        <div class="text-end">
+                                            <h2 class="fs-4 fw-bold">الايرادات</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                             <section class="shadow paddingShadow rounded-5 overflow-hidden">
                                 <div
-                                    class="d-flex flex-column align-items-center align-items-md-start flex-md-row justify-content-between">
+                                    class="d-flex flex-column gap-4 gap-md-0 align-items-center align-items-md-start flex-md-row justify-content-between">
                                     <div id="calendarIcon1"
-                                        class="position-relative buttonNavbarlanguage buttonNavbarlanguageOverflow rounded-5 p-0">
-                                        <div
-                                            class="text-black pt-1 divBoxArrow divBoxArrowNumber rounded-5 w-100 d-flex align-items-center">
+                                        class="position-relative buttonNavbarlanguage border border-0 rounded-5">
+                                        <div class="pt-1 divBoxArrow divBoxArrowNumber w-100">
                                             <span class="fw-bold fs-5 spanPublids">الشهر</span>
                                             <input id="txtdate1" type="text"
                                                 class="formControl position-absolute border border-0">
                                         </div>
                                     </div>
-                                    <div class="mt-2 containerOverflowMobeile">
+                                    <div class="mt-2 containerWidth tableScroll overflow-auto overflow-md-hidden">
                                         <div class="d-flex gap-5 align-items-end divPaddingNumber">
                                             <ul class="fw-bold px-0 stylelist d-none d-md-flex flex-column gap-2">
                                                 <li class="position-relative listLine fs-6">200</li>
@@ -349,9 +359,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -360,9 +369,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -371,9 +379,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -382,9 +389,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -393,9 +399,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -404,9 +409,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -415,9 +419,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -426,9 +429,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -437,9 +439,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -448,9 +449,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -459,9 +459,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div
-                                                        class="d-flex flex-column align-items-center gap-3 position-relative">
+                                                <div class="position-relative">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
                                                         <div class="divLineBlue">
                                                             <div class="lineBox"></div>
                                                         </div>
@@ -485,9 +484,8 @@
                                         <h2 class="fs-3 fw-bold">احصائيات المديونيه</h2>
                                     </div>
                                     <div id="calendarIcon2"
-                                        class="position-relative buttonNavbarlanguage buttonNavbarlanguageOverflow rounded-5 p-0">
-                                        <div
-                                            class="text-black pt-1 divBoxArrow divBoxArrowSalary rounded-5 w-100 d-flex align-items-center">
+                                        class="position-relative buttonNavbarlanguage border border-0 rounded-5">
+                                        <div class="pt-1 divBoxArrow divBoxArrowSalary w-100">
                                             <span class="fw-bold fs-5 spanPublids">الشهر</span>
                                             <input id="txtdate2" type="text"
                                                 class="formControl position-absolute border border-0">
@@ -495,8 +493,8 @@
                                     </div>
                                     <div
                                         class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 gap-md-5">
-                                        <div class="childBuilds">
-                                            <div class="position-relative text-end beforeBuilds rounded-3">
+                                        <div class="childBuilds text-end">
+                                            <div class="position-relative beforeBuilds rounded-3">
                                                 <span class="fs-5">المنشأت التي سددت</span>
                                             </div>
                                             <div class="position-relative beforeBuilds rounded-3">

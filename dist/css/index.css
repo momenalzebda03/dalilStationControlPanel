@@ -97,12 +97,12 @@ select:focus-visible {
   transform: rotate(180deg);
 }
 
-.buttonNavbarlanguageOverflow {
-  background: transparent;
-}
-
 .heightFull {
   min-height: 100vh;
+}
+
+.heightFulllogin {
+  height: 100vh;
 }
 
 .spanColorCard {
@@ -119,6 +119,10 @@ select:focus-visible {
 
 .backgroundRightSignIn {
   background-color: #4F2396;
+}
+
+.tableScroll::-webkit-scrollbar {
+  height: 8px !important;
 }
 
 body nav {
@@ -268,16 +272,14 @@ body div div section section div .paddingShadow div div .circle {
 
 body div div section section div .paddingShadow div div .circle .angle {
   background-color: rgba(204, 204, 204, 0.4);
-  top: 0;
-  left: 0;
   transform: rotate(-40deg);
 }
 
-body div div div div div div div .childBuilds .beforeBuilds span {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds span {
   color: #5C5C5C;
 }
 
-body div div div div div div div .childBuilds .beforeBuilds::before {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -287,15 +289,11 @@ body div div div div div div div .childBuilds .beforeBuilds::before {
   background-color: #ccc;
 }
 
-body div div div div div div div .childBuilds .beforeBuilds:last-child::before {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds:last-child::before {
   background-color: #4F2396;
 }
 
-body div div section section div .paddingShadow div div .stylelist {
-  list-style: none;
-}
 body div div section section div .paddingShadow div div .stylelist li {
-  font-size: 20px;
   color: #ccc;
 }
 
@@ -316,172 +314,172 @@ body div div section section div .paddingShadow div div .stylelist .listLine::be
   opacity: 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::before,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::before,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::after {
   width: 23px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(1) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(1) div .divLineBlue::before {
   min-height: 50px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(1) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(1) div .lineBox::before {
   background-color: #967EBD;
   width: 23px;
   height: 40px;
   bottom: 50px;
   z-index: -1;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(1) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(1) div .lineBox::after {
   background-color: #A391C0;
   width: 23px;
   height: 48px;
   bottom: 50px;
   z-index: -2;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(2) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(2) div .divLineBlue::before {
   min-height: 65px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(2) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(2) div .lineBox::before {
   height: 50px;
   bottom: 65px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(2) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(2) div .lineBox::after {
   height: 53px;
   bottom: 75px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(3) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(3) div .divLineBlue::before {
   min-height: 38px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(3) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(3) div .lineBox::before {
   height: 40px;
   bottom: 43px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(3) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(3) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(4) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(4) div .divLineBlue::before {
   min-height: 50px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(4) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(4) div .lineBox::before {
   height: 60px;
   bottom: 43px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(4) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(4) div .lineBox::after {
   height: 53px;
   bottom: 78px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(5) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(5) div .divLineBlue::before {
   min-height: 30px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(5) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(5) div .lineBox::before {
   height: 33px;
   bottom: 50px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(5) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(5) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(6) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(6) div .divLineBlue::before {
   min-height: 58px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(6) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(6) div .lineBox::before {
   height: 60px;
   bottom: 75px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(6) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(6) div .lineBox::after {
   height: 50px;
   bottom: 80px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(7) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(7) div .divLineBlue::before {
   min-height: 40px;
   bottom: 25;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(7) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(7) div .lineBox::before {
   height: 60px;
   bottom: 50px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(7) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(7) div .lineBox::after {
   height: 53px;
   bottom: 83px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(8) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(8) div .divLineBlue::before {
   min-height: 50px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(8) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(8) div .lineBox::before {
   height: 60px;
   bottom: 67px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(8) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(8) div .lineBox::after {
   height: 53px;
   bottom: 80px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(9) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(9) div .divLineBlue::before {
   min-height: 40px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(9) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(9) div .lineBox::before {
   height: 60px;
   bottom: 60px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(9) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(9) div .lineBox::after {
   height: 53px;
   bottom: 73px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(10) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(10) div .divLineBlue::before {
   min-height: 55px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(10) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(10) div .lineBox::before {
   height: 60px;
   bottom: 53px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(10) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(10) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(11) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(11) div .divLineBlue::before {
   min-height: 35px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(11) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(11) div .lineBox::before {
   height: 60px;
   bottom: 35px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(11) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(11) div .lineBox::after {
   height: 53px;
   bottom: 75px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(12) div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(12) div .divLineBlue::before {
   min-height: 35px;
   bottom: 25px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(12) div .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(12) div .lineBox::before {
   height: 60px;
   bottom: 40px;
 }
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div:nth-child(12) div .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div:nth-child(12) div .lineBox::after {
   height: 53px;
   bottom: 74px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
   background-color: #967EBD;
   z-index: -1;
   width: 23px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
   width: 23px;
   background-color: #A391C0;
   z-index: -2;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue::before {
   content: "";
   position: absolute;
   background-color: #4F2396;
@@ -491,8 +489,8 @@ body div div section section div .paddingShadow .containerOverflowMobeile .divPa
   border-radius: 5px 5px 0 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -509,25 +507,22 @@ body div div section section div .paddingShadow .containerOverflowMobeile .divPa
 
 .shadowHeight {
   max-height: 630px;
-  overflow-y: auto;
-  overflow-x: hidden;
   border-radius: 10px 10px 0 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar,
+body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar,
 .shadowHeight::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar-thumb,
+body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar-thumb,
 .shadowHeight::-webkit-scrollbar-thumb {
   background: #4F2396;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile {
+body div div section section div .paddingShadow .containerWidth {
   width: 60%;
-  overflow: auto;
 }
 
 body div .widthSignIn {
@@ -556,41 +551,43 @@ body div .widthSignIn div .colorBlue {
   color: #4F2396;
 }
 
-body div .widthSignIn div .stringSignIn {
+.stringSignIn {
   width: 75%;
   color: #ABABAB;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn {
-  height: 65px;
-}
-
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn .inputSignIn {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
   height: 61px;
+  border-top: 2px solid #ff6347;
+  border-left: 2px solid #ff6347;
+  border-right: 2px solid #00bfff;
+  border-bottom: 2px solid #00bfff;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn .inputSignIn::-moz-placeholder {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn::-moz-placeholder {
+  color: #ccc;
   font-weight: bold;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn .inputSignIn::placeholder {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn::placeholder {
+  color: #ccc;
   font-weight: bold;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn div .divTextInput {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
   right: 30px;
   top: -18px;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn div .stylePass a {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .stylePass a {
   color: rgba(246, 149, 84, 0.8);
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit {
+body div .widthSignIn div form div div .styleInputSubmit {
   background-color: #4F2396;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit .hoverInput {
+body div .widthSignIn div form div div .styleInputSubmit .hoverInput {
   top: 50%;
   left: 50%;
   width: 0;
@@ -600,19 +597,15 @@ body div .widthSignIn div .widthForm div div .styleInputSubmit .hoverInput {
   transition: 0.5s;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit:hover .hoverInput {
+body div .widthSignIn div form div div .styleInputSubmit:hover .hoverInput {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit .inputSpanIndex {
+body div .widthSignIn div form div div .styleInputSubmit .inputSpanIndex {
   z-index: 1;
-}
-
-body div .widthSignIn div .widthForm {
-  width: 450px;
 }
 
 body div div section .gapRow {
@@ -628,9 +621,10 @@ body div div section .gapRow div .imageHover:hover img {
 }
 
 body div div section ul li .divBorder {
-  background-image: linear-gradient(to right, red, blue);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border-right: 2px solid #F69554;
+  border-left: 2px solid #F69554;
+  border-top: 2px solid rgba(246, 149, 84, 0.8);
+  border-bottom: 2px solid rgba(246, 149, 84, 0.8);
   transition: 0.4s;
 }
 
@@ -720,10 +714,6 @@ body div div section div div div div .boxButtonStor {
   display: none;
 }
 
-.tableScroll::-webkit-scrollbar {
-  height: 8px !important;
-}
-
 .thPadding {
   padding: 20px;
 }
@@ -768,14 +758,10 @@ body div div section div div div div .boxButtonStor {
 }
 
 @media (max-width: 990px) {
-  body div div section section div .paddingShadow .containerOverflowMobeile {
-    overflow: auto;
-  }
-  body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
+  body div div section section div .paddingShadow .containerWidth .divPaddingNumber {
     padding-top: 100px;
-    overflow: auto;
   }
-  .paddingShadow {
+  body div div section section div .paddingShadow {
     padding: 15px !important;
   }
   .widthSignIn {
@@ -783,11 +769,10 @@ body div div section div div div div .boxButtonStor {
     height: auto;
   }
   .widthForm {
-    width: 100%;
+    width: 100% !important;
   }
-  body div .widthSignIn div .stringSignIn {
+  .stringSignIn {
     width: 100%;
-    color: #ABABAB;
   }
   .sizeSpan {
     font-size: 10px;

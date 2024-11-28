@@ -31,10 +31,10 @@ select:focus-visible {
 }
 
 .buttonNavbarlanguage {
-    border-top: 2px solid #ff6347;
-    border-left: 2px solid #ff6347;
-    border-right: 2px solid #00bfff;
-    border-bottom: 2px solid #00bfff;
+    border-top: 2px solid $colorBorderOne;
+    border-left: 2px solid $colorBorderOne;
+    border-right: 2px solid $colorBorderTow;
+    border-bottom: 2px solid $colorBorderTow;
     width: 118px;
     height: 38px;
     padding: 2px;
@@ -110,12 +110,12 @@ select:focus-visible {
     }
 }
 
-.buttonNavbarlanguageOverflow {
-    background: transparent;
-}
-
 .heightFull {
     min-height: 100vh;
+}
+
+.heightFulllogin {
+    height: 100vh;
 }
 
 .spanColorCard {
@@ -132,6 +132,10 @@ select:focus-visible {
 
 .backgroundRightSignIn {
     background-color: $colorBlue;
+}
+
+.tableScroll::-webkit-scrollbar {
+    height: 8px !important;
 }
 
 // end General Code
@@ -303,18 +307,16 @@ body div div section section div .paddingShadow div div .circle {
 
 body div div section section div .paddingShadow div div .circle .angle {
     background-color: #cccccc66;
-    top: 0;
-    left: 0;
     transform: rotate(-40deg);
 }
 
-body div div div div div div div .childBuilds .beforeBuilds {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds {
     span {
         color: $colorListPublis;
     }
 }
 
-body div div div div div div div .childBuilds .beforeBuilds::before {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds::before {
     content: "";
     position: absolute;
     width: 13px;
@@ -324,15 +326,12 @@ body div div div div div div div .childBuilds .beforeBuilds::before {
     background-color: $colorShdow;
 }
 
-body div div div div div div div .childBuilds .beforeBuilds:last-child::before {
+body div div section section div .paddingShadow div div .childBuilds .beforeBuilds:last-child::before {
     background-color: $colorBlue;
 }
 
 body div div section section div .paddingShadow div div .stylelist {
-    list-style: none;
-
     li {
-        font-size: 20px;
         color: $colorShdow;
     }
 }
@@ -354,13 +353,13 @@ body div div section section div .paddingShadow div div .stylelist .listLine::be
     opacity: 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::before,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::before,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::after {
     width: 23px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine {
 
     div:nth-child(1) {
         div {
@@ -593,19 +592,19 @@ body div div section section div .paddingShadow .containerOverflowMobeile .divPa
     }
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
     background-color: $blueNormal;
     z-index: -1;
     width: 23px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     width: 23px;
     background-color: $colorEsay;
     z-index: -2;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue::before {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue::before {
     content: "";
     position: absolute;
     background-color: $colorBlue;
@@ -615,8 +614,8 @@ body div div section section div .paddingShadow .containerOverflowMobeile .divPa
     border-radius: 5px 5px 0 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
-body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
+body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     content: "";
     position: absolute;
     left: 7px;
@@ -633,25 +632,22 @@ body div div section section div .paddingShadow .containerOverflowMobeile .divPa
 
 .shadowHeight {
     max-height: 630px;
-    overflow-y: auto;
-    overflow-x: hidden;
     border-radius: 10px 10px 0 0;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar,
+body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar,
 .shadowHeight::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar-thumb,
+body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar-thumb,
 .shadowHeight::-webkit-scrollbar-thumb {
     background: $colorBlue;
 }
 
-body div div section section div .paddingShadow .containerOverflowMobeile {
+body div div section section div .paddingShadow .containerWidth {
     width: 60%;
-    overflow: auto;
 }
 
 // end containt
@@ -682,39 +678,40 @@ body div .widthSignIn div .colorBlue {
     color: $colorBlue;
 }
 
-body div .widthSignIn div .stringSignIn {
+.stringSignIn {
     width: 75%;
     color: $colorSignIn;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn {
-    height: 65px;
-}
-
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn .inputSignIn {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
     height: 61px;
+    border-top: 2px solid $colorBorderOne;
+    border-left: 2px solid $colorBorderOne;
+    border-right: 2px solid $colorBorderTow;
+    border-bottom: 2px solid $colorBorderTow;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn .inputSignIn::placeholder {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn::placeholder {
+    color: $colorShdow;
     font-weight: bold;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn div .divTextInput {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
     right: 30px;
     top: -18px;
 }
 
-body div .widthSignIn div .widthForm div .buttonNavbarlanguageSignIn div .stylePass {
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .stylePass {
     a {
         color: $colorPass;
     }
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit {
+body div .widthSignIn div form div div .styleInputSubmit {
     background-color: $colorBlue;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit .hoverInput {
+body div .widthSignIn div form div div .styleInputSubmit .hoverInput {
     top: 50%;
     left: 50%;
     width: 0;
@@ -724,19 +721,15 @@ body div .widthSignIn div .widthForm div div .styleInputSubmit .hoverInput {
     transition: 0.5s;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit:hover .hoverInput {
+body div .widthSignIn div form div div .styleInputSubmit:hover .hoverInput {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-body div .widthSignIn div .widthForm div div .styleInputSubmit .inputSpanIndex {
+body div .widthSignIn div form div div .styleInputSubmit .inputSpanIndex {
     z-index: 1;
-}
-
-body div .widthSignIn div .widthForm {
-    width: 450px;
 }
 
 // end sign in
@@ -758,9 +751,10 @@ body div div section .gapRow div .imageHover:hover {
 // end synopsis
 // start Social media
 body div div section ul li .divBorder {
-    background-image: linear-gradient(to right, red, blue);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    border-right: 2px solid $colorOrange;
+    border-left: 2px solid $colorOrange;
+    border-top: 2px solid $colorPass;
+    border-bottom: 2px solid $colorPass;
     transition: 0.4s;
 }
 
@@ -856,10 +850,6 @@ body div div section div div div div .boxButtonStor {
 
 // end details
 // start table
-.tableScroll::-webkit-scrollbar {
-    height: 8px !important;
-}
-
 .thPadding {
     padding: 20px;
 }
@@ -904,16 +894,11 @@ body div div section div div div div .boxButtonStor {
 // end table
 // start media
 @media (max-width: 990px) {
-    body div div section section div .paddingShadow .containerOverflowMobeile {
-        overflow: auto;
-    }
-
-    body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
+    body div div section section div .paddingShadow .containerWidth .divPaddingNumber {
         padding-top: 100px;
-        overflow: auto;
     }
 
-    .paddingShadow {
+    body div div section section div .paddingShadow {
         padding: 15px !important;
     }
 
@@ -923,12 +908,11 @@ body div div section div div div div .boxButtonStor {
     }
 
     .widthForm {
-        width: 100%;
+        width: 100% !important;
     }
 
-    body div .widthSignIn div .stringSignIn {
+    .stringSignIn {
         width: 100%;
-        color: $colorSignIn;
     }
 
     .sizeSpan {
