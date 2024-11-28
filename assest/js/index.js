@@ -1,3 +1,16 @@
+$(document).ready(function () {
+  let dark = false;
+  $(".imageDark").click(function () {
+    if (!dark) {
+      $(this).attr("src", "assest/images/dark.png");
+      dark = true;
+    } else {
+      $(this).attr("src", "assest/images/iconSun.svg");
+      dark = false;
+    }
+  });
+});
+
 function toggleDropdown(elementPrefix) {
   const dropdown = $(`.${elementPrefix}`);
   dropdown.toggleClass("open");
@@ -74,17 +87,4 @@ var chart2 = new Chart(ctx2, {
       },
     ],
   },
-});
-
-$(document).ready(function () {
-  let dark = false;
-  $(".imageDark").click(function () {
-    if (!dark) {
-      $(this).attr("src", "assest/images/dark.png");
-      dark = true;
-    } else {
-      $(this).attr("src", "assest/images/iconSun.svg");
-      dark = false;
-    }
-  });
 });

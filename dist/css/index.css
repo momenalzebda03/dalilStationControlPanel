@@ -656,6 +656,31 @@ body div div section ul li .divBorder:hover .divWhiteBorder .divSocialMedia::bef
   left: -88px;
 }
 
+body div div section div ul li div .widthDiv {
+  background-color: rgba(246, 149, 84, 0.8);
+  width: 50px;
+  height: 50px;
+}
+
+body div div section div ul li div .widthDiv::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 42%;
+  top: 42%;
+  border-radius: 50%;
+  background-color: #4F2396;
+  transition: 0.3s;
+}
+
+body div div section div ul li div .widthDiv:hover::before {
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+
 @media (max-width: 990px) {
   body div div section section div .paddingShadow .containerOverflowMobeile {
     overflow: auto;

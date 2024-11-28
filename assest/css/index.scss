@@ -180,7 +180,7 @@ body div div .navbarDetails div div .divHoverImage:hover {
 // end navbar defails
 // start data
 body div div section ul .divDataCol {
-    height: 45px;    
+    height: 45px;
     background-color: $colordata;
     transition: 0.3;
 }
@@ -787,6 +787,33 @@ body div div section ul li .divBorder:hover .divWhiteBorder .divSocialMedia::bef
 }
 
 // end Social media
+// start Notifications
+body div div section div ul li div .widthDiv {
+    background-color: $colorPass;
+    width: 50px;
+    height: 50px;
+}
+
+body div div section div ul li div .widthDiv::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 42%;
+    top: 42%;
+    border-radius: 50%;
+    background-color: $colorBlue;
+    transition: 0.3s;
+}
+
+body div div section div ul li div .widthDiv:hover::before {
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+// end Notifications
 // start media
 @media (max-width: 990px) {
     body div div section section div .paddingShadow .containerOverflowMobeile {

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DALIL STATION CONTROL PANEL</title>
+</head>
+
+<body>
+    <div class="row w-100 mx-0 ps-md-5">
+        <div class="col-10">
+            <!-- start navbar -->
+            <nav class="container position-relative px-4 px-md-0 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="cursorMouse d-none d-md-block" data-aos="flip-left">
+                        <img src="assest/images/iconSun.svg" alt="" class="imageDark" width="20px" height="20px">
+                    </div>
+                    <div class="d-flex gap-2 gap-md-0 justify-content-between ms-3 w-100">
+                        <div class="d-flex flex-row gap-3 me-md-auto gap-md-4 align-items-start align-items-center">
+                            <div class="d-none d-md-block" data-aos="flip-right">
+                                <span>الساعة الاَن : 8:55 صباحاً</span>
+                            </div>
+                            <div class="cursorMouse d-md-none">
+                                <img src="assest/images/iconSun.svg" alt="">
+                            </div>
+                            <div class="position-relative" data-aos="flip-up">
+                                <div class="divBeforeBell position-absolute rounded-circle end-0"></div>
+                                <img src="assest/images/bell.svg" alt="">
+                            </div>
+                            <div class="position-relative buttonNavbarlanguage rounded-5" data-aos="flip-down">
+                                <div class="pt-1 divBoxArrow divDropDwon rounded-5 bg-white w-100 d-flex align-items-center"
+                                    id="toogleDropDown">
+                                    العربية
+                                </div>
+                                <div
+                                    class="bg-white text-end boxButton position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">العربية
+                                    </div>
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('English')">English
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="d-none d-md-block text-end position-relative" data-aos="flip-down">
+                                <h1 class="mb-0 fs-3">أهلاً وسهلاً,<span class="spanColorUser">راشد</span></h1>
+                                <div class="beforePoint me-4">
+                                    <span class="fs-4">نشط الأن</span>
+                                </div>
+                            </div>
+                            <div data-aos="flip-left">
+                                <img src="assest/images/user.svg" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+            <!-- start Notifications -->
+            <section class="mx-2 mx-md-0 mt-5">
+                <div class="text-end" data-aos="flip-right">
+                    <h2 class="mb-0">الاشعارات</h2>
+                    <ul
+                        class="list-unstyled mt-3 p-0 p-md-4 rounded-3 d-flex flex-column gap-md-5 justify-content-center">
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <a href="#" class="text-decoration-none fs-5 spanColorCard">الامس</a>
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <div>
+                                    <h2 class="mb-0 fs-4">تسجيل المنشأة</h2>
+                                    <span class="spanColorCard">تم تسجيل منشأة جديدة بإسم سمارت تاتش</span>
+                                </div>
+                                <div
+                                    class="widthDiv overflow-hidden position-relative d-flex justify-content-center align-items-center rounded-circle">
+                                    <img src="assest/images/bellNot.svg" alt="" class="position-relative">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <a href="#" class="text-decoration-none fs-5 spanColorCard">الامس</a>
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <div>
+                                    <h2 class="mb-0 fs-4">تغيير كلمه المرور</h2>
+                                    <span class="spanColorCard">قامت منشأه سمارت تاتش بتغيير كلمة المرور الخاصة
+                                        بها</span>
+                                </div>
+                                <div
+                                    class="widthDiv overflow-hidden position-relative d-flex justify-content-center align-items-center rounded-circle">
+                                    <img src="assest/images/bellNot.svg" alt="" class="position-relative">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <a href="#" class="text-decoration-none fs-5 spanColorCard">الامس</a>
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <div>
+                                    <h2 class="mb-0 fs-4">اشتراك جديد</h2>
+                                    <span class="spanColorCard">تم اشتراك شركة سمارت تاتش بإشتراك كن شريك النجاح </span>
+                                </div>
+                                <div
+                                    class="widthDiv overflow-hidden position-relative d-flex justify-content-center align-items-center rounded-circle">
+                                    <img src="assest/images/bellNot.svg" alt="" class="position-relative">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end Notifications -->
+        </div>
+        <div class="col col-2 bg-black heightFull"></div>
+    </div>
+</body>
+<script src="assest/js/jquery.min.js"></script>
+<script src="assest/js/bootstrap.bundle.min.js"></script>
+<script src="assest/js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        delay: 200,
+        easing: 'ease',
+    });
+</script>
+
+</html>
