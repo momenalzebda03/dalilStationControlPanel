@@ -8,6 +8,12 @@ $("#toogleDropDown").on("click", function () {
   toggleDropdown(elementPrefix);
 });
 
+function selectOption(language) {
+  $("#toogleDropDown").text(language);
+  const elementPrefix = "divDropDwon";
+  toggleDropdown(elementPrefix);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const dateInput = document.getElementById("txtdate");
   const calendarIcon = document.getElementById("calendarIcon");
@@ -68,4 +74,17 @@ var chart2 = new Chart(ctx2, {
       },
     ],
   },
+});
+
+$(document).ready(function () {
+  let dark = false;
+  $(".imageDark").click(function () {
+    if (!dark) {
+      $(this).attr("src", "assest/images/dark.png");
+      dark = true;
+    } else {
+      $(this).attr("src", "assest/images/iconSun.svg");
+      dark = false;
+    }
+  });
 });

@@ -35,6 +35,7 @@ select:focus-visible {
     width: 118px;
     height: 38px;
     padding: 2px;
+    z-index: 1;
 
     .boxButton {
         display: none;
@@ -662,7 +663,7 @@ body div .widthSignIn div .widthForm {
     width: 450px;
 }
 
-.checkEmail {
+body div .heightFull div .checkEmail {
     color: $colorOrange;
 }
 
