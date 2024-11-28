@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DALIL STATION CONTROL PANEL</title>
+</head>
+
+<body>
+    <div class="row w-100 mx-0 ps-md-5">
+        <div class="col-10">
+            <!-- start navbar -->
+            <nav class="container position-relative px-4 px-md-0 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="cursorMouse d-none d-md-block" data-aos="flip-left">
+                        <img src="assest/images/iconSun.svg" alt="" class="imageDark" width="20px" height="20px">
+                    </div>
+                    <div class="d-flex gap-2 gap-md-0 justify-content-between ms-3 w-100">
+                        <div class="d-flex flex-row gap-3 me-md-auto gap-md-4 align-items-start align-items-center">
+                            <div class="d-none d-md-block" data-aos="flip-right">
+                                <span>الساعة الاَن : 8:55 صباحاً</span>
+                            </div>
+                            <div class="cursorMouse d-md-none">
+                                <img src="assest/images/iconSun.svg" alt="">
+                            </div>
+                            <div class="position-relative" data-aos="flip-up">
+                                <div class="divBeforeBell position-absolute rounded-circle end-0"></div>
+                                <img src="assest/images/bell.svg" alt="">
+                            </div>
+                            <div class="position-relative buttonNavbarlanguage rounded-5" data-aos="flip-down">
+                                <div class="pt-1 divBoxArrow divDropDwon rounded-5 bg-white w-100 d-flex align-items-center"
+                                    id="toogleDropDown">
+                                    العربية
+                                </div>
+                                <div
+                                    class="bg-white text-end boxButton position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">العربية
+                                    </div>
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('English')">English
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="d-none d-md-block text-end position-relative" data-aos="flip-down">
+                                <h1 class="mb-0 fs-3">أهلاً وسهلاً,<span class="spanColorUser">راشد</span></h1>
+                                <div class="beforePoint me-4">
+                                    <span class="fs-4">نشط الأن</span>
+                                </div>
+                            </div>
+                            <div data-aos="flip-left">
+                                <img src="assest/images/user.svg" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+            <!-- start navbar details -->
+            <nav class="navbarDetails mt-5">
+                <div
+                    class="d-flex justify-content-between align-items-center align-items-md-end flex-column-reverse gap-3 gap-md-0 flex-md-row">
+                    <div class="d-flex gap-5 align-items-center" data-aos="flip-left">
+                        <div class="cursorMouse px-3 py-2 rounded-circle divHoverImage position-relative">
+                            <img src="assest/images/arrawRight.svg" alt="" class="hoverArraw position-relative">
+                        </div>
+                        <div class="cursorMouse">
+                            <img src="assest/images/delete.svg" alt="">
+                        </div>
+                        <div class="cursorMouse">
+                            <img src="assest/images/prevention.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mx-3 mx-md-5 text-end" data-aos="flip-right">
+                        <h2 class="mb-0">سمارت تاتش</h2>
+                        <span class="fs-3 spanColorCard">تفاصيل مؤسسة سمارت تاتش</span>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar details -->
+            <!-- start data -->
+            <section class="container mt-5">
+                <ul class="d-flex flex-wrap gap-3 justify-content-end">
+                    <li data-aos="flip-left"
+                        class="divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
+                        <div>
+                            <span class="fs-6">الموقع الالكتروني</span>
+                        </div>
+                        <div>
+                            <img src="assest/images/finger.svg" alt="">
+                        </div>
+                    </li>
+                    <li data-aos="flip-right"
+                        class="divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
+                        <div>
+                            <span class="fs-6">الموقع الالكتروني</span>
+                        </div>
+                        <div>
+                            <img src="assest/images/finger.svg" alt="">
+                        </div>
+                    </li>
+                    <li data-aos="flip-left"
+                        class="divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
+                        <div class="px-3 py-1 rounded-5 backgroundDataBox">
+                            <span class="text-nowrap sizeSpan">الرياض - الزلفي</span>
+                        </div>
+                        <div>
+                            <span class="text-nowrap">عنوان المنشأة :</span>
+                        </div>
+                    </li>
+                    <li data-aos="flip-right"
+                        class="divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
+                        <div class="px-3 py-1 rounded-5 backgroundDataBox">
+                            <span class="text-nowrap sizeSpan">9:00 AM - 4:00 PM</span>
+                        </div>
+                        <div>
+                            <span class="text-nowrap">موعد العمل:</span>
+                        </div>
+                    </li>
+                    <li data-aos="flip-left"
+                        class="divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
+                        <div class="px-3 py-1 rounded-5 backgroundDataBox">
+                            <span class="text-nowrap sizeSpan">4</span>
+                        </div>
+                        <div>
+                            <span>عدد الفروع:</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- end data -->
+            <!-- start Synopsis -->
+            <section class="mx-3 mx-md-5 mt-5">
+                <div class="text-end">
+                    <h2 class="fw-bold">نبذة عن الشركة</h2>
+                    <span class="fs-5 spanColorCard">تأسست شركة [سمارت تاتش] بهدف تقديم حلول تسويقية شاملة تساعد
+                        العلامات التجارية على تحقيق أهدافها ونموها في السوق. </span>
+                </div>
+                <div class="row mt-4 gapRow text-end">
+                    <div class="col-lg-4" data-aos="flip-left">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis3.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="flip-up">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis2.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="flip-down">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis1.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="flip-left">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis6.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="flip-up">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis5.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="flip-down">
+                        <div class="imageHover position-relative overflow-hidden">
+                            <img src="assest/images/Synopsis4.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end Synopsis -->
+            <!-- start Record -->
+            <section class="mx-3 mx-md-5 mt-5">
+                <div class="text-end d-flex flex-column gap-3" data-aos="flip-down">
+                    <h2>السجل التجاري</h2>
+                    <img src="assest/images/CommercialRegistration.svg" alt="">
+                </div>
+            </section>
+            <!-- end Record -->
+            <!-- start Social media -->
+            <section class="mx-0 mx-md-5 mt-5">
+                <div class="container">
+                    <ul class="row gap-3 gap-md-0 list-unstyled">
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/linkid.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/x.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/tiktop.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/instagram.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/twiter.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col col-lg-2">
+                            <a href="#"
+                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative divSocialMedia rounded-circle">
+                                        <img src="assest/images/facebook.svg" alt="" class="position-relative">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end Social media -->
+        </div>
+        <div class="col col-2 bg-black heightFull"></div>
+    </div>
+</body>
+<script src="assest/js/jquery.min.js"></script>
+<script src="assest/js/bootstrap.bundle.min.js"></script>
+<script src="assest/js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        delay: 200,
+        easing: 'ease',
+    });
+</script>
+
+</html>

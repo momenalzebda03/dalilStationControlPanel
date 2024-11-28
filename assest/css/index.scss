@@ -103,12 +103,20 @@ select:focus-visible {
     }
 }
 
-body div div div div div div .buttonNavbarlanguageOverflow {
+.buttonNavbarlanguageOverflow {
     background: transparent;
 }
 
 .heightFull {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.spanColorCard {
+    color: $colorText;
+}
+
+.sizeSpan {
+    font-size: 14px;
 }
 
 // end General Code
@@ -145,11 +153,43 @@ body nav div div .beforePoint::before {
 }
 
 // end navbar
-// start cards
-body .divCards div div div .styleCard div div .spanColorCard {
-    color: $colorText;
+// start navbar defails
+body div div .navbarDetails div div .divHoverImage .hoverArraw {
+    left: 0;
+    transition: 0.3s;
 }
 
+body div div .navbarDetails div div .divHoverImage {
+    background-color: $colorHoverArraw;
+}
+
+body div div .navbarDetails div div .divHoverImage:hover {
+    .hoverArraw {
+        left: -5px;
+    }
+}
+
+// end navbar defails
+// start data
+body div div section ul .divDataCol {
+    height: 45px;
+    background-color: $colordata;
+}
+
+body div div section ul .divDataCol .backgroundDataBox {
+    background-color: $colorwhite;
+}
+
+body div div section ul .divDataCol:hover {
+    background-color: #f6955466;
+
+    .backgroundDataBox {
+        background-color: $colorHoverArraw;
+    }
+}
+
+// end data
+// start cards
 body .divCards div div div .styleCard div div .spanCardBlue {
     color: $colorBlue;
 }
@@ -195,19 +235,19 @@ body .divCards div div div .styleCard:hover::before {
 
 // end cards
 // start containt
-.paddingShadow {
+body div div section section div .paddingShadow {
     padding: 10px 55px !important;
 }
 
-.listRight {
+body div div div div ul .listRight {
     background-color: rgba(98, 98, 104, 0.118);
 }
 
-.spanPublids {
+body div div div div ul .listRight div .listChild li .spanPublids {
     color: $colorListPublis;
 }
 
-.listChild li:last-child .spanPublids {
+body div div div div ul .listRight div .listChild li:last-child .spanPublids {
     color: $colorBlue;
 }
 
@@ -215,13 +255,13 @@ body div div div div ul .listRight div .listChild li .imageStar {
     width: 12px;
 }
 
-body div div div div div div .paddingShadow div div .circle {
+body div div section section div .paddingShadow div div .circle {
     width: 175px;
     height: 175px;
     background-color: $colorBlue;
 }
 
-body div div div div div div .paddingShadow div div .circle .angle {
+body div div section section div .paddingShadow div div .circle .angle {
     background-color: #cccccc66;
     top: 0;
     left: 0;
@@ -248,7 +288,7 @@ body div div div div div div div .childBuilds .beforeBuilds:last-child::before {
     background-color: $colorBlue;
 }
 
-body div div div div div div .paddingShadow div div .stylelist {
+body div div section section div .paddingShadow div div .stylelist {
     list-style: none;
 
     li {
@@ -257,7 +297,7 @@ body div div div div div div .paddingShadow div div .stylelist {
     }
 }
 
-body div div div div div div .paddingShadow div div .stylelist .listLine::before {
+body div div section section div .paddingShadow div div .stylelist .listLine::before {
     content: "";
     position: absolute;
     width: 650px;
@@ -268,19 +308,19 @@ body div div div div div div .paddingShadow div div .stylelist .listLine::before
     z-index: -2;
 }
 
-body div div div div div div .buttonNavbarlanguage .formControl {
+.formControl {
     left: 0;
     top: 20px;
     opacity: 0;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue,
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::before,
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::after {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue,
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::before,
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div::after {
     width: 23px;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine {
 
     div:nth-child(1) {
         div {
@@ -513,19 +553,19 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     }
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
     background-color: $blueNormal;
     z-index: -1;
     width: 23px;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     width: 23px;
     background-color: $colorEsay;
     z-index: -2;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue::before {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue::before {
     content: "";
     position: absolute;
     background-color: $colorBlue;
@@ -535,8 +575,8 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     border-radius: 5px 5px 0 0;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
-body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
+body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     content: "";
     position: absolute;
     left: 7px;
@@ -558,18 +598,18 @@ body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddin
     border-radius: 10px 10px 0 0;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar,
+body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar,
 .shadowHeight::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar-thumb,
+body div div section section div .paddingShadow .containerOverflowMobeile::-webkit-scrollbar-thumb,
 .shadowHeight::-webkit-scrollbar-thumb {
     background: $colorBlue;
 }
 
-body div div div div div div .paddingShadow .containerOverflowMobeile {
+body div div section section div .paddingShadow .containerOverflowMobeile {
     width: 60%;
     overflow: auto;
 }
@@ -668,13 +708,67 @@ body div .heightFull div .checkEmail {
 }
 
 // end sign in
+// start synopsis
+body div div section .gapRow {
+    row-gap: 20px;
+}
+
+body div div section .gapRow div .imageHover img {
+    transition: transform 0.3s ease;
+}
+
+body div div section .gapRow div .imageHover:hover {
+    img {
+        transform: scale(1.1);
+    }
+}
+
+// end synopsis
+// start Social media
+body div div section ul li .divBorder {
+    background-image: linear-gradient(to right, red, blue);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: 0.4s;
+}
+
+body div div section ul li .divBorder .divWhiteBorder {
+    margin: 1.4px;
+    width: 154%;
+    padding: 40px;
+}
+
+body div div section ul li .divBorder .divWhiteBorder .divSocialMedia::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -20px;
+    left: -25px;
+    border-radius: 50px;
+    background-color: $colorBlue;
+    transition: 0.3s;
+}
+
+body div div section ul li .divBorder:hover {
+    margin-top: -20px;
+}
+
+body div div section ul li .divBorder:hover .divWhiteBorder .divSocialMedia::before {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -88px;
+}
+
+// end Social media
 // start media
 @media (max-width: 990px) {
-    body div div div div div div .paddingShadow .containerOverflowMobeile {
+    body div div section section div .paddingShadow .containerOverflowMobeile {
         overflow: auto;
     }
 
-    body div div div div div div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
+    body div div section section div .paddingShadow .containerOverflowMobeile .divPaddingNumber {
         padding-top: 100px;
         overflow: auto;
     }
@@ -688,13 +782,17 @@ body div .heightFull div .checkEmail {
         height: auto;
     }
 
-    body div .widthSignIn div .widthForm {
+    .widthForm {
         width: 100%;
     }
 
     body div .widthSignIn div .stringSignIn {
         width: 100%;
         color: $colorSignIn;
+    }
+
+    .sizeSpan {
+        font-size: 10px;
     }
 }
 
