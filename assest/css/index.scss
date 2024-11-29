@@ -353,13 +353,13 @@ body div div section section div .paddingShadow div div .stylelist .listLine::be
     opacity: 0;
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue,
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::before,
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div::after {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue,
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div::before,
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div::after {
     width: 23px;
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine {
 
     div:nth-child(1) {
         div {
@@ -592,19 +592,19 @@ body div div section section div .paddingShadow .containerWidth .divPaddingNumbe
     }
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
     background-color: $blueNormal;
     z-index: -1;
     width: 23px;
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     width: 23px;
     background-color: $colorEsay;
     z-index: -2;
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue::before {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue::before {
     content: "";
     position: absolute;
     background-color: $colorBlue;
@@ -614,8 +614,8 @@ body div div section section div .paddingShadow .containerWidth .divPaddingNumbe
     border-radius: 5px 5px 0 0;
 }
 
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
-body div div section section div .paddingShadow .containerWidth .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
+body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     content: "";
     position: absolute;
     left: 7px;
@@ -635,19 +635,15 @@ body div div section section div .paddingShadow .containerWidth .divPaddingNumbe
     border-radius: 10px 10px 0 0;
 }
 
-body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar,
+body div div section section div .paddingShadow div::-webkit-scrollbar,
 .shadowHeight::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-body div div section section div .paddingShadow .containerWidth::-webkit-scrollbar-thumb,
+body div div section section div .paddingShadow div::-webkit-scrollbar-thumb,
 .shadowHeight::-webkit-scrollbar-thumb {
     background: $colorBlue;
-}
-
-body div div section section div .paddingShadow .containerWidth {
-    width: 60%;
 }
 
 // end containt
@@ -877,10 +873,10 @@ body div div section div div div div .boxButtonStor {
     left: 0;
     width: 100%;
     height: 100%;
-    border-right: 2px solid $colorOrange;
-    border-left: 2px solid $colorOrange;
-    border-top: 2px solid $colorPass;
-    border-bottom: 2px solid $colorPass;
+    border-right: 2px solid $colorBorderOne;
+    border-left: 2px solid $colorBlue;
+    border-top: 2px solid $colorBlue;
+    border-bottom: 2px solid $colorBorderOne;
     border-radius: 6px;
 }
 
@@ -894,7 +890,7 @@ body div div section div div div div .boxButtonStor {
 // end table
 // start media
 @media (max-width: 990px) {
-    body div div section section div .paddingShadow .containerWidth .divPaddingNumber {
+    body div div section section div .paddingShadow div .divPaddingNumber {
         padding-top: 100px;
     }
 
@@ -930,6 +926,10 @@ body div div section div div div div .boxButtonStor {
 
     .thPadding {
         padding: 10px;
+    }
+
+    body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
+        width: 350px;
     }
 }
 

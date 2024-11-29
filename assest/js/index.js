@@ -45,47 +45,32 @@ function selectOptionStor(option) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dateInput = document.getElementById("txtdate");
-  const calendarIcon = document.getElementById("calendarIcon");
-  const dateInput1 = document.getElementById("txtdate1");
-  const calendarIcon1 = document.getElementById("calendarIcon1");
-  const dateInput2 = document.getElementById("txtdate2");
-  const calendarIcon2 = document.getElementById("calendarIcon2");
-
-  const datepicker = flatpickr(dateInput, {
-    dateFormat: "d/m/Y",
-    allowInput: true,
-    onClose: function () {
-      toggleDropdown("divBoxArrowOverflow");
+  const dateInputs = [
+    {
+      input: document.getElementById("txtdate"),
+      icon: document.getElementById("calendarIcon"),
+      boxId: "divBoxArrowOverflow",
     },
-  });
-
-  const datepicker1 = flatpickr(dateInput1, {
-    dateFormat: "d/m/Y",
-    allowInput: true,
-    onClose: function () {
-      toggleDropdown("divBoxArrowNumber");
+    {
+      input: document.getElementById("txtdate1"),
+      icon: document.getElementById("calendarIcon1"),
+      boxId: "divBoxArrowNumber",
     },
-  });
-
-  const datepicker2 = flatpickr(dateInput2, {
-    dateFormat: "d/m/Y",
-    allowInput: true,
-    onClose: function () {
-      toggleDropdown("divBoxArrowSalary");
+    {
+      input: document.getElementById("txtdate2"),
+      icon: document.getElementById("calendarIcon2"),
+      boxId: "divBoxArrowSalary",
     },
-  });
+  ];
 
-  calendarIcon.addEventListener("click", function () {
-    datepicker.open();
-  });
+  dateInputs.forEach(({ input, icon, boxId }) => {
+    const datepicker = flatpickr(input, {
+      dateFormat: "d/m/Y",
+      allowInput: true,
+      onClose: () => toggleDropdown(boxId),
+    });
 
-  calendarIcon1.addEventListener("click", function () {
-    datepicker1.open();
-  });
-
-  calendarIcon2.addEventListener("click", function () {
-    datepicker2.open();
+    icon.addEventListener("click", () => datepicker.open());
   });
 });
 
