@@ -31,10 +31,10 @@ select:focus-visible {
 }
 
 .buttonNavbarlanguage {
-    border-top: 2px solid $colorBorderOne;
-    border-left: 2px solid $colorBorderOne;
-    border-right: 2px solid $colorBorderTow;
-    border-bottom: 2px solid $colorBorderTow;
+    border-right: 2px solid $colorBorderOne;
+    border-left: 2px solid $colorBlue;
+    border-top: 2px solid $colorBlue;
+    border-bottom: 2px solid $colorBorderOne;
     width: 118px;
     height: 38px;
     padding: 2px;
@@ -138,6 +138,10 @@ select:focus-visible {
     height: 8px !important;
 }
 
+.spanColorUser {
+    color: $colorBlue;
+}
+
 // end General Code
 
 // start navbar
@@ -150,10 +154,6 @@ body nav div div div .divBeforeBell {
     width: 7px;
     height: 7px;
     top: 6px;
-}
-
-body nav div div div .spanColorUser {
-    color: $colorBlue;
 }
 
 body nav div div .beforePoint {
@@ -197,6 +197,20 @@ body div div .navbarDetails div div .divHoverImage:hover {
 }
 
 // end navbar defails
+// start menu
+.activeList {
+    background-color: $colorBlue;
+
+    div {
+        img {}
+
+        span {
+            color: $colorwhite;
+        }
+    }
+}
+
+// end menu
 // start data
 body div div section ul .divDataCol {
     height: 45px;
