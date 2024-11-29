@@ -220,12 +220,12 @@ body div div .navbarDetails div div .divHoverImage:hover {
 
 // end navbar defails
 // start menu
-body div .heightFull div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
     transform: rotate(0);
     transition: 0.3s;
 }
 
-body div .heightFull div div .alginStartMobile li .hoverListMenu:hover {
+body div nav div div .alginStartMobile li .hoverListMenu:hover {
     background-color: $colorBlue;
 
     div {

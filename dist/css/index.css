@@ -198,21 +198,21 @@ body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
   transform: rotate(362deg);
 }
 
-body div .heightFull div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transform: rotate(0);
   transition: 0.3s;
 }
 
-body div .heightFull div div .alginStartMobile li .hoverListMenu:hover {
+body div nav div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
-body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div img {
+body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
-body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
+body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
   transform: rotate(90deg);
 }
-body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div span {
+body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
   color: white;
 }
 
