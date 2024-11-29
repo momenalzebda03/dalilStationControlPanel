@@ -142,6 +142,28 @@ select:focus-visible {
     color: $colorBlue;
 }
 
+.buttonAdd {
+    background-color: $colorOrange;
+}
+
+.buttonAdd::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 40%;
+    border-radius: 50px;
+    background-color: $colorBlue;
+    transition: 0.3s;
+}
+
+.buttonAdd:hover::before {
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 50px;
+}
+
 // end General Code
 
 // start navbar
@@ -221,7 +243,7 @@ body div .heightFull div div .alginStartMobile li .hoverListMenu:hover {
     }
 }
 
-body div .heightFull div div .alginStartMobile li .activeList {
+body div nav div div .alginStartMobile li .activeList {
     background-color: $colorBlue !important;
 
     div {
@@ -240,8 +262,23 @@ body div .heightFull div div .alginStartMobile li .activeList {
     }
 }
 
-body div .heightFull div div .alginStartMobile li div div .sizeSpanMenu {
+body div nav div div .alginStartMobile li div div .sizeSpanMenu {
     font-size: 18px;
+}
+
+body div nav a div .colorButtonLogOut {
+    background-color: $colorButtonLogOut;
+    padding: 10px;
+}
+
+body div nav a div .buttonAddOverflow::before {
+    top: 50%;
+}
+
+body div nav a div .buttonAddOverflow:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 // end menu
@@ -868,28 +905,6 @@ body div div section div ul li div .widthDiv:hover::before {
 body div div section div div div div .divImageSearch {
     top: 15px;
     right: 22px;
-}
-
-body div div section div div .buttonAdd {
-    background-color: $colorOrange;
-}
-
-body div div section div div .buttonAdd::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 40%;
-    border-radius: 50px;
-    background-color: $colorBlue;
-    transition: 0.3s;
-}
-
-body div div section div div .buttonAdd:hover::before {
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 50px;
 }
 
 body div div section div div div div .boxButtonStor {

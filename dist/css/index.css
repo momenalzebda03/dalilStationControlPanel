@@ -129,6 +129,28 @@ select:focus-visible {
   color: #4F2396;
 }
 
+.buttonAdd {
+  background-color: #F69554;
+}
+
+.buttonAdd::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40%;
+  border-radius: 50px;
+  background-color: #4F2396;
+  transition: 0.3s;
+}
+
+.buttonAdd:hover::before {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 50px;
+}
+
 body nav {
   top: 10px;
 }
@@ -194,22 +216,37 @@ body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div span 
   color: white;
 }
 
-body div .heightFull div div .alginStartMobile li .activeList {
+body div nav div div .alginStartMobile li .activeList {
   background-color: #4F2396 !important;
 }
-body div .heightFull div div .alginStartMobile li .activeList div .imageBlue {
+body div nav div div .alginStartMobile li .activeList div .imageBlue {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
-body div .heightFull div div .alginStartMobile li .activeList div .imageArrawTop {
+body div nav div div .alginStartMobile li .activeList div .imageArrawTop {
   filter: invert(1) brightness(1000%) grayscale(10000%);
   transform: rotate(90deg);
 }
-body div .heightFull div div .alginStartMobile li .activeList div span {
+body div nav div div .alginStartMobile li .activeList div span {
   color: white;
 }
 
-body div .heightFull div div .alginStartMobile li div div .sizeSpanMenu {
+body div nav div div .alginStartMobile li div div .sizeSpanMenu {
   font-size: 18px;
+}
+
+body div nav a div .colorButtonLogOut {
+  background-color: rgba(255, 10, 14, 0.6980392157);
+  padding: 10px;
+}
+
+body div nav a div .buttonAddOverflow::before {
+  top: 50%;
+}
+
+body div nav a div .buttonAddOverflow:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 body div div section ul .divDataCol {
@@ -722,28 +759,6 @@ body div div section div ul li div .widthDiv:hover::before {
 body div div section div div div div .divImageSearch {
   top: 15px;
   right: 22px;
-}
-
-body div div section div div .buttonAdd {
-  background-color: #F69554;
-}
-
-body div div section div div .buttonAdd::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 40%;
-  border-radius: 50px;
-  background-color: #4F2396;
-  transition: 0.3s;
-}
-
-body div div section div div .buttonAdd:hover::before {
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 50px;
 }
 
 body div div section div div div div .boxButtonStor {
