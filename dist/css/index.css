@@ -203,17 +203,25 @@ body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transition: 0.3s;
 }
 
+body div nav div div .alginStartMobile li .activeListNoneArrow,
 body div nav div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
+body div nav div div .alginStartMobile li .activeListNoneArrow div img,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
+body div nav div div .alginStartMobile li .activeListNoneArrow div .imageArrawTop,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
   transform: rotate(90deg);
 }
+body div nav div div .alginStartMobile li .activeListNoneArrow div span,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
   color: white;
+}
+
+body div nav div div .alginStartMobile li .activeListNoneArrow div .imageArrawTop {
+  display: none;
 }
 
 body div nav div div .alginStartMobile li .activeList {

@@ -225,6 +225,7 @@ body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
     transition: 0.3s;
 }
 
+body div nav div div .alginStartMobile li .activeListNoneArrow,
 body div nav div div .alginStartMobile li .hoverListMenu:hover {
     background-color: $colorBlue;
 
@@ -239,6 +240,14 @@ body div nav div div .alginStartMobile li .hoverListMenu:hover {
 
         span {
             color: $colorwhite;
+        }
+    }
+}
+
+body div nav div div .alginStartMobile li .activeListNoneArrow {
+    div {
+        .imageArrawTop {
+            display: none;
         }
     }
 }
