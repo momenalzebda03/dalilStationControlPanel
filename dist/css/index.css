@@ -176,11 +176,40 @@ body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
   transform: rotate(362deg);
 }
 
-.activeList {
+body div .heightFull div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+  transform: rotate(0);
+  transition: 0.3s;
+}
+
+body div .heightFull div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
-.activeList div span {
+body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div img {
+  filter: invert(1) brightness(1000%) grayscale(10000%);
+}
+body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
+  transform: rotate(90deg);
+}
+body div .heightFull div div .alginStartMobile li .hoverListMenu:hover div span {
   color: white;
+}
+
+body div .heightFull div div .alginStartMobile li .activeList {
+  background-color: #4F2396 !important;
+}
+body div .heightFull div div .alginStartMobile li .activeList div .imageBlue {
+  filter: invert(1) brightness(1000%) grayscale(10000%);
+}
+body div .heightFull div div .alginStartMobile li .activeList div .imageArrawTop {
+  filter: invert(1) brightness(1000%) grayscale(10000%);
+  transform: rotate(90deg);
+}
+body div .heightFull div div .alginStartMobile li .activeList div span {
+  color: white;
+}
+
+body div .heightFull div div .alginStartMobile li div div .sizeSpanMenu {
+  font-size: 18px;
 }
 
 body div div section ul .divDataCol {
@@ -528,6 +557,11 @@ body div div section section div .paddingShadow div::-webkit-scrollbar-thumb,
   background: #4F2396;
 }
 
+.imageSize {
+  width: 50px;
+  height: 50px;
+}
+
 body div .widthSignIn {
   width: 50%;
 }
@@ -792,5 +826,11 @@ body div div section div div div div .boxButtonStor {
   }
   body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
     width: 350px;
+  }
+  body div .heightFull div div .alginStartMobile {
+    align-items: start;
+  }
+  .noneMobile {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

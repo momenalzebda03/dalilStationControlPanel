@@ -198,16 +198,50 @@ body div div .navbarDetails div div .divHoverImage:hover {
 
 // end navbar defails
 // start menu
-.activeList {
+body div .heightFull div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+body div .heightFull div div .alginStartMobile li .hoverListMenu:hover {
     background-color: $colorBlue;
 
     div {
-        img {}
+        img {
+            filter: invert(1) brightness(1000%) grayscale(10000%);
+        }
+
+        .imageArrawTop {
+            transform: rotate(90deg);
+        }
 
         span {
             color: $colorwhite;
         }
     }
+}
+
+body div .heightFull div div .alginStartMobile li .activeList {
+    background-color: $colorBlue !important;
+
+    div {
+        .imageBlue {
+            filter: invert(1) brightness(1000%) grayscale(10000%);
+        }
+
+        .imageArrawTop {
+            filter: invert(1) brightness(1000%) grayscale(10000%);
+            transform: rotate(90deg);
+        }
+
+        span {
+            color: $colorwhite;
+        }
+    }
+}
+
+body div .heightFull div div .alginStartMobile li div div .sizeSpanMenu {
+    font-size: 18px;
 }
 
 // end menu
@@ -660,6 +694,11 @@ body div div section section div .paddingShadow div::-webkit-scrollbar-thumb,
     background: $colorBlue;
 }
 
+.imageSize {
+    width: 50px;
+    height: 50px;
+}
+
 // end containt
 // start sign in 
 body div .widthSignIn {
@@ -944,6 +983,14 @@ body div div section div div div div .boxButtonStor {
 
     body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
         width: 350px;
+    }
+
+    body div .heightFull div div .alginStartMobile {
+        align-items: start;
+    }
+
+    .noneMobile {
+        display: none;
     }
 }
 
