@@ -71,7 +71,7 @@
             </section>
             <!-- end navbar details -->
             <!-- start form user -->
-            <section class="mt-4 p-4 rounded-4">
+            <section class="mt-4 rounded-4">
                 <form action="" method="">
                     <div class="container">
                         <div class="row text-end gapRowForm justify-content-end">
@@ -140,82 +140,94 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row px-0 mx-0 classTopList">
+                                <div class="col-lg-4">
+                                    <div class="d-flex justify-content-start">
+                                        <div data-aos="zoom-in-up" class="w-100">
+                                            <div class="position-relative bg-black w-100">
+                                                <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                    <label class="d-flex gap-1 align-items-center">
+                                                        <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                        <span class="fs-6 fw-bold spanColorUser">البريد
+                                                            الإلكتروني</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" required
+                                                class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                                placeholder="يرجى إدخال الربيد الالكتروني">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-end">
+                                        <div class="my-3 my-md-0">
+                                            <div class="text-center position-relative overflow-hidden w-100">
+                                                <div
+                                                    class="rounded-3 ftext-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd buttonAddOverflow buttonAddOverflowNumber">
+                                                    <span class="position-relative">+996</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="zoom-in-up" class="stringSignIn">
+                                            <div class="position-relative bg-black w-100">
+                                                <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                    <label class="d-flex gap-1 align-items-center">
+                                                        <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                        <span class="fs-6 fw-bold spanColorUser">رقم الهاتف</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="number" required
+                                                class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                                placeholder="يرجى إدخال رقم الهاتف">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col col-lg-2">
-                                <div class="w-100 text-end">
-                                    <div data-aos="zoom-in-up">
-                                        <div class="position-relative bg-black w-100">
-                                            <div class="position-absolute divTextInputForm px-2 bg-white">
-                                                <label class="d-flex gap-1 align-items-center">
-                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                    <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <input type="text" required
-                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                            placeholder="يرجى إدخال الربيد الالكتروني">
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5 classMobileList classTopList">
+                        <button
+                            class="overflow-hidden divClose position-relative rounded-5 widthForm widthButton py-3 text-center">
+                            <span class="position-relative fw-bold">الغاء</span>
+                        </button>
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#statusSuccessModal"
+                            class="overflow-hidden divClose divOpen position-relative rounded-5 widthForm widthButton py-3 text-center">
+                            <span class="position-relative fw-bold">حفظ</span>
+                        </button>
+                        <div class="modal fade" id="statusSuccessModal" tabindex="-1" role="dialog"
+                            data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                                <div class="modal-content rounded-3 p-3">
+                                    <div class="">
+                                        <button type="button" class="bg-transparent border border-0"
+                                            data-bs-dismiss="modal">
+                                            <img src="assest/images/close.svg" alt="">
+                                        </button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col col-lg-10">
-                                <div class="w-100 text-end">
-                                    <div data-aos="zoom-in-up">
-                                        <div class="position-relative bg-black w-100">
-                                            <div class="position-absolute divTextInputForm px-2 bg-white">
-                                                <label class="d-flex gap-1 align-items-center">
-                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                    <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
-                                                </label>
-                                            </div>
+                                    <div class="modal-body text-center p-lg-4">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2"
+                                            class="icon-svg w-100 h-100">
+                                            <circle class="path circle" fill="none" stroke="#F69554CC" stroke-width="6"
+                                                stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                            <polyline class="path check" fill="none" stroke="#F69554CC" stroke-width="6"
+                                                stroke-linecap="round" stroke-miterlimit="10"
+                                                points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg>
+                                        <h4 class="fw-bold fs-3 mt-3">اضافة مستخدم</h4>
+                                        <span class="fw-bold mt-3">تــهانينا, تم اضافه مستخدم جديد بنجاح</span>
+                                        <div class="mt-5">
+                                            <button type="submit"
+                                                class="inputSpanIndex text-nowrap overflow-hidden divClose divOpen position-relative rounded-5 widthForm widthButton py-3 text-center w-50">
+                                                <span class="position-relative fw-bold">الرجوع للوحة التحكم</span>
+                                            </button>
                                         </div>
-                                        <input type="text" required
-                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                            placeholder="يرجى إدخال الربيد الالكتروني">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="mt-5 d-flex justify-content-end gap-5">
-                            <div class="w-100 text-end">
-                                <div data-aos="zoom-in-up">
-                                    <div class="position-relative bg-black w-100">
-                                        <div class="position-absolute divTextInputForm px-2 bg-white">
-                                            <label class="d-flex gap-1 align-items-center">
-                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <input type="text" required
-                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                        placeholder="يرجى إدخال الربيد الالكتروني">
-                                </div>
-                            </div>
-                            <div class="w-100">
-                                <div class="text-end d-flex gap-2">
-                                    <div class="text-nowrap">
-                                        <span>hello world</span>
-                                    </div>
-                                    <div class="w-100" data-aos="zoom-in-up">
-                                        <div class="position-relative bg-black w-100">
-                                            <div class="position-absolute divTextInputForm px-2 bg-white">
-                                                <label class="d-flex gap-1 align-items-center">
-                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                    <span class="fs-6 fw-bold spanColorUser">رقم الهاتف</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <input type="text" required
-                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                            placeholder="يرجى إدخال الاسم الاخير">
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </form>
             </section>
@@ -223,36 +235,35 @@
             <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
                 <div class="text-center overflow-hidden w-100">
                     <div
-                        class="rounded-3 ftext-center text-decoration-none border text-white rouw-bold buttonAdd colorButtonLogOut">
+                        class="rounded-3 flex-center text-decoration-none border text-white rouw-bold buttonAdd colorButtonLogOut">
                         <span>تسجيل الدخول</span>
                     </div>
                 </div>
             </a>
         </div>
         <!-- start menu -->
-        <nav class="col-2 col-md-2 rounded-4 p-3 d-flex flex-column justify-content-between">
+        <nav class="col-2 col-md-2 rounded-4 p-3 d-flex flex-column justify-content-between px-0">
             <div>
                 <div class="d-flex flex-column gap-5">
-                    <div class="d-none d-md-flex justify-content-end me-md-3 rounded-3">
+                    <div class="noneTap text-end me-md-4">
                         <img src="assest/images/ControlPanel.svg" alt="">
                     </div>
-                    <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-md-3 px-3"
+                    <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
                         id="accordionExample">
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseOne">
                             <!-- activeListPage -->
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">الرئيسية</span>
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الرئيسية</span>
                                     <img src="assest/images/home.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseOne" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -261,18 +272,18 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 activeListPage hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">ادارة
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">ادارة
                                         المستخدمين</span>
                                     <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseTow" class="accordion-collapse noneMobile" aria-labelledby="headingOne"
+                            <div id="collapseTow" class="accordion-collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
@@ -282,19 +293,18 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseThree">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">منشأت</span>
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">منشأت</span>
                                     <img src="assest/images/Facilities.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseThree" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -303,19 +313,19 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFour">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
                                     <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">الأعلانات</span>
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الأعلانات</span>
                                     <img src="assest/images/iconNews.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseFour" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -324,19 +334,18 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFive">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">الطلبات</span>
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الطلبات</span>
                                     <img src="assest/images/Requests.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseFive" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -345,19 +354,19 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSix">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
                                     <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">الاشتراكات</span>
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاشتراكات</span>
                                     <img src="assest/images/IconContributions.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseSix" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -366,19 +375,19 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSeven">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
                                     <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">المدفوعات</span>
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">المدفوعات</span>
                                     <img src="assest/images/Payments.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseSeven" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -387,19 +396,19 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
                                     <span
-                                        class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">الاعدادات</span>
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاعدادات</span>
                                     <img src="assest/images/Settings.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseEat" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseEat" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -408,19 +417,19 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
-                                <div class="d-none d-md-block">
+                                <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
                                 </div>
                                 <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser d-none d-md-block text-nowrap">مركز
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
                                         المساعدة</span>
                                     <img src="assest/images/help.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseNine" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
@@ -431,7 +440,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="logIn.html" class="d-none d-md-block text-decoration-none">
+            <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div
                         class="rounded-3 ftext-center text-decoration-none border colorButtonLogOut text-white rouw-bold buttonAdd buttonAddOverflow">
