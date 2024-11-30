@@ -151,6 +151,11 @@ select:focus-visible {
   height: 50px;
 }
 
+.colorButtonLogOut {
+  background-color: rgba(255, 10, 14, 0.6980392157) !important;
+  padding: 10px;
+}
+
 body nav {
   top: 10px;
 }
@@ -240,11 +245,6 @@ body div nav div div .alginStartMobile li .activeList div span {
 
 body div nav div div .alginStartMobile li div div .sizeSpanMenu {
   font-size: 18px;
-}
-
-body div nav a div .colorButtonLogOut {
-  background-color: rgba(255, 10, 14, 0.6980392157);
-  padding: 10px;
 }
 
 body div nav a div .buttonAddOverflow::before {
@@ -850,8 +850,8 @@ body div div section div div div div .boxButtonStor {
   body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
     width: 350px;
   }
-  body div .heightFull div div .alginStartMobile {
-    align-items: start;
+  body div nav div div .alginStartMobile {
+    align-items: center;
   }
   .noneMobile {
     display: none;

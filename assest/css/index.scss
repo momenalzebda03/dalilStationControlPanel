@@ -164,6 +164,11 @@ select:focus-visible {
     height: 50px;
 }
 
+.colorButtonLogOut {
+    background-color: $colorButtonLogOut !important;
+    padding: 10px;
+}
+
 // end General Code
 
 // start navbar
@@ -273,11 +278,6 @@ body div nav div div .alginStartMobile li .activeList {
 
 body div nav div div .alginStartMobile li div div .sizeSpanMenu {
     font-size: 18px;
-}
-
-body div nav a div .colorButtonLogOut {
-    background-color: $colorButtonLogOut;
-    padding: 10px;
 }
 
 body div nav a div .buttonAddOverflow::before {
@@ -1009,12 +1009,22 @@ body div div section div div div div .boxButtonStor {
         width: 350px;
     }
 
-    body div .heightFull div div .alginStartMobile {
-        align-items: start;
+    body div nav div div .alginStartMobile {
+        align-items: center;
     }
 
     .noneMobile {
         display: none;
+    }
+
+    body div nav div div .alginStartMobile li .hoverListMenu:hover {
+        //     background-color: transparent;
+
+        //     div {
+        //         img {
+        //             filter: invert(0) brightness(0%) grayscale(0%);
+        //         }
+        //     }
     }
 }
 
