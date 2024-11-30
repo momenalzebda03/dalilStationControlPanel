@@ -67,7 +67,7 @@
             <!-- end navbar -->
             <!-- start navbar details -->
             <section class="container my-5 text-end" data-aos="flip-right">
-                <h2 class="fw-bold mb-0">اضافة مستخدم</h2>
+                <h2 class="fw-bold mb-0">اضافة منشأ</h2>
             </section>
             <!-- end navbar details -->
             <!-- start form user -->
@@ -75,114 +75,207 @@
                 <form action="" method="">
                     <div class="container">
                         <div class="row text-end gapRowForm justify-content-end">
-                            <div class="col-lg-4">
+                            <div class="col-lg-2 indexRow">
                                 <div data-aos="zoom-in-up">
                                     <div class="position-relative bg-black w-100">
                                         <div class="position-absolute divTextInputForm px-2 bg-white">
                                             <label class="d-flex gap-1 align-items-center">
                                                 <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                <span class="fs-6 fw-bold spanColorUser">الأسم الأخير</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <input type="text" required
-                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                        placeholder="يرجى إدخال الاسم الاخير">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div data-aos="zoom-in-down">
-                                    <div class="position-relative bg-black w-100">
-                                        <div class="position-absolute divTextInputForm px-2 bg-white">
-                                            <label class="d-flex gap-1 align-items-center">
-                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                <span class="fs-6 fw-bold spanColorUser">الاسم الاوسط</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <input type="text" required
-                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                        placeholder="يرجى إدخال الاسم الاوسط">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div data-aos="zoom-in-up">
-                                    <div class="position-relative bg-black w-100">
-                                        <div class="position-absolute divTextInputForm px-2 bg-white">
-                                            <label class="d-flex gap-1 align-items-center">
-                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                <span class="fs-6 fw-bold spanColorUser">الأسم الأول</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <input type="text" required
-                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                        placeholder="يرجى إدخال اسم الاول">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div data-aos="zoom-in-down">
-                                    <div class="position-relative bg-black w-100">
-                                        <div class="position-absolute divTextInputForm px-2 bg-white">
-                                            <label class="d-flex gap-1 align-items-center">
-                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                <span class="fs-6 fw-bold spanColorUser">الجنس</span>
+                                                <span class="fs-6 fw-bold spanColorUser">المنطقة</span>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="position-relative selectIcon">
                                         <select name="sources" id="sources"
                                             class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
-                                            placeholder="يرجى اختيار الجنس">
-                                            <option value="mela">ذكر</option>
-                                            <option value="fmela"> انثى</option>
+                                            placeholder="المنطقة">
+                                            <option value="1">غزة</option>
+                                            <option value="2">رفح</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row px-0 mx-0 classTopList">
-                                <div class="col-lg-4">
-                                    <div class="d-flex justify-content-start">
-                                        <div data-aos="zoom-in-up" class="w-100">
-                                            <div class="position-relative bg-black w-100">
-                                                <div class="position-absolute divTextInputForm px-2 bg-white">
-                                                    <label class="d-flex gap-1 align-items-center">
-                                                        <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                        <span class="fs-6 fw-bold spanColorUser">البريد
-                                                            الإلكتروني</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <input type="email" required
-                                                class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                                placeholder="يرجى إدخال الربيد الالكتروني">
+                            <div class="col-lg-2 indexRow">
+                                <div data-aos="zoom-in-down">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">المدينة</span>
+                                            </label>
                                         </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="المدينة">
+                                            <option value="1">غزة</option>
+                                            <option value="2">رفح</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-8">
-                                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-end">
-                                        <div class="my-3 my-md-0">
-                                            <div class="text-center position-relative overflow-hidden w-100">
-                                                <div
-                                                    class="rounded-3 ftext-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd buttonAddOverflow buttonAddOverflowNumber">
-                                                    <span class="position-relative">+996</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-aos="zoom-in-up" class="stringSignIn">
-                                            <div class="position-relative bg-black w-100">
-                                                <div class="position-absolute divTextInputForm px-2 bg-white">
-                                                    <label class="d-flex gap-1 align-items-center">
-                                                        <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
-                                                        <span class="fs-6 fw-bold spanColorUser">رقم الهاتف</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <input type="number" required
-                                                class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
-                                                placeholder="يرجى إدخال رقم الهاتف">
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div data-aos="zoom-in-down">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">نوع المنشأة </span>
+                                            </label>
                                         </div>
                                     </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="يرجى إدخال نوع المنشأة">
+                                            <option value="1">مؤسسة</option>
+                                            <option value="2">شركة</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">اسم المنشأة</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="يرجى إدخال اسم المنشأة">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 indexRow">
+                                <div data-aos="zoom-in-down">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">موعد العمل</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="موعد العمل">
+                                            <option value="1">تسويق</option>
+                                            <option value="2">مطاعم</option>
+                                            <option value="3">مقاهي</option>
+                                            <option value="4">خدمات منزلية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 indexRow">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">عدد الفروع</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="عدد الفروع">
+                                            <option value="1">تسويق</option>
+                                            <option value="2">مطاعم</option>
+                                            <option value="3">مقاهي</option>
+                                            <option value="4">خدمات منزلية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">نوع النشاط التجاري</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="يرجى إدخال نوع النشاط التجاري">
+                                            <option value="1">تسويق</option>
+                                            <option value="2">مطاعم</option>
+                                            <option value="3">مقاهي</option>
+                                            <option value="4">خدمات منزلية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">اسم النشاط التجاري</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="يرجى إدخال اسم النشاط التجاري">
+                                            <option value="1">تسويق</option>
+                                            <option value="2">مطاعم</option>
+                                            <option value="3">مقاهي</option>
+                                            <option value="4">خدمات منزلية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div class="d-flex w-100 gap-4 justify-content-center">
+                                    <div class="my-3 my-md-0">
+                                        <div class="text-center position-relative overflow-hidden w-100">
+                                            <div
+                                                class="rounded-3 ftext-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd buttonAddOverflow buttonAddOverflowNumber">
+                                                <span class="position-relative">+996</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="zoom-in-down" class="w-100">
+                                        <div class="position-relative w-100">
+                                            <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                <label class="d-flex gap-1 align-items-center">
+                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                    <span class="fs-6 fw-bold spanColorUser">رقم الهاتف</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="email" required
+                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                            placeholder="يرجى ادخال رقم الهاتف">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 indexRow">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">البريد الألكتروني</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="email" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="البريد الألكتروني">
                                 </div>
                             </div>
                         </div>
@@ -191,11 +284,11 @@
                         class="d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5 classMobileList classTopList">
                         <button
                             class="overflow-hidden divClose position-relative rounded-5 widthForm widthButton py-3 text-center">
-                            <span class="position-relative fw-bold">الغاء</span>
+                            <span class="position-relative fw-bold">الرجوع</span>
                         </button>
                         <button type="submit" data-bs-toggle="modal" data-bs-target="#statusSuccessModal"
                             class="overflow-hidden divClose divOpen position-relative rounded-5 widthForm widthButton py-3 text-center">
-                            <span class="position-relative fw-bold">حفظ</span>
+                            <span class="position-relative fw-bold">التالي</span>
                         </button>
                         <div class="modal fade" id="statusSuccessModal" tabindex="-1" role="dialog"
                             data-bs-backdrop="static" data-bs-keyboard="false">
@@ -272,7 +365,7 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
                                 id="accordionDiv">
                                 <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
@@ -283,7 +376,7 @@
                                     <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseTow" class="accordion-collapse" aria-labelledby="headingOne"
+                            <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
@@ -293,7 +386,7 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseThree">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
                                 id="accordionDiv">
                                 <div class="noneTap">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
@@ -303,7 +396,7 @@
                                     <img src="assest/images/Facilities.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseThree" class="accordion-collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
