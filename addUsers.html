@@ -66,206 +66,165 @@
             </nav>
             <!-- end navbar -->
             <!-- start navbar details -->
-            <nav class="navbarDetails mt-5">
-                <div
-                    class="d-flex justify-content-between align-items-center align-items-md-end flex-column-reverse gap-3 gap-md-0 flex-md-row">
-                    <div class="d-flex gap-5 align-items-center" data-aos="flip-left">
-                        <a href="#" class="cursorMouse px-3 py-2 rounded-circle divHoverImage position-relative">
-                            <img src="assest/images/arrawRight.svg" alt="" class="hoverArraw position-relative">
-                        </a>
-                        <div class="cursorMouse">
-                            <img src="assest/images/delete.svg" alt="" class="rotateImage">
-                        </div>
-                        <div class="cursorMouse">
-                            <img src="assest/images/prevention.svg" alt="" class="rotateImage">
-                        </div>
-                    </div>
-                    <div class="mx-md-5 text-end" data-aos="flip-right">
-                        <h2 class="mb-0">سمارت تاتش</h2>
-                        <span class="fs-3 spanColorCard">تفاصيل مؤسسة سمارت تاتش</span>
-                    </div>
-                </div>
-            </nav>
+            <section class="container mt-5 text-end" data-aos="flip-right">
+                <h2 class="fw-bold mb-0">اضافة مستخدم</h2>
+            </section>
             <!-- end navbar details -->
-            <!-- start data -->
-            <section class="container mt-5">
-                <ul class="d-flex flex-wrap gap-3 justify-content-end">
-                    <li data-aos="flip-left"
-                        class="position-relative overflow-hidden divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
-                        <div class="position-relative">
-                            <span class="fs-6">الموقع الالكتروني</span>
+            <!-- start form user -->
+            <section class="mt-4 p-4 rounded-4">
+                <form action="" method="">
+                    <div class="container">
+                        <div class="row text-end gapRowForm justify-content-end">
+                            <div class="col-lg-4">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">الأسم الأخير</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="يرجى إدخال الاسم الاخير">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div data-aos="zoom-in-down">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">الاسم الاوسط</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="يرجى إدخال الاسم الاوسط">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">الأسم الأول</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="يرجى إدخال اسم الاول">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div data-aos="zoom-in-down">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">الجنس</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative selectIcon">
+                                        <select name="sources" id="sources"
+                                            class="inputSignIn w-100 border border-2 p-3 pe-4 rounded-4 custom-select"
+                                            placeholder="يرجى اختيار الجنس">
+                                            <option value="mela">ذكر</option>
+                                            <option value="fmela"> انثى</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="position-relative">
-                            <img src="assest/images/finger.svg" alt="">
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col col-lg-2">
+                                <div class="w-100 text-end">
+                                    <div data-aos="zoom-in-up">
+                                        <div class="position-relative bg-black w-100">
+                                            <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                <label class="d-flex gap-1 align-items-center">
+                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                    <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" required
+                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                            placeholder="يرجى إدخال الربيد الالكتروني">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-10">
+                                <div class="w-100 text-end">
+                                    <div data-aos="zoom-in-up">
+                                        <div class="position-relative bg-black w-100">
+                                            <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                <label class="d-flex gap-1 align-items-center">
+                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                    <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" required
+                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                            placeholder="يرجى إدخال الربيد الالكتروني">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li data-aos="flip-right"
-                        class="position-relative overflow-hidden divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
-                        <div class="position-relative">
-                            <span class="fs-6">الموقع الالكتروني</span>
-                        </div>
-                        <div class="position-relative">
-                            <img src="assest/images/finger.svg" alt="">
-                        </div>
-                    </li>
-                    <li data-aos="flip-right"
-                        class="position-relative overflow-hidden divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
-                        <div class="px-3 py-1 rounded-5 bg-white position-relative">
-                            <span class="text-nowrap sizeSpan text-black">الرياض - الزلفي</span>
-                        </div>
-                        <div class="position-relative">
-                            <span class="text-nowrap">عنوان المنشأة :</span>
-                        </div>
-                    </li>
-                    <li data-aos="flip-right"
-                        class="position-relative overflow-hidden divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
-                        <div class="px-3 py-1 rounded-5 bg-white position-relative">
-                            <span class="text-nowrap sizeSpan text-black">9:00 AM - 4:00 PM</span>
-                        </div>
-                        <div class="position-relative">
-                            <span class="text-nowrap">موعد العمل:</span>
-                        </div>
-                    </li>
-                    <li data-aos="flip-right"
-                        class="position-relative overflow-hidden divDataCol px-3 text-black fw-bold rounded-5 d-flex align-items-center justify-content-end gap-3 widthForm">
-                        <div class="px-3 py-1 rounded-5 bg-white position-relative">
-                            <span class="text-nowrap sizeSpan text-black">4</span>
-                        </div>
-                        <div class="position-relative">
-                            <span>عدد الفروع:</span>
-                        </div>
-                    </li>
-                </ul>
+                        <!-- <div class="mt-5 d-flex justify-content-end gap-5">
+                            <div class="w-100 text-end">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative bg-black w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-6 fw-bold spanColorUser">البريد الالكتروني</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="يرجى إدخال الربيد الالكتروني">
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <div class="text-end d-flex gap-2">
+                                    <div class="text-nowrap">
+                                        <span>hello world</span>
+                                    </div>
+                                    <div class="w-100" data-aos="zoom-in-up">
+                                        <div class="position-relative bg-black w-100">
+                                            <div class="position-absolute divTextInputForm px-2 bg-white">
+                                                <label class="d-flex gap-1 align-items-center">
+                                                    <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                    <span class="fs-6 fw-bold spanColorUser">رقم الهاتف</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" required
+                                            class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                            placeholder="يرجى إدخال الاسم الاخير">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </form>
             </section>
-            <!-- end data -->
-            <!-- start Synopsis -->
-            <section class="mx-3 mx-md-5 mt-5">
-                <div class="text-end">
-                    <h2 class="fw-bold">نبذة عن الشركة</h2>
-                    <span class="fs-5 spanColorCard">تأسست شركة [سمارت تاتش] بهدف تقديم حلول تسويقية شاملة تساعد
-                        العلامات التجارية على تحقيق أهدافها ونموها في السوق. </span>
-                </div>
-                <div class="row mt-4 gapRow text-end">
-                    <div class="col-lg-4" data-aos="flip-left">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis3.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="flip-up">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis2.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="flip-down">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis1.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="flip-left">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis6.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="flip-up">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis5.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="flip-down">
-                        <div class="imageHover position-relative overflow-hidden">
-                            <img src="assest/images/Synopsis4.svg" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- end Synopsis -->
-            <!-- start Record -->
-            <section class="mx-3 mx-md-5 mt-5">
-                <div class="text-end d-flex flex-column gap-3" data-aos="flip-down">
-                    <h2>السجل التجاري</h2>
-                    <img src="assest/images/CommercialRegistration.svg" alt="">
-                </div>
-            </section>
-            <!-- end Record -->
-            <!-- start Social media -->
-            <section class="mx-0 mx-md-5 mt-5">
-                <div class="container">
-                    <ul class="row gap-3 gap-md-0 list-unstyled">
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/linkid.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/x.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/tiktop.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/instagram.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/twiter.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col col-lg-2">
-                            <a href="#"
-                                class="overflow-hidden divBorder rounded-3 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="bg-white divWhiteBorder widthForm rounded-3 d-flex justify-content-center align-items-center">
-                                    <div class="position-relative divSocialMedia rounded-circle">
-                                        <img src="assest/images/facebook.svg" alt="" class="position-relative">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- end Social media -->
+            <!-- end form user -->
             <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
-                <div class="text-center position-relative overflow-hidden w-100">
+                <div class="text-center overflow-hidden w-100">
                     <div
                         class="rounded-3 ftext-center text-decoration-none border text-white rouw-bold buttonAdd colorButtonLogOut">
-                        <span class="position-relative">تسجيل الدخول</span>
+                        <span>تسجيل الدخول</span>
                     </div>
                 </div>
             </a>
@@ -302,7 +261,7 @@
                             </div>
                         </li>
                         <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 hoverListMenu"
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-4 py-2 rounded-3 activeListPage hoverListMenu"
                                 id="accordionDiv">
                                 <div class="d-none d-md-block">
                                     <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
@@ -313,8 +272,8 @@
                                     <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
                                 </div>
                             </div>
-                            <div id="collapseTow" class="accordion-collapse collapse noneMobile"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseTow" class="accordion-collapse noneMobile" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <ul class="list-unstyled text-end mt-3 px-4">
                                     <li class="spanColorUser fw-bold">
                                         <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>

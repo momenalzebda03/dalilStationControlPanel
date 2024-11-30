@@ -156,6 +156,22 @@ select:focus-visible {
   padding: 10px;
 }
 
+.inputSignIn::-moz-placeholder {
+  color: #ccc !important;
+  font-weight: bold;
+}
+
+.inputSignIn::placeholder {
+  color: #ccc !important;
+  font-weight: bold;
+}
+
+.divTextInputForm {
+  right: 15px;
+  top: -15px;
+  z-index: 1;
+}
+
 body nav {
   top: 10px;
 }
@@ -208,25 +224,21 @@ body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transition: 0.3s;
 }
 
-body div nav div div .alginStartMobile li .activeListNoneArrow,
+body div nav div div .alginStartMobile li .activeListPage,
 body div nav div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
-body div nav div div .alginStartMobile li .activeListNoneArrow div img,
+body div nav div div .alginStartMobile li .activeListPage div img,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
-body div nav div div .alginStartMobile li .activeListNoneArrow div .imageArrawTop,
+body div nav div div .alginStartMobile li .activeListPage div .imageArrawTop,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
   transform: rotate(90deg);
 }
-body div nav div div .alginStartMobile li .activeListNoneArrow div span,
+body div nav div div .alginStartMobile li .activeListPage div span,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
   color: white;
-}
-
-body div nav div div .alginStartMobile li .activeListNoneArrow div .imageArrawTop {
-  display: none;
 }
 
 body div nav div div .alginStartMobile li .activeList {
@@ -646,16 +658,6 @@ body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
   border-bottom: 2px solid #00bfff;
 }
 
-body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn::-moz-placeholder {
-  color: #ccc;
-  font-weight: bold;
-}
-
-body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn::placeholder {
-  color: #ccc;
-  font-weight: bold;
-}
-
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
   right: 30px;
   top: -18px;
@@ -815,6 +817,115 @@ body div div section div div div div .boxButtonStor {
   font-size: 18px;
   color: #4F2396;
   text-align: center;
+}
+
+body div div section form div .gapRowForm {
+  row-gap: 35px;
+}
+
+.custom-select {
+  color: #ABABAB;
+}
+
+.custom-select-trigger {
+  position: relative;
+  display: block;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.custom-select-trigger:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 25px;
+  margin-top: -3px;
+  border-bottom: 0 solid #5f5f5f;
+  border-right: 0 solid #5f5f5f;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all 0.4s ease-in-out;
+  transform-origin: 50% 0;
+}
+
+.custom-select.opened .custom-select-trigger:after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.custom-options {
+  position: absolute;
+  display: block;
+  width: 90%;
+  top: 100%;
+  right: 0;
+  margin: 15px 0;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+  margin-left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+}
+
+.custom-select.opened .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.custom-options:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 100%;
+  top: -10px;
+  right: 25px;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #b5b5b5;
+  border-left: 1px solid #b5b5b5;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  line-height: 47px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.custom-option:hover,
+.custom-option.selection {
+  background: rgba(246, 149, 84, 0.4);
+}
+
+.custom-select-trigger::before {
+  content: url("/assest/images/iconArrow.svg");
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transition: 0.3s;
+}
+
+.custom-select.opened .custom-select-trigger::before {
+  transform: rotate(-180deg);
 }
 
 @media (max-width: 990px) {
