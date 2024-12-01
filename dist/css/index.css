@@ -118,7 +118,7 @@ select:focus-visible {
 }
 
 .backgroundRightSignIn {
-  background-color: #4F2396;
+  background-color: #4F2396 !important;
 }
 
 .tableScroll::-webkit-scrollbar {
@@ -152,13 +152,8 @@ select:focus-visible {
 }
 
 .colorButtonLogOut {
-  background-color: rgba(255, 10, 14, 0.6980392157) !important;
+  background-color: rgba(255, 10, 14, 0.6980392157);
   padding: 10px;
-}
-
-.inputSignIn {
-  color: #ccc !important;
-  font-weight: bold;
 }
 
 .inputSignIn::-moz-placeholder {
@@ -293,6 +288,32 @@ select:focus-visible {
 .buttonAddOverflowNumber {
   padding: 15px 20px;
   background-color: #F69554 !important;
+}
+
+.buttonAddOverflowNumber:hover::before {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.colorBlue {
+  color: #4F2396;
+}
+
+.stringSignIn {
+  width: 75%;
+  color: #ABABAB;
+}
+
+.gapRow {
+  row-gap: 20px;
+}
+
+.gapRowForm {
+  row-gap: 35px;
+}
+
+.noneResize {
+  resize: none;
 }
 
 body nav {
@@ -487,6 +508,8 @@ body div div section section div .paddingShadow div div .circle {
 }
 
 body div div section section div .paddingShadow div div .circle .angle {
+  width: 100%;
+  height: 100%;
   background-color: rgba(204, 204, 204, 0.4);
   transform: rotate(-40deg);
 }
@@ -764,15 +787,6 @@ body div .backgroundRightSignIn div .divBeforeImageSignIn::after {
   left: -400px;
 }
 
-body div .widthSignIn div .colorBlue {
-  color: #4F2396;
-}
-
-.stringSignIn {
-  width: 75%;
-  color: #ABABAB;
-}
-
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
   height: 61px;
   border-top: 2px solid #ff6347;
@@ -809,10 +823,6 @@ body div .widthSignIn div form div div .styleInputSubmit:hover .hoverInput {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-body div div section .gapRow {
-  row-gap: 20px;
 }
 
 body div div section .gapRow div .imageHover img {
@@ -938,61 +948,51 @@ body div div section div div div div .boxButtonStor {
   text-align: center;
 }
 
-body div div section form div .gapRowForm {
-  row-gap: 35px;
+.divClose,
+.divOpen {
+  width: 25%;
 }
 
-body div div section form div .divClose {
-  border: 2px solid #4F2396;
-  color: #4F2396;
+.divClose {
+  border: 2px solid #4F2396 !important;
   background-color: transparent;
 }
 
-body div div section form div .divOpen::before,
-body div div section form div .divClose::before {
-  content: "";
-  position: absolute;
-  background-color: #4F2396;
-  width: 0;
-  height: 0;
+.divOpen:hover::before,
+.divClose::before {
   top: 20px;
   left: 47%;
-  border-radius: 50%;
-  z-index: -1;
-  transition: 0.3s;
 }
 
-body div div section form div .divClose:hover span {
+.divClose:hover {
+  border: 2px solid #4F2396 !important;
+}
+.divClose:hover span {
   color: white;
 }
 
-body div div section form div .divOpen::before,
-body div div section form div .divClose:hover::before {
+.divOpen::before,
+.divClose:hover::before {
   top: 0;
   left: 0;
-  width: 600px;
-  height: 600px;
-  border-radius: 0;
+  width: 110%;
+  height: 100%;
+  border-radius: 40px;
 }
 
-body div div section form div .divOpen:hover::before {
-  border-radius: 50%;
+.divOpen:hover::before {
   top: 20px;
   left: 47%;
   width: 0;
   height: 0;
 }
 
-body div div section form div .divOpen {
+.divOpen {
   color: white;
 }
 
-body div div section form div .divOpen:hover span {
+.divOpen:hover span {
   color: #4F2396;
-}
-
-body div div section form div .widthButton {
-  width: 25%;
 }
 
 .modal .modal-content svg.icon-svg {
@@ -1035,6 +1035,35 @@ body div div section form div .widthButton {
     stroke-dashoffset: 900;
   }
 }
+.absoluteCenter {
+  top: 33%;
+  left: 35%;
+}
+
+body div div div div div .buttonAddNews::before {
+  width: 100% !important;
+  border-radius: 0;
+}
+
+body div div div div div .buttonAddNews:hover::before {
+  left: 0;
+  top: 0;
+}
+
+body div div div div div .buttonAddNews {
+  width: 40%;
+  padding: 18px;
+}
+
+body div div div div div form div div div .divTextInputFormOverflow {
+  right: 40px;
+}
+
+body div div div div div form div div div .absoluteCenterPhone {
+  top: 15px;
+  left: 18px;
+}
+
 @media (max-width: 1192px) {
   body div div .divCards div .gapPageTap {
     row-gap: 20px;
@@ -1056,17 +1085,21 @@ body div div section form div .widthButton {
   .classTopList {
     margin-top: 100px !important;
   }
+  body div div section section div .paddingShadow div div .circle .angle {
+    width: 115%;
+    height: 115%;
+  }
 }
 @media (max-width: 990px) {
+  body div div section section div .paddingShadow div div .circle .angle {
+    width: 100%;
+    height: 100%;
+  }
   body div div section section div .paddingShadow div .divPaddingNumber {
     padding-top: 100px;
   }
   body div div section section div .paddingShadow {
     padding: 15px !important;
-  }
-  .widthSignIn {
-    width: 100% !important;
-    height: auto;
   }
   .widthForm {
     width: 100% !important;

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex gap-3">
+        <button type="submit" data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews"
+            class="position-relative overflow-hidden rounded-5 text-center text-decoration-none border colorButtonLogOut widthForm fw-bold buttonAdd colorBlue divClose divOpen">
+            <span class="position-relative fw-bold">add news</span>
+        </button>
+        <button type="submit" data-bs-toggle="modal" data-bs-target="#statusSuccessModalSup"
+            class="position-relative overflow-hidden rounded-5 text-center text-decoration-none border colorButtonLogOut widthForm fw-bold buttonAdd colorBlue divClose divOpen">
+            <span class="position-relative fw-bold">add users</span>
+        </button>
+    </div>
+    <div class="modal fade" id="statusSuccessModalNews" tabindex="-1" role="dialog" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content rounded-3 p-3 pb-5">
+                <div>
+                    <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal">
+                        <img src="assest/images/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body text-center pb-0">
+                    <h4 class="fw-bold fs-3 mb-5">اضافة اعلان</h4>
+                    <div class="px-4">
+                        <form method="" action="" class="row gapRowForm">
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">تفاصيل العنوان</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="ادخال سعر الأشتراك">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">عنوان الأعلان</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="سمارت تاتش">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">صورة الاعلان</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative cursorMouse" id="divBorderFile">
+                                        <textarea name="" id="triggerFileInput" rows="5"
+                                            class="cursorMouse inputSignIn noneResize w-100 p-3 pe-4 text-end rounded-4 border border-2"></textarea>
+                                        <div class="position-absolute absoluteCenter">
+                                            <div class="d-flex flex-column align-items-center gap-1">
+                                                <img src="assest/images/iconImage.svg" alt="">
+                                                <span class="spanColorCard fs-5">قم بتحميل صورة الاعلان</span>
+                                            </div>
+                                        </div>
+                                        <input type="file" ref="fileInput" id="fileInput" class="d-none" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">مدة ظهور الاعلان</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="ادخل مدة الاشتراك">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pt-3 mt-5">
+                        <button type="submit" data-bs-toggle="modal"
+                            class="position-relative overflow-hidden text-center text-decoration-none rounded-4 widthForm fw-bold buttonAdd divClose divOpen buttonAddNews">
+                            <span class="position-relative fw-bold">اضافة</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="statusSuccessModalSup" tabindex="-1" role="dialog" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content rounded-3 p-3 pb-5">
+                <div>
+                    <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal">
+                        <img src="assest/images/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body text-center p-lg-2">
+                    <h4 class="fw-bold fs-3 mb-5">اضافة اشتراك</h4>
+                    <div class="px-4">
+                        <form method="" action="" class="row gapRowForm">
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">سعر الاشتراك</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="ادخال سعر الأشتراك">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">اسم الاشتراك</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="سمارت تاتش">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">صورة الاشتراك</span>
+                                            </label>
+                                        </div>
+                                        <div class="position-absolute absoluteCenterPhone">
+                                            <img src="assest/images/iconImage.svg" alt="" id="divBorderFile1"
+                                                class="cursorMouse">
+                                            <input type="file" id="fileInput1" class="d-none">
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="قم بوضع صورة الاشتراك">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div class="position-absolute divTextInputForm px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">مدة الاشتراك</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" required
+                                        class="inputSignIn w-100 p-3 pe-4 text-end rounded-4 border border-2"
+                                        placeholder="ادخل مدة الاشتراك">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div data-aos="zoom-in-up">
+                                    <div class="position-relative w-100">
+                                        <div
+                                            class="position-absolute divTextInputForm divTextInputFormOverflow px-2 bg-white">
+                                            <label class="d-flex gap-1 align-items-center">
+                                                <span class="fs-5 pt-1 ps-2 text-danger fw-bold">*</span>
+                                                <span class="fs-5 fw-bold spanColorUser">تفاصيل الاشتراك</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <textarea name="" id="" rows="7"
+                                        class="rounded-5 inputSignIn noneResize w-100 p-3 pe-4 text-end border border-2"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pt-5 mt-5">
+                        <button type="submit" data-bs-toggle="modal"
+                            class="position-relative overflow-hidden text-center text-decoration-none rounded-4 widthForm fw-bold buttonAdd divClose divOpen buttonAddNews">
+                            <span class="position-relative fw-bold">اضافة</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assest/js/bootstrap.bundle.min.js"></script>
+<script src="assest/js/index.js"></script>
+
+</html>

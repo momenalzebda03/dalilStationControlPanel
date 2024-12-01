@@ -1,3 +1,11 @@
+document.getElementById("divBorderFile").addEventListener("click", function () {
+  document.getElementById("fileInput").click();
+});
+
+document.getElementById("divBorderFile1").addEventListener("click", function () {
+  document.getElementById("fileInput1").click();
+});
+
 $(".custom-select").each(function () {
   var classes = $(this).attr("class"),
     placeholder = $(this).attr("placeholder");
@@ -156,21 +164,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     icon.addEventListener("click", () => datepicker.open());
   });
-});
-
-var ctx2 = document.getElementById("chart2").getContext("2d");
-var chart2 = new Chart(ctx2, {
-  type: "line",
-  data: {
-    labels: ["January", "February", "March", "April", "May"],
-    datasets: [
-      {
-        label: "Sales",
-        data: [2500, 2000, 2500, 2000, 2500],
-        backgroundColor: "#005DBA",
-        borderColor: "#",
-        borderWidth: 1,
-      },
-    ],
-  },
 });
