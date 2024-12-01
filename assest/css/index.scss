@@ -219,11 +219,6 @@ select:focus-visible {
 .custom-select.opened .custom-select-trigger:after {
     margin-top: 3px;
     transform: rotate(-135deg) translateY(-50%);
-    z-index: 9999;
-}
-
-.selectIcon {
-    z-index: -1;
 }
 
 .custom-options {
@@ -231,7 +226,7 @@ select:focus-visible {
     display: block;
     width: 70%;
     top: 100%;
-    left: 0;
+    left: -10px;
     border-radius: 10px 10px 0 0;
     margin: 5px 0;
     box-sizing: border-box;
@@ -1311,6 +1306,13 @@ body div div div div div form div div div .absoluteCenterPhone {
         left: 17%;
     }
 
+    .indexRow:nth-child(-n+4) {
+        z-index: 0 !important;
+    }
+
+    .indexRow:nth-child(-n+8) {
+        z-index: 0;
+    }
 }
 
 // end media

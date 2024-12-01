@@ -50,19 +50,6 @@ $(".custom-option").on("click", function () {
   $option.addClass("selection");
   $select.removeClass("opened");
   $select.find(".custom-select-trigger").text($option.text());
-
-  var selectedValue = $option.data("value");
-  var $opacityDiv = $(".opacityDiv");
-
-  if (selectedValue == "1") {
-    if ($opacityDiv.is(":hidden")) {
-      $opacityDiv.css("display", "block");
-    }
-  } else {
-    if ($opacityDiv.is(":visible")) {
-      $opacityDiv.css("display", "none");
-    }
-  }
 });
 
 $(".opacityDiv .cursorMouse").on("click", function () {
