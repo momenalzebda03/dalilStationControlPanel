@@ -66,7 +66,7 @@ select:focus-visible {
 
     .divBoxArrow {
         height: 98%;
-        padding-left: 18px;
+        padding-left: 15px;
         padding-bottom: 2px;
     }
 
@@ -377,6 +377,7 @@ body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
     transition: 0.3s;
 }
 
+body div nav div div .alginStartMobile li .activeList,
 body div nav div div .alginStartMobile li .activeListPage,
 body div nav div div .alginStartMobile li .hoverListMenu:hover {
     background-color: $colorBlue;
@@ -387,25 +388,6 @@ body div nav div div .alginStartMobile li .hoverListMenu:hover {
         }
 
         .imageArrawTop {
-            transform: rotate(90deg);
-        }
-
-        span {
-            color: $colorwhite;
-        }
-    }
-}
-
-body div nav div div .alginStartMobile li .activeList {
-    background-color: $colorBlue !important;
-
-    div {
-        .imageBlue {
-            filter: invert(1) brightness(1000%) grayscale(10000%);
-        }
-
-        .imageArrawTop {
-            filter: invert(1) brightness(1000%) grayscale(10000%);
             transform: rotate(90deg);
         }
 
@@ -518,6 +500,7 @@ body div div section section div .paddingShadow {
 
 body div div div div ul .listRight {
     background-color: $colorContaint;
+
     div {
         span {
             color: $colorBlueLink;
@@ -915,12 +898,12 @@ body div .backgroundRightSignIn div .divBeforeImageSignIn::after {
     left: -400px;
 }
 
-body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
+body div .widthSignIn div form div .inputSignIn {
     height: 61px;
-    border-top: 2px solid $colorBorderOne;
-    border-left: 2px solid $colorBorderOne;
-    border-right: 2px solid $colorBorderTow;
-    border-bottom: 2px solid $colorBorderTow;
+    border-top: 2px solid $colorBlue;
+    border-left: 2px solid $colorBlue;
+    border-right: 2px solid $colorOrange;
+    border-bottom: 2px solid $colorOrange;
 }
 
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {

@@ -61,7 +61,7 @@ select:focus-visible {
 }
 .buttonNavbarlanguage .divBoxArrow {
   height: 98%;
-  padding-left: 18px;
+  padding-left: 15px;
   padding-bottom: 2px;
 }
 .buttonNavbarlanguage .divBoxArrow::before {
@@ -360,34 +360,24 @@ body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transition: 0.3s;
 }
 
+body div nav div div .alginStartMobile li .activeList,
 body div nav div div .alginStartMobile li .activeListPage,
 body div nav div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
+body div nav div div .alginStartMobile li .activeList div img,
 body div nav div div .alginStartMobile li .activeListPage div img,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
+body div nav div div .alginStartMobile li .activeList div .imageArrawTop,
 body div nav div div .alginStartMobile li .activeListPage div .imageArrawTop,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
   transform: rotate(90deg);
 }
+body div nav div div .alginStartMobile li .activeList div span,
 body div nav div div .alginStartMobile li .activeListPage div span,
 body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
-  color: white;
-}
-
-body div nav div div .alginStartMobile li .activeList {
-  background-color: #4F2396 !important;
-}
-body div nav div div .alginStartMobile li .activeList div .imageBlue {
-  filter: invert(1) brightness(1000%) grayscale(10000%);
-}
-body div nav div div .alginStartMobile li .activeList div .imageArrawTop {
-  filter: invert(1) brightness(1000%) grayscale(10000%);
-  transform: rotate(90deg);
-}
-body div nav div div .alginStartMobile li .activeList div span {
   color: white;
 }
 
@@ -782,12 +772,12 @@ body div .backgroundRightSignIn div .divBeforeImageSignIn::after {
   left: -400px;
 }
 
-body div .widthSignIn div form div .buttonNavbarlanguageSignIn .inputSignIn {
+body div .widthSignIn div form div .inputSignIn {
   height: 61px;
-  border-top: 2px solid #ff6347;
-  border-left: 2px solid #ff6347;
-  border-right: 2px solid #00bfff;
-  border-bottom: 2px solid #00bfff;
+  border-top: 2px solid #4F2396;
+  border-left: 2px solid #4F2396;
+  border-right: 2px solid #F69554;
+  border-bottom: 2px solid #F69554;
 }
 
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {

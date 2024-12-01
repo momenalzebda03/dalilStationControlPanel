@@ -1,0 +1,97 @@
+@import "color";
+
+// start General Code
+.custom-select-trigger::before {
+    left: 90%;
+}
+
+.divTextInputForm {
+    right: unset;
+    left: 15px;
+}
+
+.custom-options {
+    left: unset;
+    right: 10px;
+}
+
+// end General Code
+// start navbar
+body nav div div .beforePoint::before {
+    right: 38%;
+    bottom: 12px;
+}
+
+// end navbar
+// start sign in
+.buttonNavbarlanguage {
+    .divBoxArrow::before {
+        right: 70px;
+    }
+
+    .divBoxArrow {
+        padding-right: 15px;
+    }
+}
+
+// end sign in
+// start containt
+.shadowHeight {
+    direction: ltr;
+}
+
+// end containt
+
+// start form user
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
+    right: unset;
+    left: 30px;
+}
+
+body div div div div div form div div div .absoluteCenterPhone {
+    left: unset;
+    right: 18px;
+}
+
+// end form user
+// start navbar defails
+body div div .navbarDetails div div .divHoverImage {
+    img {
+        transform: rotate(-180deg);
+    }
+}
+
+body div div .navbarDetails div div .divHoverImage:hover {
+    .hoverArraw {
+        left: 5px;
+    }
+}
+
+// end navbar defails
+// start menu
+body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
+
+body div nav div div .alginStartMobile li .activeList,
+body div nav div div .alginStartMobile li .activeListPage,
+body div nav div div .alginStartMobile li .hoverListMenu:hover {
+    background-color: $colorBlue;
+
+    div {
+        img {
+            filter: invert(1) brightness(1000%) grayscale(10000%);
+        }
+
+        .imageArrawTop {
+            transform: rotate(-270deg);
+        }
+
+        span {
+            color: $colorwhite;
+        }
+    }
+}
+
+// end menu

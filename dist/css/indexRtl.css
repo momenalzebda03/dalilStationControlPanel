@@ -1,0 +1,73 @@
+.custom-select-trigger::before {
+  left: 90%;
+}
+
+.divTextInputForm {
+  right: unset;
+  left: 15px;
+}
+
+.custom-options {
+  left: unset;
+  right: 10px;
+}
+
+body nav div div .beforePoint::before {
+  right: 38%;
+  bottom: 12px;
+}
+
+.buttonNavbarlanguage .divBoxArrow::before {
+  right: 70px;
+}
+.buttonNavbarlanguage .divBoxArrow {
+  padding-right: 15px;
+}
+
+.shadowHeight {
+  direction: ltr;
+}
+
+body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
+  right: unset;
+  left: 30px;
+}
+
+body div div div div div form div div div .absoluteCenterPhone {
+  left: unset;
+  right: 18px;
+}
+
+body div div .navbarDetails div div .divHoverImage img {
+  transform: rotate(-180deg);
+}
+
+body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
+  left: 5px;
+}
+
+body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
+body div nav div div .alginStartMobile li .activeList,
+body div nav div div .alginStartMobile li .activeListPage,
+body div nav div div .alginStartMobile li .hoverListMenu:hover {
+  background-color: #4F2396;
+}
+body div nav div div .alginStartMobile li .activeList div img,
+body div nav div div .alginStartMobile li .activeListPage div img,
+body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
+  filter: invert(1) brightness(1000%) grayscale(10000%);
+}
+body div nav div div .alginStartMobile li .activeList div .imageArrawTop,
+body div nav div div .alginStartMobile li .activeListPage div .imageArrawTop,
+body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
+  transform: rotate(-270deg);
+}
+body div nav div div .alginStartMobile li .activeList div span,
+body div nav div div .alginStartMobile li .activeListPage div span,
+body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
+  color: white;
+}/*# sourceMappingURL=indexRtl.css.map */
