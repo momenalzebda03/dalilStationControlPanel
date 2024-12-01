@@ -885,6 +885,10 @@ body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
     z-index: 1;
 }
 
+body div .backgroundRightSignIn div .divBeforeImageSignIn::before { 
+    
+}
+
 body div .backgroundRightSignIn div .divBeforeImageSignIn::before {
     content: url("/assest/images/circle.png");
     position: absolute;
