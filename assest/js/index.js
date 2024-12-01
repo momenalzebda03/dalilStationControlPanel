@@ -1,3 +1,14 @@
+$("#toogleDropDown").on("click", function () {
+  const elementPrefix = "divDropDwon";
+  toggleDropdown(elementPrefix);
+});
+
+function selectOption(language) {
+  $("#toogleDropDown").text(language);
+  const elementPrefix = "divDropDwon";
+  toggleDropdown(elementPrefix);
+}
+
 $(".custom-select").each(function () {
   var classes = $(this).attr("class"),
     placeholder = $(this).attr("placeholder");
