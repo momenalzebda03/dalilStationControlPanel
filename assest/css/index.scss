@@ -513,7 +513,7 @@ body .divCards div div div .styleCard:hover::before {
 // end cards
 // start containt
 body div div section section div .paddingShadow {
-    padding: 10px 55px !important;
+    padding: 30px 55px !important;
 }
 
 body div div div div ul .listRight {
@@ -1232,7 +1232,11 @@ body div div div div div form div div div .absoluteCenterPhone {
         }
     }
 
-    body div div section div section ul .shadowHeight .listRight div .sizeTap {
+    body div div section div section ul .listRight div .sizeTap {
+        font-size: 10px;
+    }
+
+    body div div div div ul .listRight div .listChild li .spanPublids {
         font-size: 5px;
     }
 
@@ -1328,6 +1332,14 @@ body div div div div div form div div div .absoluteCenterPhone {
 
     body div div section form div div .indexRow:nth-child(8) {
         z-index: 2 !important;
+    }
+
+    body div div section div section ul .listRight div .sizeTap {
+        font-size: 17px;
+    }
+
+    body div div div div ul .listRight div .listChild li .spanPublids {
+        font-size: 13px;
     }
 }
 
