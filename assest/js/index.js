@@ -71,17 +71,6 @@ function toggleDropdown(elementPrefix) {
   dropdown.toggleClass("open");
 }
 
-$("#toogleDropDown").on("click", function () {
-  const elementPrefix = "divDropDwon";
-  toggleDropdown(elementPrefix);
-});
-
-function selectOption(language) {
-  $("#toogleDropDown").text(language);
-  const elementPrefix = "divDropDwon";
-  toggleDropdown(elementPrefix);
-}
-
 $(document).ready(function () {
   var $accordionItem = $(".accordionItem");
   var $collapseElement = $("#collapseTow");
@@ -135,33 +124,3 @@ $(document).ready(function () {
 function selectOptionStor(option) {
   document.getElementById("selectedOption").textContent = option;
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dateInputs = [
-    {
-      input: document.getElementById("txtdate"),
-      icon: document.getElementById("calendarIcon"),
-      boxId: "divBoxArrowOverflow",
-    },
-    {
-      input: document.getElementById("txtdate1"),
-      icon: document.getElementById("calendarIcon1"),
-      boxId: "divBoxArrowNumber",
-    },
-    {
-      input: document.getElementById("txtdate2"),
-      icon: document.getElementById("calendarIcon2"),
-      boxId: "divBoxArrowSalary",
-    },
-  ];
-
-  dateInputs.forEach(({ input, icon, boxId }) => {
-    const datepicker = flatpickr(input, {
-      dateFormat: "d/m/Y",
-      allowInput: true,
-      onClose: () => toggleDropdown(boxId),
-    });
-
-    icon.addEventListener("click", () => datepicker.open());
-  });
-});
