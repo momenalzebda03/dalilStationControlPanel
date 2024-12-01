@@ -517,7 +517,12 @@ body div div section section div .paddingShadow {
 }
 
 body div div div div ul .listRight {
-    background-color: rgba(98, 98, 104, 0.118);
+    background-color: $colorContaint;
+    div {
+        span {
+            color: $colorBlueLink;
+        }
+    }
 }
 
 body div div div div ul .listRight div .listChild li .spanPublids {
