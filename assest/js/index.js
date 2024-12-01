@@ -1,11 +1,3 @@
-document.getElementById("divBorderFile").addEventListener("click", function () {
-  document.getElementById("fileInput").click();
-});
-
-document.getElementById("divBorderFile1").addEventListener("click", function () {
-  document.getElementById("fileInput1").click();
-});
-
 $(".custom-select").each(function () {
   var classes = $(this).attr("class"),
     placeholder = $(this).attr("placeholder");
