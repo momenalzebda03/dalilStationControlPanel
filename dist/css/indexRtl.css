@@ -24,6 +24,16 @@ body nav div div .beforePoint::before {
   padding-right: 15px;
 }
 
+body div section div .divBeforeImageSignIn .positionCircle {
+  bottom: 20px;
+}
+
+body div section div .divBeforeImageSignIn .positionCircleLeft {
+  bottom: -90px;
+  left: unset;
+  right: -400px;
+}
+
 .shadowHeight {
   direction: ltr;
 }
