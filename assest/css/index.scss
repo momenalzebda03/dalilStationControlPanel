@@ -494,7 +494,7 @@ body .divCards div div div .styleCard:hover::before {
 
 // end cards
 // start containt
-body div div section section div .paddingShadow {
+body div div section div div div .paddingShadow {
     padding: 30px 55px !important;
 }
 
@@ -520,26 +520,26 @@ body div div div div ul .listRight div .listChild li .imageStar {
     width: 12px;
 }
 
-body div div section section div .paddingShadow div div .circle {
+body div div section div div .paddingShadow div div .circle {
     width: 175px;
     height: 175px;
     background-color: $colorBlue;
 }
 
-body div div section section div .paddingShadow div div .circle .angle {
+body div div section div div .paddingShadow div div .circle .angle {
     width: 100%;
     height: 100%;
     background-color: #cccccc66;
     transform: rotate(-40deg);
 }
 
-body div div section section div .paddingShadow div div .childBuilds .beforeBuilds {
+body div div section div div .paddingShadow div div .childBuilds .beforeBuilds {
     span {
         color: $colorListPublis;
     }
 }
 
-body div div section section div .paddingShadow div div .childBuilds .beforeBuilds::before {
+body div div section div div .paddingShadow div div .childBuilds .beforeBuilds::before {
     content: "";
     position: absolute;
     width: 13px;
@@ -549,17 +549,17 @@ body div div section section div .paddingShadow div div .childBuilds .beforeBuil
     background-color: $colorShdow;
 }
 
-body div div section section div .paddingShadow div div .childBuilds .beforeBuilds:last-child::before {
+body div div section div div .paddingShadow div div .childBuilds .beforeBuilds:last-child::before {
     background-color: $colorBlue;
 }
 
-body div div section section div .paddingShadow div div .stylelist {
+body div div section div div .paddingShadow div div .stylelist {
     li {
         color: $colorShdow;
     }
 }
 
-body div div section section div .paddingShadow div div .stylelist .listLine::before {
+body div div section div div .paddingShadow div div .stylelist .listLine::before {
     content: "";
     position: absolute;
     width: 650px;
@@ -576,13 +576,13 @@ body div div section section div .paddingShadow div div .stylelist .listLine::be
     opacity: 0;
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue,
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div::before,
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div::after {
+body div div section div div .paddingShadow div div div div .childLine div div .divLineBlue,
+body div div section div div .paddingShadow div div div div .childLine div div::before,
+body div div section div div .paddingShadow div div div div .childLine div div::after {
     width: 23px;
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine {
+body div div section div div .paddingShadow div div div div .childLine {
 
     div:nth-child(1) {
         div {
@@ -815,19 +815,19 @@ body div div section section div .paddingShadow div .divPaddingNumber .childLine
     }
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before {
     background-color: $blueNormal;
     z-index: -1;
     width: 23px;
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     width: 23px;
     background-color: $colorEsay;
     z-index: -2;
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue::before {
     content: "";
     position: absolute;
     background-color: $colorBlue;
@@ -837,8 +837,8 @@ body div div section section div .paddingShadow div .divPaddingNumber .childLine
     border-radius: 5px 5px 0 0;
 }
 
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
-body div div section section div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::before,
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue .lineBox::after {
     content: "";
     position: absolute;
     left: 7px;
@@ -858,13 +858,13 @@ body div div section section div .paddingShadow div .divPaddingNumber .childLine
     border-radius: 10px 10px 0 0;
 }
 
-body div div section section div .paddingShadow div::-webkit-scrollbar,
+body div div section div div .paddingShadow div::-webkit-scrollbar,
 .shadowHeight::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-body div div section section div .paddingShadow div::-webkit-scrollbar-thumb,
+body div div section div div .paddingShadow div::-webkit-scrollbar-thumb,
 .shadowHeight::-webkit-scrollbar-thumb {
     background: $colorBlue;
 }
@@ -883,10 +883,6 @@ body div .widthSignIn {
 body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
     width: 450px;
     z-index: 1;
-}
-
-body div .backgroundRightSignIn div .divBeforeImageSignIn::before { 
-    
 }
 
 body div .backgroundRightSignIn div .divBeforeImageSignIn::before {
@@ -1236,23 +1232,18 @@ body div div div div div form div div div .absoluteCenterPhone {
         margin-top: 100px !important;
     }
 
-    body div div section section div .paddingShadow div div .circle .angle {
+    body div div section div div .paddingShadow div div .circle .angle {
         width: 115%;
         height: 115%;
     }
 }
 
 @media (max-width: 990px) {
-    body div div section section div .paddingShadow div div .circle .angle {
-        width: 1100%;
-        height: 1100%;
-    }
-
-    body div div section section div .paddingShadow div .divPaddingNumber {
+    body div div section div div .paddingShadow div .divPaddingNumber {
         padding-top: 100px;
     }
 
-    body div div section section div .paddingShadow {
+    body div div section div div .paddingShadow {
         padding: 15px !important;
     }
 
