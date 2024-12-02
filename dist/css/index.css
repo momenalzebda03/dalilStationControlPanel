@@ -60,41 +60,31 @@ select:focus-visible {
   background-color: #f0f0f0;
 }
 .buttonNavbarlanguage .divBoxArrow {
-  height: 98%;
-  padding-left: 15px;
-  padding-bottom: 2px;
-}
-.buttonNavbarlanguage .divBoxArrow::before {
-  content: "";
-  background-image: url("/assest/images/iconArrow.svg");
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 30px;
-  top: 12.5px;
-  transition: transform 0.3s ease;
-  width: 15px;
-  height: 15px;
+  transition: 0.3s;
 }
 .buttonNavbarlanguage .divBoxArrow.open + .boxButton {
   display: block;
 }
-.buttonNavbarlanguage .divDropDwon.open::before {
+.buttonNavbarlanguage .divBoxArrowSalary img,
+.buttonNavbarlanguage .divBoxArrowNumber img,
+.buttonNavbarlanguage .divBoxArrowOverflow img,
+.buttonNavbarlanguage .divDropDwon img {
+  transition: 0.3s;
+}
+.buttonNavbarlanguage .divDropDwon.open img {
   transform: rotate(180deg);
 }
-.buttonNavbarlanguage .divDropDwonSort.open::before {
+.buttonNavbarlanguage .divBoxArrowSalary.open img,
+.buttonNavbarlanguage .divBoxArrowNumber.open img,
+.buttonNavbarlanguage .divBoxArrowOverflow.open img,
+.buttonNavbarlanguage .divDropDwonSort.open img {
   transform: rotate(180deg);
 }
 .buttonNavbarlanguage .divBoxArrowOverflow {
   background-color: #F69554;
 }
-.buttonNavbarlanguage .divBoxArrowOverflow::before {
+.buttonNavbarlanguage .divBoxArrowOverflow img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
-}
-.buttonNavbarlanguage .divBoxArrowSalary.open::before,
-.buttonNavbarlanguage .divBoxArrowNumber.open::before,
-.buttonNavbarlanguage .divBoxArrowOverflow.open::before {
-  transform: rotate(180deg);
 }
 
 .heightFull {

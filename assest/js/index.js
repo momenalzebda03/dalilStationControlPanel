@@ -4,9 +4,18 @@ $("#toogleDropDown").on("click", function () {
 });
 
 function selectOption(language) {
-  $("#toogleDropDown").text(language);
+  $("#toogleDropDown span").text(language);
   const elementPrefix = "divDropDwon";
   toggleDropdown(elementPrefix);
+}
+
+function toggleDropdown(elementPrefix) {
+  const dropdown = $(`.${elementPrefix}`);
+  dropdown.toggleClass("open");
+  const arrow = $("#dropdownArrow");
+  dropdown.hasClass("open")
+    ? arrow.css("transform", "rotate(180deg)")
+    : arrow.css("transform", "rotate(0deg)");
 }
 
 $(".custom-select").each(function () {
@@ -55,11 +64,6 @@ $(".custom-option").on("click", function () {
 $(".opacityDiv .cursorMouse").on("click", function () {
   $(".opacityDiv").css("display", "none");
 });
-
-function toggleDropdown(elementPrefix) {
-  const dropdown = $(`.${elementPrefix}`);
-  dropdown.toggleClass("open");
-}
 
 $(document).ready(function () {
   var $accordionItem = $(".accordionItem");
