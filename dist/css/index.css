@@ -416,7 +416,7 @@ body div div section ul .divDataCol:hover div span {
   color: white;
 }
 
-body .divCards div div div .styleCard div div .spanCardBlue {
+body .divCards div div div .styleCard div .spanCardBlue {
   color: #4F2396;
 }
 
@@ -431,10 +431,10 @@ body .divCards div div div .styleCard:hover {
   margin-top: -10px;
   transition: 0.3s;
 }
-body .divCards div div div .styleCard:hover div div span {
+body .divCards div div div .styleCard:hover div span {
   color: white;
 }
-body .divCards div div div .styleCard:hover div div img {
+body .divCards div div div .styleCard:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
 
@@ -451,6 +451,10 @@ body .divCards div div div .styleCard::before {
 body .divCards div div div .styleCard:hover::before {
   width: 100%;
   height: 100%;
+}
+
+body .divCards div div div .styleCard div .sizeTitleCard {
+  font-size: 15px;
 }
 
 body div div section div div div .paddingShadow {
@@ -507,14 +511,14 @@ body div div section div div .paddingShadow div div .childBuilds .beforeBuilds:l
   background-color: #4F2396;
 }
 
-body div div section div div .paddingShadow div div .stylelist li {
+body div div section div div .paddingShadow div .divPaddingNumber .stylelist li {
   color: #ccc;
 }
 
-body div div section div div .paddingShadow div div .stylelist .listLine::before {
+body div div section div div .paddingShadow div .divPaddingNumber .stylelist .listLine::before {
   content: "";
   position: absolute;
-  width: 650px;
+  width: 700px;
   height: 2px;
   left: 60px;
   top: 14px;
@@ -528,155 +532,155 @@ body div div section div div .paddingShadow div div .stylelist .listLine::before
   opacity: 0;
 }
 
-body div div section div div .paddingShadow div div div div .childLine div div .divLineBlue,
-body div div section div div .paddingShadow div div div div .childLine div div::before,
-body div div section div div .paddingShadow div div div div .childLine div div::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue,
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div::before,
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div::after {
   width: 23px;
 }
 
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(1) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(1) div .divLineBlue::before {
   min-height: 50px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(1) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(1) div .lineBox::before {
   background-color: #967EBD;
   width: 23px;
   height: 40px;
   bottom: 50px;
   z-index: -1;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(1) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(1) div .lineBox::after {
   background-color: #A391C0;
   width: 23px;
   height: 48px;
   bottom: 50px;
   z-index: -2;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(2) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(2) div .divLineBlue::before {
   min-height: 65px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(2) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(2) div .lineBox::before {
   height: 50px;
   bottom: 65px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(2) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(2) div .lineBox::after {
   height: 53px;
   bottom: 75px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(3) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(3) div .divLineBlue::before {
   min-height: 38px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(3) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(3) div .lineBox::before {
   height: 40px;
   bottom: 43px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(3) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(3) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(4) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(4) div .divLineBlue::before {
   min-height: 50px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(4) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(4) div .lineBox::before {
   height: 60px;
   bottom: 43px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(4) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(4) div .lineBox::after {
   height: 53px;
   bottom: 78px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(5) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(5) div .divLineBlue::before {
   min-height: 30px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(5) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(5) div .lineBox::before {
   height: 33px;
   bottom: 50px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(5) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(5) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(6) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(6) div .divLineBlue::before {
   min-height: 58px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(6) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(6) div .lineBox::before {
   height: 60px;
   bottom: 75px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(6) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(6) div .lineBox::after {
   height: 50px;
   bottom: 80px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(7) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(7) div .divLineBlue::before {
   min-height: 40px;
   bottom: 25;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(7) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(7) div .lineBox::before {
   height: 60px;
   bottom: 50px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(7) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(7) div .lineBox::after {
   height: 53px;
   bottom: 83px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(8) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(8) div .divLineBlue::before {
   min-height: 50px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(8) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(8) div .lineBox::before {
   height: 60px;
   bottom: 67px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(8) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(8) div .lineBox::after {
   height: 53px;
   bottom: 80px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(9) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(9) div .divLineBlue::before {
   min-height: 40px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(9) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(9) div .lineBox::before {
   height: 60px;
   bottom: 60px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(9) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(9) div .lineBox::after {
   height: 53px;
   bottom: 73px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(10) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(10) div .divLineBlue::before {
   min-height: 55px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(10) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(10) div .lineBox::before {
   height: 60px;
   bottom: 53px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(10) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(10) div .lineBox::after {
   height: 53px;
   bottom: 70px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(11) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(11) div .divLineBlue::before {
   min-height: 35px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(11) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(11) div .lineBox::before {
   height: 60px;
   bottom: 35px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(11) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(11) div .lineBox::after {
   height: 53px;
   bottom: 75px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(12) div .divLineBlue::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(12) div .divLineBlue::before {
   min-height: 35px;
   bottom: 25px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(12) div .lineBox::before {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(12) div .lineBox::before {
   height: 60px;
   bottom: 40px;
 }
-body div div section div div .paddingShadow div div div div .childLine div:nth-child(12) div .lineBox::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div:nth-child(12) div .lineBox::after {
   height: 53px;
   bottom: 74px;
 }
@@ -720,7 +724,6 @@ body div div section div div .paddingShadow div .divPaddingNumber .childLine div
 }
 
 .shadowHeight {
-  max-height: 630px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -1129,5 +1132,8 @@ body div div div div div form div div div .absoluteCenterPhone {
   }
   body div div div div ul .listRight div .listChild li .spanPublids {
     font-size: 13px;
+  }
+  .shadowHeight {
+    min-height: 630px;
   }
 }/*# sourceMappingURL=index.css.map */

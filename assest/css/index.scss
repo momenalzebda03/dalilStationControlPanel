@@ -446,7 +446,7 @@ body div div section ul .divDataCol:hover {
 
 // end data
 // start cards
-body .divCards div div div .styleCard div div .spanCardBlue {
+body .divCards div div div .styleCard div .spanCardBlue {
     color: $colorBlue;
 }
 
@@ -462,14 +462,12 @@ body .divCards div div div .styleCard:hover {
     transition: 0.3s;
 
     div {
-        div {
-            span {
-                color: $colorwhite;
-            }
+        span {
+            color: $colorwhite;
+        }
 
-            img {
-                filter: invert(1) brightness(1000%) grayscale(10000%);
-            }
+        img {
+            filter: invert(1) brightness(1000%) grayscale(10000%);
         }
     }
 }
@@ -487,6 +485,10 @@ body .divCards div div div .styleCard::before {
 body .divCards div div div .styleCard:hover::before {
     width: 100%;
     height: 100%;
+}
+
+body .divCards div div div .styleCard div .sizeTitleCard {
+    font-size: 15px;
 }
 
 // end cards
@@ -550,16 +552,16 @@ body div div section div div .paddingShadow div div .childBuilds .beforeBuilds:l
     background-color: $colorBlue;
 }
 
-body div div section div div .paddingShadow div div .stylelist {
+body div div section div div .paddingShadow div .divPaddingNumber .stylelist {
     li {
         color: $colorShdow;
     }
 }
 
-body div div section div div .paddingShadow div div .stylelist .listLine::before {
+body div div section div div .paddingShadow div .divPaddingNumber .stylelist .listLine::before {
     content: "";
     position: absolute;
-    width: 650px;
+    width: 700px;
     height: 2px;
     left: 60px;
     top: 14px;
@@ -573,13 +575,13 @@ body div div section div div .paddingShadow div div .stylelist .listLine::before
     opacity: 0;
 }
 
-body div div section div div .paddingShadow div div div div .childLine div div .divLineBlue,
-body div div section div div .paddingShadow div div div div .childLine div div::before,
-body div div section div div .paddingShadow div div div div .childLine div div::after {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div .divLineBlue,
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div::before,
+body div div section div div .paddingShadow div .divPaddingNumber .childLine div div::after {
     width: 23px;
 }
 
-body div div section div div .paddingShadow div div div div .childLine {
+body div div section div div .paddingShadow div .divPaddingNumber .childLine {
 
     div:nth-child(1) {
         div {
@@ -851,7 +853,6 @@ body div div section div div .paddingShadow div .divPaddingNumber .childLine div
 }
 
 .shadowHeight {
-    max-height: 630px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -1316,6 +1317,10 @@ body div div div div div form div div div .absoluteCenterPhone {
 
     body div div div div ul .listRight div .listChild li .spanPublids {
         font-size: 13px;
+    }
+
+    .shadowHeight {
+        min-height: 630px;
     }
 }
 
