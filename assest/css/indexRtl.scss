@@ -50,6 +50,10 @@ body div section div .divBeforeImageSignIn .positionCircleLeft {
     direction: ltr;
 }
 
+body div div section div div .paddingShadow div div .stylelist .listLine::before {
+    left: unset;
+    right: 60px;
+}
 // end containt
 
 // start form user

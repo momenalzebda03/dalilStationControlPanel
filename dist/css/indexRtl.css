@@ -38,6 +38,11 @@ body div section div .divBeforeImageSignIn .positionCircleLeft {
   direction: ltr;
 }
 
+body div div section div div .paddingShadow div div .stylelist .listLine::before {
+  left: unset;
+  right: 60px;
+}
+
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
   right: unset;
   left: 30px;
