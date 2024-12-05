@@ -933,18 +933,6 @@ body div .widthSignIn div form div div .styleInputSubmit:hover .hoverInput {
 }
 
 // end sign in
-// start synopsis
-body div div section .gapRow div .imageHover img {
-    transition: transform 0.3s ease;
-}
-
-body div div section .gapRow div .imageHover:hover {
-    img {
-        transform: scale(1.1);
-    }
-}
-
-// end synopsis
 // start Social media
 body div div section ul li .divBorder {
     border-right: 2px solid $colorOrange;
@@ -1024,6 +1012,10 @@ body div div section div div div div .boxButtonStor {
 
 // end details
 // start table
+.tagNormal {
+    white-space: normal;
+}
+
 .thPadding {
     padding: 20px;
 }

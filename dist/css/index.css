@@ -799,14 +799,6 @@ body div .widthSignIn div form div div .styleInputSubmit:hover .hoverInput {
   height: 100%;
 }
 
-body div div section .gapRow div .imageHover img {
-  transition: transform 0.3s ease;
-}
-
-body div div section .gapRow div .imageHover:hover img {
-  transform: scale(1.1);
-}
-
 body div div section ul li .divBorder {
   border-right: 2px solid #F69554;
   border-left: 2px solid #F69554;
@@ -877,6 +869,10 @@ body div div section div div div div .divImageSearch {
 body div div section div div div div .boxButtonStor {
   top: 60px;
   display: none;
+}
+
+.tagNormal {
+  white-space: normal;
 }
 
 .thPadding {
