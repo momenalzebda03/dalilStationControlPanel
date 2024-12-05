@@ -74,7 +74,7 @@
                     <h2 class="mb-0">منشأت</h2>
                     <span class="fs-3 spanColorCard">استعرض بيانات المنشاَت على التطبيق لتقوم بالاجراءات المناسبة</span>
                 </div>
-                <div class="row mt-4 gap-4 gap-md-0">
+                <div class="row mt-4 gap-4 gap-lg-0">
                     <div class="col-lg-3" data-aos="flip-right">
                         <a href="#">
                             <button
@@ -87,10 +87,10 @@
                         </a>
                     </div>
                     <div class="col-lg-9" data-aos="flip-left">
-                        <div class="row gap-3 gap-md-0 justify-content-end">
+                        <div class="row gap-3 gap-lg-0 justify-content-end">
                             <div id="toogleDropDownStor"
-                                class="col-lg-3 position-relative shadow p-3 pe-4 rounded-5 border border-0 d-flex justify-content-end gap-3">
-                                <div class="fw-bold text-nowrap">
+                                class="col-lg-3 position-relative shadow p-3 rounded-5 border border-0 d-flex justify-content-end gap-lg-4">
+                                <div class="fw-bold">
                                     <span><span class="checkEmail">الترتيب حسب</span> : <span
                                             id="selectedOption">الاحدث</span></span>
                                 </div>
@@ -105,9 +105,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 position-relative">
-                                <input type="text"
-                                    class="w-100 p-3 pe-5 rounded-5 shadow border border-0 text-end inputSearch"
+                            <div class="col-lg-5 position-relative px-0 px-lg-3">
+                                <input type="text" class="w-100 p-3 pe-5 rounded-5 shadow border border-0 text-end"
                                     placeholder="بحث ...">
                                 <div class="position-absolute divImageSearch">
                                     <img src="assest/images/search.svg" alt="">
@@ -156,9 +155,8 @@
                                 </div>
                             </th>
                             <th class="thPadding">
-                                <a href="#">
-                                    <img src="assest/images/Details.svg" alt="" class="w-50">
-                                </a>
+                                <img src="assest/images/Details.svg" alt="" class="cursorMouse w-50"
+                                    data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
                             </th>
                             <th class="thPadding">ابداع رقمي</th>
                             <th class="thPadding">0537377428</th>
@@ -186,9 +184,8 @@
                                 </div>
                             </th>
                             <th class="thPadding">
-                                <a href="#">
-                                    <img src="assest/images/Details.svg" alt="" class="w-50">
-                                </a>
+                                <img src="assest/images/Details.svg" alt="" class="cursorMouse w-50"
+                                    data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
                             </th>
                             <th class="thPadding">ابداع رقمي</th>
                             <th class="thPadding">0537377428</th>
@@ -204,6 +201,51 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- start modal -->
+                <div class="modal fade" id="statusSuccessModalNews" tabindex="-1" role="dialog"
+                    data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content rounded-3 p-3 pb-5">
+                            <div>
+                                <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal">
+                                    <img src="assest/images/close.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="modal-body text-center pb-0">
+                                <h4 class="fw-bold fs-5 mb-3 spanColorUser">تفاصيل الاعلان</h4>
+                                <div class="position-relative d-flex justify-content-center mb-3 overflowModal">
+                                    <div
+                                        class="position-absolute d-flex justify-content-center align-items-center divMobileFlexBox sizeDivModal">
+                                        <div class="text-white d-flex flex-column gap-2 mt-3 p-0 divTextModal">
+                                            <h2 class="fw-bold sizeMobile">تطبيق دليل ستيشن</h2>
+                                            <span class="sizeMobileSpan">دليل ستيشن منصتك الشاملة للنجاح وصل إلى
+                                                عملائك المستهدفين بسهولة وفعالية</span>
+                                        </div>
+                                        <div class="mt-5 noneTap">
+                                            <img src="assest/images/userAnnouncementDetails.svg" alt=""
+                                                class="widthImageModal">
+                                        </div>
+                                    </div>
+                                    <img src="assest/images/AnnouncementDetails.svg"
+                                        class="stringSignIn buttonAddNews p-0" alt="">
+                                </div>
+                                <div class="mt-lg-5 fw-bold thPadding paddingTextModal d-flex flex-column gap-5">
+                                    <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</span>
+                                    <span> إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                        لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على
+                                        صورة حقيقية لتصميم الموقع.</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="checkEmail fw-bold fs-5">مدة الظهور: 3 أيام</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal -->
             </div>
             <!-- end table -->
             <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">

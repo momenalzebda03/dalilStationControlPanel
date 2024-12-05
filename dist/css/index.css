@@ -922,6 +922,27 @@ body div div section div div div div .boxButtonStor {
   text-align: center;
 }
 
+body div div .divHiddenModile div div div div .overflowModal .sizeDivModal {
+  max-height: 200px;
+  width: 40%;
+}
+
+body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal {
+  width: 230px;
+}
+
+body div div .divHiddenModile div div div div .overflowModal .sizeDivModal div .widthImageModal {
+  width: 160px;
+}
+
+body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal .sizeMobile {
+  font-size: 25px;
+}
+
+body div div .divHiddenModile div div div div .paddingTextModal {
+  padding: 0 180px;
+}
+
 .divClose,
 .divOpen {
   width: 25%;
@@ -1066,6 +1087,23 @@ body div div div div div form div div div .absoluteCenterPhone {
     width: 115%;
     height: 115%;
   }
+  body div div .divHiddenModile {
+    overflow: auto;
+  }
+  body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
+    width: 350px;
+  }
+  .divTable {
+    width: 900px;
+    top: 23px;
+  }
+  .thPadding {
+    padding: 10px !important;
+  }
+  body div div .divHiddenModile div div div div .overflowModal .divMobileFlexBox {
+    width: 100% !important;
+    height: 120px;
+  }
 }
 @media (max-width: 990px) {
   body div div section div div div .paddingShadow {
@@ -1075,20 +1113,10 @@ body div div div div div form div div div .absoluteCenterPhone {
     width: 100% !important;
   }
   .stringSignIn {
-    width: 100%;
+    width: 100% !important;
   }
   .sizeSpan {
     font-size: 10px;
-  }
-  .divTable {
-    width: 900px;
-    top: 23px;
-  }
-  .divHiddenModile {
-    overflow: auto;
-  }
-  .thPadding {
-    padding: 10px;
   }
   body div .backgroundRightSignIn div .divBeforeImageSignIn .imageuserSignIn {
     width: 350px;
@@ -1115,14 +1143,17 @@ body div div div div div form div div div .absoluteCenterPhone {
   body div div section form div div .indexRow:nth-child(4) {
     z-index: 5 !important;
   }
-  body div div section form div div .indexRow:nth-child(6) {
+  body div div section form div div .indexRow:nth-child(5) {
     z-index: 4 !important;
   }
-  body div div section form div div .indexRow:nth-child(7) {
+  body div div section form div div .indexRow:nth-child(6) {
     z-index: 3 !important;
   }
-  body div div section form div div .indexRow:nth-child(8) {
+  body div div section form div div .indexRow:nth-child(7) {
     z-index: 2 !important;
+  }
+  body div div section form div div .indexRow:nth-child(8) {
+    z-index: 1 !important;
   }
   body div div section div section ul .listRight div .sizeTap {
     font-size: 17px;
@@ -1132,5 +1163,12 @@ body div div div div div form div div div .absoluteCenterPhone {
   }
   .shadowHeight {
     min-height: 630px;
+  }
+  body div div .divHiddenModile div div div div .overflowModal {
+    overflow: hidden;
+  }
+  body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal .sizeMobileSpan,
+  body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal .sizeMobile {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */
