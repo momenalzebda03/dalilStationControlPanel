@@ -867,12 +867,152 @@ body div div section div div .paddingShadow div::-webkit-scrollbar-thumb,
     background: $colorBlue;
 }
 
-.imageSize {
+body div div section div .shadowHeight ul .listRight div .imageSize {
     width: 50px;
     height: 50px;
 }
 
+body div div section div .rowReverseMobile div div div div .divImageSearchOverflow {
+    right: 20px !important;
+}
+
+body div div section div .rowReverseMobile div div div div .inputSearchHelp::placeholder {
+    color: $colorBlack;
+}
+
+body div div section div .rowReverseMobile div div div ul .inputSearchHelpActive,
+body div div section div .rowReverseMobile div div div div .inputSearchHelp {
+    background-color: $colorSearch;
+}
+
+body div div section div .rowReverseMobile div div div ul .inputSearchHelpActiveHover:hover {
+    background-color: $colorSearch;
+}
+
+body div div section div .rowReverseMobile div div div div .imageSizeChat {
+    width: 40px;
+    height: 40px;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer {
+    height: 500px;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .message .messageText {
+    font-size: 13px;
+    border-radius: 0 28px 28px 28px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .userMessage .messageText {
+    background-color: #f1f1f1;
+    color: $colorBlue;
+    align-self: flex-start;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .supportMessage .messageText {
+    border-radius: 28px 0 28px 28px;
+    background-color: $colorButtonHelpActive;
+    color: $colorwhite;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText {
+    background-color: #f1f1f1;
+    border-radius: 28px 0 28px 28px;
+
+    div {
+        width: 5px;
+        height: 5px;
+        background-color: $colorBlue;
+        animation: showAndHide 0.5s;
+    }
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(0) {
+    animation-delay: 0s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(1) {
+    animation-delay: 1s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(2) {
+    animation-delay: 2s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(3) {
+    animation-delay: 3s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(4) {
+    animation-delay: 4s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(5) {
+    animation-delay: 5s;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(6) {
+    animation-delay: 6s;
+}
+
+@keyframes showAndHide {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatInput input {
+    background-color: $colorSearch;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatInput button {
+    img {
+        top: 0;
+        left: 0;
+        transition: 0.2s;
+    }
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatInput button:hover {
+    img {
+        top: -5px;
+        left: -5px;
+    }
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .spanMessageDay {
+    color: $colorDay;
+}
+
 // end containt
+// start navbar buttons
+body div div section div div .divNotActiveHelp {
+    background-color: $colorButtonHelpNotActive;
+}
+
+body div div section div div .divActiveHelp {
+    background-color: $colorButtonHelpActive;
+}
+
+// end navbar buttons
 // start sign in 
 body div .widthSignIn {
     width: 50%;
@@ -953,7 +1093,7 @@ body div div section ul li .divBorder .divWhiteBorder .divSocialMedia::before {
     position: absolute;
     width: 70px;
     height: 70px;
-    top: -20px;
+    top: 0x;
     left: -25px;
     border-radius: 50px;
     background-color: $colorBlue;
@@ -1002,7 +1142,7 @@ body div div section div ul li div .widthDiv:hover::before {
 // start details
 body div div section div div div div .divImageSearch {
     top: 15px;
-    right: 22px;
+    right: 32px;
 }
 
 body div div section div div div div .boxButtonStor {
@@ -1330,6 +1470,10 @@ body div div div div div form div div div .absoluteCenterPhone {
     body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal .sizeMobileSpan,
     body div div .divHiddenModile div div div div .overflowModal .sizeDivModal .divTextModal .sizeMobile {
         font-size: 12px;
+    }
+
+    body div div section div .rowReverseMobile {
+        flex-direction: column-reverse;
     }
 }
 

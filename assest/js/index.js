@@ -118,3 +118,55 @@ $(document).ready(function () {
 function selectOptionStor(option) {
   document.getElementById("selectedOption").textContent = option;
 }
+
+const items = document.querySelectorAll(".inputSearchHelpActiveHover");
+items.forEach((item) => {
+  item.addEventListener("click", function () {
+    items.forEach((i) => i.classList.remove("inputSearchHelpActive"));
+    this.classList.add("inputSearchHelpActive");
+  });
+});
+
+const inputField = document.getElementById("chatInput");
+const sendButton = document.getElementById("sendBtn");
+const chatBox = document.querySelector(".chatBox");
+function sendMessage() {
+  const messageText = inputField.value.trim();
+
+  if (messageText) {
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("message", "userMessage");
+    const messagesHTML = `
+        <div class="d-flex flex-column gap-2 align-items-start w-100">
+            <div class="messageText fw-bold p-3">${messageText}</div>
+            <div>
+                <img src="assest/images/check.svg" alt="">
+                <span>12:15</span>
+            </div>
+        </div>
+    `;
+    messageElement.innerHTML = messagesHTML;
+    chatBox.appendChild(messageElement);
+    chatBox.scrollTop = chatBox.scrollHeight;
+    inputField.value = "";
+  }
+}
+
+sendButton.addEventListener("click", sendMessage);
+inputField.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    sendMessage();
+  }
+});
+
+const divPoints = document.querySelectorAll(".messageText .divPoint");
+function restartAnimation() {
+  divPoints.forEach((div) => {
+    div.style.animation = "none";
+  });
+  void divPoints[0].offsetWidth;
+  divPoints.forEach((div, index) => {
+    div.style.animation = `showAndHide 0.5s forwards ${index}s`;
+  });
+}
+setTimeout(restartAnimation, 7000);

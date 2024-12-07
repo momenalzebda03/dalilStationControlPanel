@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.ltr.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <title>DALIL STATION CONTROL PANEL</title>
+</head>
+
+<body>
+    <div class="row w-100 mx-0 ps-md-5">
+        <div class="col-10 col-md-10">
+            <!-- start navbar -->
+            <nav class="mb-3 mb-md-0 container position-relative rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="cursorMouse d-none d-md-block" data-aos="flip-left">
+                        <img src="assest/images/iconSun.svg" alt="" class="imageDark" width="20px" height="20px">
+                    </div>
+                    <div class="d-flex gap-2 gap-md-0 justify-content-between ms-3 w-100">
+                        <div class="d-flex flex-row gap-3 me-md-auto gap-md-4 align-items-start align-items-center">
+                            <div class="d-none d-md-block" data-aos="flip-right">
+                                <span>الساعة الاَن : 8:55 صباحاً</span>
+                            </div>
+                            <div class="cursorMouse d-md-none">
+                                <img src="assest/images/iconSun.svg" alt="">
+                            </div>
+                            <div class="position-relative" data-aos="flip-up">
+                                <div class="divBeforeBell position-absolute rounded-circle end-0"></div>
+                                <img src="assest/images/bell.svg" alt="">
+                            </div>
+                            <div class="position-relative buttonNavbarlanguage rounded-5" data-aos="flip-down">
+                                <div class="pt-1 divBoxArrow px-3 divDropDwon d-flex justify-content-between align-items-center"
+                                    id="toogleDropDown">
+                                    <span>العربية</span>
+                                    <img src="assest/images/iconArrow.svg" alt="">
+                                </div>
+                                <div
+                                    class="bg-white text-end boxButton position-absolute start-0 w-100 border border-2 rounded-3 pt-2">
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('العربية')">
+                                        <span>العربية</span>
+                                    </div>
+                                    <div class="option p-2 cursorMouse" onclick="selectOption('English')">
+                                        <span>English</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="d-none d-md-block text-end position-relative" data-aos="flip-down">
+                                <h1 class="mb-0 fs-3">أهلاً وسهلاً,<span class="spanColorUser">راشد</span></h1>
+                                <div class="beforePoint me-4">
+                                    <span class="fs-4">نشط الأن</span>
+                                </div>
+                            </div>
+                            <div data-aos="flip-left">
+                                <img src="assest/images/user.svg" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+            <!-- start navbar buttons -->
+            <section class="container my-5" data-aos="flip-right">
+                <div class="d-flex justify-content-end align-items-center gap-4 flex-column-reverse flex-md-row">
+                    <div class="d-flex gap-3 flex-column flex-md-row">
+                        <div class="divNotActiveHelp text-center divActiveHelp rounded-5 py-3 px-4">
+                            <span class="text-white fw-bold text-nowrap">مقدم الخدمة ( صاحب المنشأة)</span>
+                        </div>
+                        <div class="divNotActiveHelp text-center rounded-5 py-3 px-4">
+                            <span class="text-white fw-bold text-nowrap">طالب الخدمة ( الزائر )</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="fw-bold text-nowrap">مركز المساعدة</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- end navbar buttons -->
+            <!-- start containt -->
+            <section class="border border-2 rounded-3">
+                <div class="container">
+                    <div class="row rowReverseMobile">
+                        <div class="col-md-8 px-md-0">
+                            <div class="border-bottom border-2">
+                                <div class="d-flex align-items-center justify-content-between py-3 px-md-4 py-md-4"
+                                    data-aos="flip-left">
+                                    <div class="cursorMouse">
+                                        <img src="assest/images/deleteHelp.svg" alt="">
+                                    </div>
+                                    <div class="rounded-4 d-flex justify-content-end gap-3">
+                                        <div class="text-end spanColorUser">
+                                            <h2 class="fs-5 mb-1">شركة سمارت تاتش</h2>
+                                            <span class="fw-bold">متصل</span>
+                                        </div>
+                                        <div>
+                                            <img src="assest/images/search1.svg" alt=""
+                                                class="rounded-circle imageSizeChat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-2 mx-md-5" data-aos="flip-left">
+                                <div class="d-flex flex-column chatContainer">
+                                    <div class="chatBox p-3">
+                                        <div class="text-center my-3 my-md-0">
+                                            <span class="fw-bold spanMessageDay">اليوم</span>
+                                        </div>
+                                        <div>
+                                            <div class="message d-flex mb-2 userMessage">
+                                                <div class="d-flex flex-column gap-2 align-items-start w-100">
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div>
+                                                        <img src="assest/images/check.svg" alt="">
+                                                        <span>12:15</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="message d-flex mb-2 supportMessage">
+                                                <div class="d-flex flex-column gap-2 align-items-end w-100">
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div>
+                                                        <img src="assest/images/check.svg" alt="">
+                                                        <span>12:15</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="message d-flex mb-2 messageStay justify-content-end fw-bold p-3">
+                                            <div class="messageText d-flex gap-1 fw-bold p-3">
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 chatInput">
+                                            <button id="sendBtn"
+                                                class="rounded-circle border cursorMouse p-3 backgroundRightSignIn hoverImageSend">
+                                                <img src="assest/images/send.svg" alt="" class="position-relative">
+                                            </button>
+                                            <input type="text" placeholder="اكتب رسالتك..."
+                                                class="border border-0 w-100 p-3" id="chatInput">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 border-bottom border-2 border-start border-md-start px-md-0">
+                            <div class="d-flex justify-content-end py-3 px-md-4 py-md-4" data-aos="flip-right">
+                                <div class="w-100 d-flex flex-column gap-4">
+                                    <div class="position-relative">
+                                        <input type="text"
+                                            class="w-100 p-3 pe-5 rounded-3 border border-0 text-end inputSearchHelp"
+                                            placeholder="البحث">
+                                        <div class="position-absolute divImageSearch divImageSearchOverflow">
+                                            <img src="assest/images/searchHelp.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <ul class="px-0 d-flex flex-column gap-3">
+                                        <li
+                                            class="cursorMouse px-4 py-3 inputSearchHelpActiveHover inputSearchHelpActive rounded-4 d-flex justify-content-end gap-3">
+                                            <div class="text-end spanColorUser">
+                                                <h2 class="fs-5 mb-1">شركة سمارت تاتش</h2>
+                                                <span class="fw-bold">متصل</span>
+                                            </div>
+                                            <div>
+                                                <img src="assest/images/search1.svg" alt=""
+                                                    class="rounded-circle imageSizeChat">
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="cursorMouse px-4 py-3 inputSearchHelpActiveHover rounded-4 d-flex justify-content-end gap-3">
+                                            <div class="text-end spanColorUser">
+                                                <h2 class="fs-5 mb-1">مطاعم البيك</h2>
+                                                <span class="fw-bold">متصل</span>
+                                            </div>
+                                            <div>
+                                                <img src="assest/images/search2.svg" alt=""
+                                                    class="rounded-circle imageSizeChat">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end containt -->
+            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
+                <div class="text-center position-relative overflow-hidden w-100">
+                    <div
+                        class="rounded-3 text-center text-decoration-none border text-white fw-bold buttonAdd colorButtonLogOut">
+                        <span class="position-relative">تسجيل الخروج</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- start menu -->
+        <nav class="col-2 col-md-2 rounded-4 p-3 d-flex flex-column justify-content-between px-0">
+            <div>
+                <div class="d-flex flex-column gap-5">
+                    <a href="index.html" class="noneTap text-end me-md-4">
+                        <img src="assest/images/ControlPanel.svg" alt="">
+                    </a>
+                    <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
+                        id="accordionExample">
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseOne">
+                            <!-- activeListPage -->
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الرئيسية</span>
+                                    <img src="assest/images/home.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">ادارة
+                                        المستخدمين</span>
+                                    <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseThree">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">منشأت</span>
+                                    <img src="assest/images/Facilities.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFour">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الأعلانات</span>
+                                    <img src="assest/images/iconNews.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFive">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الطلبات</span>
+                                    <img src="assest/images/Requests.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSix">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاشتراكات</span>
+                                    <img src="assest/images/IconContributions.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSeven">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">المدفوعات</span>
+                                    <img src="assest/images/Payments.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span
+                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاعدادات</span>
+                                    <img src="assest/images/Settings.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseEat" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
+                                id="accordionDiv">
+                                <div class="noneTap">
+                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
+                                        المساعدة</span>
+                                    <img src="assest/images/help.svg" alt="" class="imageBlue">
+                                </div>
+                            </div>
+                            <div id="collapseNine" class="accordion-collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="list-unstyled text-end mt-3 px-4">
+                                    <li class="spanColorUser fw-bold">
+                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
+                <div class="text-center position-relative overflow-hidden w-100">
+                    <div
+                        class="rounded-3 text-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd">
+                        <span class="position-relative">تسجيل الخروج</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <!-- end menu -->
+    </div>
+</body>
+<script src="assest/js/jquery.min.js"></script>
+<script src="assest/js/bootstrap.bundle.min.js"></script>
+<script src="assest/js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        delay: 200,
+        easing: 'ease',
+    });
+</script>
+
+</html>
