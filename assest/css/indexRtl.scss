@@ -18,7 +18,8 @@
 // end General Code
 // start navbar
 body nav div div .beforePoint::before {
-    right: 38%;
+    right: unset;
+    left: 30%;
     bottom: 12px;
 }
 
@@ -54,6 +55,7 @@ body div div section div div .paddingShadow div div .stylelist .listLine::before
     left: unset;
     right: 60px;
 }
+
 // end containt
 
 // start form user
@@ -109,3 +111,19 @@ body div nav div div .alginStartMobile li .hoverListMenu:hover {
 }
 
 // end menu
+// start table
+tr:first-child th:first-child {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+// end table

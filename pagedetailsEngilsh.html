@@ -79,15 +79,17 @@
                 </div>
                 <div class="row mt-4 gap-4 gap-md-0">
                     <div class="col-lg-3" data-aos="flip-right">
-                        <a href="#">
-                            <button
-                                class="overflow-hidden px-4 py-2 rounded-5 buttonAdd border border-0 text-white position-relative">
-                                <div class="position-relative d-flex gap-2 align-items-center">
-                                    <span class="fw-bold">اضافة منشأة</span>
-                                    <img src="assest/images/plus.svg" alt="">
-                                </div>
-                            </button>
-                        </a>
+                        <div class="d-flex justify-content-end justify-content-lg-start">
+                            <a href="#">
+                                <button
+                                    class="overflow-hidden px-4 py-2 rounded-5 buttonAdd border border-0 text-white position-relative">
+                                    <div class="position-relative d-flex gap-2 align-items-center">
+                                        <span class="fw-bold">اضافة منشأة</span>
+                                        <img src="assest/images/plus.svg" alt="">
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-9" data-aos="flip-left">
                         <div class="row gap-3 gap-md-0 justify-content-end">
@@ -123,83 +125,84 @@
             <!-- end details -->
             <!-- start table -->
             <div class="divHiddenModile w-100 mt-3 mt-md-5">
-                <table class="mt-4 w-100">
-                    <div class="position-relative w-100">
-                        <div class="position-absolute divTable backgroundRightSignIn rounded-4"></div>
-                    </div>
+                <table class="mt-4 w-100 rounded-4">
                     <tbody>
-                        <tr class="text-center text-nowrap text-white">
-                            <div>
-                                <th class="thPadding py-4">الإجراء</th>
-                                <th class="thPadding">التفاصيل</th>
-                                <th class="thPadding">النشاط التجاري</th>
-                                <th class="thPadding">رقم الجوال</th>
-                                <th class="thPadding">البريد الالكتروني</th>
-                                <th class="thPadding">( مؤسسة / شركة)</th>
-                                <th class="thPadding">اسم المنشأة</th>
-                                <th class="thPadding">
-                                    <img src="assest/images/studio.svg" alt="">
-                                </th>
-                                <th class="thPadding">
-                                    <img src="assest/images/trueTable.svg" alt="">
-                                </th>
-                            </div>
+                        <tr class="text-center text-nowrap text-white backgroundRightSignIn">
+                            <th class="thPadding py-4">الإجراء</th>
+                            <th class="thPadding py-4">التفاصيل</th>
+                            <th class="thPadding py-4">النشاط التجاري</th>
+                            <th class="thPadding py-4">رقم الجوال</th>
+                            <th class="thPadding py-4">البريد الالكتروني</th>
+                            <th class="thPadding py-4">( مؤسسة / شركة)</th>
+                            <th class="thPadding py-4">اسم المنشأة</th>
+                            <th class="thPadding py-4">
+                                <img src="assest/images/studio.svg" alt="">
+                            </th>
+                            <th class="thPadding py-4">
+                                <img src="assest/images/trueTable.svg" alt="">
+                            </th>
                         </tr>
                         <tr class="text-center text-nowrap hoverTr">
-                            <th class="thPadding d-flex gap-3 py-4">
-                                <div>
-                                    <a href="#">
-                                        <img src="assest/images/delete.svg" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="assest/images/prevention.svg" alt="">
-                                    </a>
+                            <th
+                                class="thPadding py-4 tagNormal d-lg-flex justify-content-center align-items-center mt-2 gap-3 py-4">
+                                <div class="d-flex gap-3">
+                                    <div>
+                                        <a href="#">
+                                            <img src="assest/images/delete.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assest/images/prevention.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </th>
-                            <th class="thPadding">
-                                <img src="assest/images/Details.svg" alt="" class="cursorMouse w-50"
+                            <th class="thPadding py-4 tagNormal">
+                                <img src="assest/images/Details.svg" alt="" class="cursorMouse iconTable"
                                     data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
                             </th>
-                            <th class="thPadding">ابداع رقمي</th>
-                            <th class="thPadding">0537377428</th>
-                            <th class="thPadding">Rashed123@gmail.com</th>
-                            <th class="thPadding">مؤسسة</th>
-                            <th class="thPadding">سمارت تاتش</th>
-                            <th class="thPadding">
+                            <th class="thPadding py-4 tagNormal">ابداع رقمي</th>
+                            <th class="thPadding py-4 tagNormal">0537377428</th>
+                            <th class="thPadding py-4 tagNormal">Rashed123@gmail.com</th>
+                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
+                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
+                            <th class="thPadding py-4 tagNormal">
                                 <img src="assest/images/imageTable.svg" alt="">
                             </th>
-                            <th class="thPadding">
+                            <th class="thPadding py-4 tagNormal">
                                 <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
                             </th>
                         </tr>
                         <tr class="text-center text-nowrap hoverTr">
-                            <th class="thPadding d-flex gap-3 py-4">
-                                <div>
-                                    <a href="#">
-                                        <img src="assest/images/delete.svg" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="assest/images/prevention.svg" alt="">
-                                    </a>
+                            <th
+                                class="thPadding py-4 tagNormal d-lg-flex justify-content-center align-items-center mt-2 gap-3 py-4">
+                                <div class="d-flex gap-3">
+                                    <div>
+                                        <a href="#">
+                                            <img src="assest/images/delete.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assest/images/prevention.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </th>
-                            <th class="thPadding">
-                                <img src="assest/images/Details.svg" alt="" class="cursorMouse w-50"
+                            <th class="thPadding py-4 tagNormal">
+                                <img src="assest/images/Details.svg" alt="" class="cursorMouse iconTable"
                                     data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
                             </th>
-                            <th class="thPadding">ابداع رقمي</th>
-                            <th class="thPadding">0537377428</th>
-                            <th class="thPadding">Rashed123@gmail.com</th>
-                            <th class="thPadding">مؤسسة</th>
-                            <th class="thPadding">سمارت تاتش</th>
-                            <th class="thPadding">
+                            <th class="thPadding py-4 tagNormal">ابداع رقمي</th>
+                            <th class="thPadding py-4 tagNormal">0537377428</th>
+                            <th class="thPadding py-4 tagNormal">Rashed123@gmail.com</th>
+                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
+                            <th class="thPadding py-4 tagNormal">سمارت تاتش</th>
+                            <th class="thPadding py-4 tagNormal">
                                 <img src="assest/images/imageTable.svg" alt="">
                             </th>
-                            <th class="thPadding">
+                            <th class="thPadding py-4 tagNormal">
                                 <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
                             </th>
                         </tr>

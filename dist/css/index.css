@@ -943,6 +943,11 @@ body div div .divHiddenModile div div div div .paddingTextModal {
   padding: 0 180px;
 }
 
+.iconTable {
+  width: 40px;
+  height: auto;
+}
+
 .divClose,
 .divOpen {
   width: 25%;
@@ -1158,7 +1163,7 @@ body div div div div div form div div div .absoluteCenterPhone {
     font-size: 13px;
   }
   .shadowHeight {
-    min-height: 630px;
+    max-height: 400px;
   }
   body div div .divHiddenModile div div div div .overflowModal {
     overflow: hidden;
