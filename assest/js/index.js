@@ -169,4 +169,4 @@ function restartAnimation() {
     div.style.animation = `showAndHide 0.5s forwards ${index}s`;
   });
 }
-setTimeout(restartAnimation, 7000);
+setInterval(restartAnimation, 7000);

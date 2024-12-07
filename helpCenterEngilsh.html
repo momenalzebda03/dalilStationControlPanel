@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <div class="row w-100 mx-0 ps-md-5 pe-0">
-        <div class="col-10">
+    <div class="row w-100 mx-0 ps-md-5">
+        <div class="col-10 col-md-10">
             <!-- start navbar -->
             <nav class="mb-3 mb-md-0 container position-relative rounded-4">
                 <div class="d-flex align-items-center gap-3">
@@ -71,190 +71,146 @@
                 </div>
             </nav>
             <!-- end navbar -->
-            <!-- start details -->
-            <section class="mx-2 mt-5">
-                <div class="text-end" data-aos="flip-right">
-                    <h2 class="mb-0">منشأت</h2>
-                    <span class="fs-3 spanColorCard">استعرض بيانات المنشاَت على التطبيق لتقوم بالاجراءات المناسبة</span>
-                </div>
-                <div class="row mt-4 gap-4 gap-md-0">
-                    <div class="col-lg-3" data-aos="flip-right">
-                        <div class="d-flex justify-content-end justify-content-lg-start">
-                            <a href="#">
-                                <button
-                                    class="overflow-hidden px-4 py-2 rounded-5 buttonAdd border border-0 text-white position-relative">
-                                    <div class="position-relative d-flex gap-2 align-items-center">
-                                        <span class="fw-bold">اضافة منشأة</span>
-                                        <img src="assest/images/plus.svg" alt="">
-                                    </div>
-                                </button>
-                            </a>
+            <!-- start navbar buttons -->
+            <section class="container my-5" data-aos="flip-right">
+                <div class="d-flex justify-content-end align-items-center gap-4 flex-column-reverse flex-md-row">
+                    <div class="d-flex gap-3 flex-column flex-md-row">
+                        <div class="divNotActiveHelp text-center divActiveHelp rounded-5 py-3 px-4">
+                            <span class="text-white fw-bold text-nowrap">مقدم الخدمة ( صاحب المنشأة)</span>
+                        </div>
+                        <div class="divNotActiveHelp text-center rounded-5 py-3 px-4">
+                            <span class="text-white fw-bold text-nowrap">طالب الخدمة ( الزائر )</span>
                         </div>
                     </div>
-                    <div class="col-lg-9" data-aos="flip-left">
-                        <div class="row gap-3 gap-md-0 justify-content-end">
-                            <div id="toogleDropDownStor"
-                                class="col-lg-3 position-relative shadow p-3 pe-4 rounded-5 border border-0 d-flex justify-content-end gap-3">
-                                <div class="fw-bold text-nowrap">
-                                    <span><span class="checkEmail">الترتيب حسب</span> : <span
-                                            id="selectedOption">الاحدث</span></span>
-                                </div>
-                                <div>
-                                    <img src="assest/images/sort.svg" alt="">
-                                </div>
-                                <div
-                                    class="bg-white text-end boxButtonStor rounded-4 position-absolute start-0 w-100 bg-white border border-2 rounded-3 pt-2">
-                                    <div class="option p-2 cursorMouse" onclick="selectOptionStor('الاحدث')">الاحدث
+                    <div>
+                        <h2 class="fw-bold text-nowrap">مركز المساعدة</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- end navbar buttons -->
+            <!-- start containt -->
+            <section class="border border-2 rounded-3">
+                <div class="container">
+                    <div class="row rowReverseMobile">
+                        <div class="col-md-8 px-md-0">
+                            <div class="border-bottom border-2">
+                                <div class="d-flex align-items-center justify-content-between py-3 px-md-4 py-md-4"
+                                    data-aos="flip-left">
+                                    <div class="cursorMouse">
+                                        <img src="assest/images/deleteHelp.svg" alt="">
                                     </div>
-                                    <div class="option p-2 cursorMouse" onclick="selectOptionStor('الاقدم')">الاقدم
+                                    <div class="rounded-4 d-flex justify-content-start gap-3">
+                                        <div class="text-start spanColorUser">
+                                            <h2 class="fs-5 mb-1">شركة سمارت تاتش</h2>
+                                            <span class="fw-bold">متصل</span>
+                                        </div>
+                                        <div>
+                                            <img src="assest/images/search1.svg" alt=""
+                                                class="rounded-circle imageSizeChat">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 position-relative">
-                                <input type="text"
-                                    class="w-100 p-3 pe-5 rounded-5 shadow border border-0 text-end inputSearch"
-                                    placeholder="بحث ...">
-                                <div class="position-absolute divImageSearch">
-                                    <img src="assest/images/search.svg" alt="">
+                            <div class="my-2 mx-md-5" data-aos="flip-left">
+                                <div class="d-flex flex-column chatContainer">
+                                    <div class="text-center my-2">
+                                        <span class="fw-bold spanMessageDay">اليوم</span>
+                                    </div>
+                                    <div class="chatBox p-3">
+                                        <div>
+                                            <div class="message d-flex mb-2 userMessage">
+                                                <div class="d-flex flex-column gap-2 align-items-start w-100">
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div>
+                                                        <img src="assest/images/check.svg" alt="">
+                                                        <span>12:15</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="message d-flex mb-2 supportMessage">
+                                                <div class="d-flex flex-column gap-2 align-items-end w-100">
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div class="messageText fw-bold p-3">مرحباً هل ممكن مساعدة
+                                                    </div>
+                                                    <div>
+                                                        <img src="assest/images/check.svg" alt="">
+                                                        <span>12:15</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="message d-flex mb-2 messageStay justify-content-end fw-bold p-3">
+                                            <div class="messageText d-flex gap-1 fw-bold p-3">
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                                <div class="fw-bold divPoint fs-2 rounded-circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 chatInput">
+                                            <button id="sendBtn"
+                                                class="rounded-circle border cursorMouse p-3 backgroundRightSignIn hoverImageSend">
+                                                <img src="assest/images/send.svg" alt="" class="position-relative">
+                                            </button>
+                                            <input type="text" placeholder="اكتب رسالتك..."
+                                                class="border border-0 w-100 p-3" id="chatInput">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 border-bottom border-2 border-start border-md-start px-md-0">
+                            <div class="d-flex justify-content-end py-3 px-md-4 py-md-4" data-aos="flip-right">
+                                <div class="w-100 d-flex flex-column gap-4">
+                                    <div class="position-relative">
+                                        <input type="text"
+                                            class="w-100 p-3 ps-5 rounded-3 border border-0 text-start inputSearchHelp"
+                                            placeholder="البحث">
+                                        <div class="position-absolute divImageSearch divImageSearchOverflow">
+                                            <img src="assest/images/searchHelp.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <ul class="px-0 d-flex flex-column gap-3">
+                                        <li
+                                            class="cursorMouse px-4 py-3 inputSearchHelpActiveHover inputSearchHelpActive rounded-4 d-flex justify-content-end gap-3">
+                                            <div class="text-start spanColorUser">
+                                                <h2 class="fs-5 mb-1">شركة سمارت تاتش</h2>
+                                                <span class="fw-bold">متصل</span>
+                                            </div>
+                                            <div>
+                                                <img src="assest/images/search1.svg" alt=""
+                                                    class="rounded-circle imageSizeChat">
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="cursorMouse px-4 py-3 inputSearchHelpActiveHover rounded-4 d-flex justify-content-end gap-3">
+                                            <div class="text-start spanColorUser">
+                                                <h2 class="fs-5 mb-1">مطاعم البيك</h2>
+                                                <span class="fw-bold">متصل</span>
+                                            </div>
+                                            <div>
+                                                <img src="assest/images/search2.svg" alt=""
+                                                    class="rounded-circle imageSizeChat">
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- end details -->
-            <!-- start table -->
-            <div class="divHiddenModile w-100 mt-3 mt-md-5">
-                <table class="mt-4 w-100 rounded-4">
-                    <tbody>
-                        <tr class="text-center text-nowrap text-white backgroundRightSignIn">
-                            <th class="thPadding py-4">الإجراء</th>
-                            <th class="thPadding py-4">التفاصيل</th>
-                            <th class="thPadding py-4">النشاط التجاري</th>
-                            <th class="thPadding py-4">رقم الجوال</th>
-                            <th class="thPadding py-4">البريد الالكتروني</th>
-                            <th class="thPadding py-4">( مؤسسة / شركة)</th>
-                            <th class="thPadding py-4">اسم المنشأة</th>
-                            <th class="thPadding py-4">
-                                <img src="assest/images/studio.svg" alt="">
-                            </th>
-                            <th class="thPadding py-4">
-                                <img src="assest/images/trueTable.svg" alt="">
-                            </th>
-                        </tr>
-                        <tr class="text-center text-nowrap hoverTr">
-                            <th
-                                class="thPadding py-4 tagNormal d-lg-flex justify-content-center align-items-center mt-2 gap-3 py-4">
-                                <div class="d-flex gap-3">
-                                    <div>
-                                        <a href="#">
-                                            <img src="assest/images/delete.svg" alt="">
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="#">
-                                            <img src="assest/images/prevention.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th class="thPadding py-4 tagNormal">
-                                <img src="assest/images/Details.svg" alt="" class="cursorMouse iconTable"
-                                    data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
-                            </th>
-                            <th class="thPadding py-4 tagNormal">ابداع رقمي</th>
-                            <th class="thPadding py-4 tagNormal">0537377428</th>
-                            <th class="thPadding py-4 tagNormal">Rashed123@gmail.com</th>
-                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
-                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
-                            <th class="thPadding py-4 tagNormal">
-                                <img src="assest/images/imageTable.svg" alt="">
-                            </th>
-                            <th class="thPadding py-4 tagNormal">
-                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
-                            </th>
-                        </tr>
-                        <tr class="text-center text-nowrap hoverTr">
-                            <th
-                                class="thPadding py-4 tagNormal d-lg-flex justify-content-center align-items-center mt-2 gap-3 py-4">
-                                <div class="d-flex gap-3">
-                                    <div>
-                                        <a href="#">
-                                            <img src="assest/images/delete.svg" alt="">
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="#">
-                                            <img src="assest/images/prevention.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th class="thPadding py-4 tagNormal">
-                                <img src="assest/images/Details.svg" alt="" class="cursorMouse iconTable"
-                                    data-bs-toggle="modal" data-bs-target="#statusSuccessModalNews">
-                            </th>
-                            <th class="thPadding py-4 tagNormal">ابداع رقمي</th>
-                            <th class="thPadding py-4 tagNormal">0537377428</th>
-                            <th class="thPadding py-4 tagNormal">Rashed123@gmail.com</th>
-                            <th class="thPadding py-4 tagNormal">مؤسسة</th>
-                            <th class="thPadding py-4 tagNormal">سمارت تاتش</th>
-                            <th class="thPadding py-4 tagNormal">
-                                <img src="assest/images/imageTable.svg" alt="">
-                            </th>
-                            <th class="thPadding py-4 tagNormal">
-                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- start modal -->
-                <div class="modal fade" id="statusSuccessModalNews" tabindex="-1" role="dialog"
-                    data-bs-backdrop="static" data-bs-keyboard="false">
-                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                        <div class="modal-content rounded-3 p-3 pb-5">
-                            <div>
-                                <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal">
-                                    <img src="assest/images/close.svg" alt="">
-                                </button>
-                            </div>
-                            <div class="modal-body text-center pb-0">
-                                <h4 class="fw-bold fs-5 mb-3 spanColorUser">تفاصيل الاعلان</h4>
-                                <div class="position-relative d-flex justify-content-center mb-3 overflowModal">
-                                    <div
-                                        class="position-absolute d-flex justify-content-center align-items-center divMobileFlexBox sizeDivModal">
-                                        <div class="text-white d-flex flex-column gap-2 mt-3 p-0 divTextModal">
-                                            <h2 class="fw-bold sizeMobile">تطبيق دليل ستيشن</h2>
-                                            <span class="sizeMobileSpan">دليل ستيشن منصتك الشاملة للنجاح وصل إلى
-                                                عملائك المستهدفين بسهولة وفعالية</span>
-                                        </div>
-                                        <div class="mt-5 noneTap">
-                                            <img src="assest/images/userAnnouncementDetails.svg" alt=""
-                                                class="widthImageModal">
-                                        </div>
-                                    </div>
-                                    <img src="assest/images/AnnouncementDetails.svg"
-                                        class="stringSignIn buttonAddNews p-0" alt="">
-                                </div>
-                                <div class="mt-lg-5 fw-bold thPadding paddingTextModal d-flex flex-column gap-5">
-                                    <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
-                                        مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
-                                        إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</span>
-                                    <span> إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
-                                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
-                                        لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على
-                                        صورة حقيقية لتصميم الموقع.</span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="checkEmail fw-bold fs-5">مدة الظهور: 3 أيام</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end modal -->
-            </div>
-            <!-- end table -->
+            <!-- end containt -->
             <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div

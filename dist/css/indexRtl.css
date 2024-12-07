@@ -1,5 +1,6 @@
 .custom-select-trigger::before {
-  left: 90%;
+  left: unset;
+  right: 10px;
 }
 
 .divTextInputForm {
@@ -13,8 +14,7 @@
 }
 
 body nav div div .beforePoint::before {
-  right: unset;
-  left: 30%;
+  right: 30%;
   bottom: 12px;
 }
 
@@ -42,6 +42,20 @@ body div section div .divBeforeImageSignIn .positionCircleLeft {
 body div div section div div .paddingShadow div div .stylelist .listLine::before {
   left: unset;
   right: 60px;
+}
+
+body div div section div .rowReverseMobile div div div div .divImageSearchOverflow {
+  right: unset !important;
+  left: 15px;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .message .messageText {
+  border-radius: 28px 0 28px 28px;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText,
+body div div section div .rowReverseMobile div div .chatContainer .chatBox .supportMessage .messageText {
+  border-radius: 0 28px 28px 28px;
 }
 
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
