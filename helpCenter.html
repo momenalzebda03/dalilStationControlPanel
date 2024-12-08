@@ -95,7 +95,8 @@
                             <div class="border-bottom border-2">
                                 <div class="d-flex align-items-center justify-content-between py-3 px-md-4 py-md-4"
                                     data-aos="flip-left">
-                                    <div class="cursorMouse">
+                                    <div class="cursorMouse" data-bs-toggle="modal"
+                                        data-bs-target="#statusSuccessModal">
                                         <img src="assest/images/deleteHelp.svg" alt="">
                                     </div>
                                     <div class="rounded-4 d-flex justify-content-end gap-3">
@@ -208,6 +209,34 @@
                 </div>
             </section>
             <!-- end containt -->
+            <div class="modal fade" id="statusSuccessModal" tabindex="-1" role="dialog" data-bs-backdrop="static"
+                data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content rounded-3 p-3">
+                        <div class="">
+                            <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal">
+                                <img src="assest/images/closeNotBackground.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="modal-body text-center p-lg-4">
+                            <img src="assest/images/deleteChat.svg" alt="">
+                            <h4 class="fw-bold fs-3 mt-3">حذف المحادثة</h4>
+                            <div class="mt-5">
+                                <div class="d-flex gap-4 justify-content-center w-100">
+                                    <button data-bs-dismiss="modal" data-bs-target="#statusSuccessModal"
+                                        class="position-relative overflow-hidden rounded-3 text-center text-decoration-none colorButtonLogOut widthForm fw-bold py-3 buttonAdd colorBlue divClose divOpenRaidouns">
+                                        <span class="position-relative fw-bold">الغاء</span>
+                                    </button>
+                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#statusSuccessModal"
+                                        class="position-relative overflow-hidden rounded-3 text-center text-decoration-none colorButtonLogOut widthForm fw-bold py-3 buttonAdd colorBlue divClose divOpen divOpenRaidouns">
+                                        <span class="position-relative fw-bold">تاكيد الحذف</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div

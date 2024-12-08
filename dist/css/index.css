@@ -869,6 +869,14 @@ body div div section div .rowReverseMobile div div .chatContainer .spanMessageDa
   color: #8A8A8A;
 }
 
+body div div div div div div div div .divOpenRaidouns {
+  width: 45% !important;
+}
+
+body div div div div div div div div .divOpenRaidouns::before {
+  border-radius: 5px !important;
+}
+
 body div div section div div .divNotActiveHelp {
   background-color: rgba(79, 35, 150, 0.3019607843);
 }

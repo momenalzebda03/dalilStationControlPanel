@@ -1002,6 +1002,14 @@ body div div section div .rowReverseMobile div div .chatContainer .spanMessageDa
     color: $colorDay;
 }
 
+body div div div div div div div div .divOpenRaidouns {
+    width: 45% !important;
+}
+
+body div div div div div div div div .divOpenRaidouns::before {
+    border-radius: 5px !important;
+}
+
 // end containt
 // start navbar buttons
 body div div section div div .divNotActiveHelp {
