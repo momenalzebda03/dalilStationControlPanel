@@ -922,7 +922,7 @@ body div div section div .rowReverseMobile div div .chatContainer .chatBox .supp
     color: $colorwhite;
 }
 
-.messageStay .messageText {
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText {
     background-color: #f1f1f1;
     right: -90px;
     top: -5px;
@@ -935,6 +935,10 @@ body div div section div .rowReverseMobile div div .chatContainer .chatBox .supp
         background-color: $colorBlue;
         animation: showAndHide 0.5s;
     }
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageStayRight {
+    right: 0;
 }
 
 body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText .divPoint:nth-child(0) {

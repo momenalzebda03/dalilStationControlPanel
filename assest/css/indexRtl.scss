@@ -65,6 +65,16 @@ body div div section div .rowReverseMobile div div .chatContainer .chatBox .mess
     border-radius: 28px 0 28px 28px;
 }
 
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText {
+    right: unset;
+    left: -90px;
+}
+
+body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageStayRight {
+    right: unset;
+    left: 0;
+}
+
 body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText,
 body div div section div .rowReverseMobile div div .chatContainer .chatBox .supportMessage .messageText {
     border-radius: 0 28px 28px 28px;

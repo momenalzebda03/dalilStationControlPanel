@@ -132,12 +132,11 @@ const sendButton = document.getElementById("sendBtn");
 const chatBox = document.querySelector(".chatBox");
 const messageTextElement = document.querySelector(".messageStay .messageText");
 function updateMessageTextPosition() {
-  if (inputField.value.trim() !== "") {
-    messageTextElement.style.right = "0";
-  } else { 
-    messageTextElement.style.right = "-90px";
-  }
+  inputField.value.trim() !== ""
+    ? messageTextElement.classList.add("messageStayRight")
+    : messageTextElement.classList.remove("messageStayRight");
 }
+
 inputField.addEventListener("input", updateMessageTextPosition);
 function sendMessage() {
   const messageText = inputField.value.trim();
