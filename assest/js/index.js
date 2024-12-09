@@ -130,6 +130,15 @@ items.forEach((item) => {
 const inputField = document.getElementById("chatInput");
 const sendButton = document.getElementById("sendBtn");
 const chatBox = document.querySelector(".chatBox");
+const messageTextElement = document.querySelector(".messageStay .messageText");
+function updateMessageTextPosition() {
+  if (inputField.value.trim() !== "") {
+    messageTextElement.style.right = "0";
+  } else { 
+    messageTextElement.style.right = "-90px";
+  }
+}
+inputField.addEventListener("input", updateMessageTextPosition);
 function sendMessage() {
   const messageText = inputField.value.trim();
 
@@ -149,11 +158,12 @@ function sendMessage() {
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
     inputField.value = "";
+    updateMessageTextPosition();
   }
 }
 
 sendButton.addEventListener("click", sendMessage);
-inputField.addEventListener("keypress", function (event) {
+inputField.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     sendMessage();
   }

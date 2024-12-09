@@ -922,9 +922,12 @@ body div div section div .rowReverseMobile div div .chatContainer .chatBox .supp
     color: $colorwhite;
 }
 
-body div div section div .rowReverseMobile div div .chatContainer div .messageStay .messageText {
+.messageStay .messageText {
     background-color: #f1f1f1;
+    right: -90px;
+    top: -5px;
     border-radius: 28px 0 28px 28px;
+    transition: 0.3s;
 
     div {
         width: 5px;
