@@ -324,6 +324,20 @@ body nav div div .beforePoint::before {
   border-radius: 50px;
 }
 
+.menuScroll {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.menuScroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.menuScroll::-webkit-scrollbar-thumb {
+  background: #005DBA;
+}
+
 body div div .navbarDetails div div .divHoverImage .hoverArraw {
   left: 0;
   transition: 0.3s;
@@ -345,33 +359,33 @@ body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
   transform: rotate(362deg);
 }
 
-body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+body div menu div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transform: rotate(0);
   transition: 0.3s;
 }
 
-body div nav div div .alginStartMobile li .activeList,
-body div nav div div .alginStartMobile li .activeListPage,
-body div nav div div .alginStartMobile li .hoverListMenu:hover {
+body div menu div div .alginStartMobile li .activeList,
+body div menu div div .alginStartMobile li .activeListPage,
+body div menu div div .alginStartMobile li .hoverListMenu:hover {
   background-color: #4F2396;
 }
-body div nav div div .alginStartMobile li .activeList div img,
-body div nav div div .alginStartMobile li .activeListPage div img,
-body div nav div div .alginStartMobile li .hoverListMenu:hover div img {
+body div menu div div .alginStartMobile li .activeList div img,
+body div menu div div .alginStartMobile li .activeListPage div img,
+body div menu div div .alginStartMobile li .hoverListMenu:hover div img {
   filter: invert(1) brightness(1000%) grayscale(10000%);
 }
-body div nav div div .alginStartMobile li .activeList div .imageArrawTop,
-body div nav div div .alginStartMobile li .activeListPage div .imageArrawTop,
-body div nav div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
+body div menu div div .alginStartMobile li .activeList div .imageArrawTop,
+body div menu div div .alginStartMobile li .activeListPage div .imageArrawTop,
+body div menu div div .alginStartMobile li .hoverListMenu:hover div .imageArrawTop {
   transform: rotate(90deg);
 }
-body div nav div div .alginStartMobile li .activeList div span,
-body div nav div div .alginStartMobile li .activeListPage div span,
-body div nav div div .alginStartMobile li .hoverListMenu:hover div span {
+body div menu div div .alginStartMobile li .activeList div span,
+body div menu div div .alginStartMobile li .activeListPage div span,
+body div menu div div .alginStartMobile li .hoverListMenu:hover div span {
   color: white;
 }
 
-body div nav div div .alginStartMobile li div div .sizeSpanMenu {
+body div menu div div .alginStartMobile li div div .sizeSpanMenu {
   font-size: 18px;
 }
 

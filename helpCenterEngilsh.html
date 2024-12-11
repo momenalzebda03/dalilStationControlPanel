@@ -251,202 +251,209 @@
             </a>
         </div>
         <!-- start menu -->
-        <nav class="col-2 col-md-2 rounded-4 p-3 d-flex flex-column justify-content-between px-0">
+        <menu class="col-2 col-md-2 rounded-4 p-3 px-0 d-flex flex-column justify-content-between">
             <div>
-                <div class="d-flex flex-column gap-5">
-                    <a href="index.html" class="noneTap text-end me-md-4">
+                <div class="mt-2 mb-4 text-center">
+                    <a href="index.html" class="noneTap text-center">
                         <img src="assest/images/ControlPanel.svg" alt="">
                     </a>
-                    <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
-                        id="accordionExample">
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseOne">
-                            <!-- activeListPage -->
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                </div>
+                <div class="menuScroll">
+                    <div class="d-flex flex-column gap-5">
+                        <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
+                            id="accordionExample">
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseOne">
+                                <!-- activeListPage -->
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الرئيسية</span>
+                                        <img src="assest/images/home.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الرئيسية</span>
-                                    <img src="assest/images/home.svg" alt="" class="imageBlue">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseTow">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">ادارة
+                                            المستخدمين</span>
+                                        <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">ادارة
-                                        المستخدمين</span>
-                                    <img src="assest/images/UserManagement.svg" alt="" class="imageBlue">
+                                <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseThree">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseThree">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">منشأت</span>
+                                        <img src="assest/images/Facilities.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">منشأت</span>
-                                    <img src="assest/images/Facilities.svg" alt="" class="imageBlue">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFour">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFour">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الأعلانات</span>
+                                        <img src="assest/images/iconNews.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الأعلانات</span>
-                                    <img src="assest/images/iconNews.svg" alt="" class="imageBlue">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFive">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseFive">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الطلبات</span>
+                                        <img src="assest/images/Requests.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الطلبات</span>
-                                    <img src="assest/images/Requests.svg" alt="" class="imageBlue">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSix">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSix">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاشتراكات</span>
+                                        <img src="assest/images/IconContributions.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاشتراكات</span>
-                                    <img src="assest/images/IconContributions.svg" alt="" class="imageBlue">
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSeven">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseSeven">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">المدفوعات</span>
+                                        <img src="assest/images/Payments.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">المدفوعات</span>
-                                    <img src="assest/images/Payments.svg" alt="" class="imageBlue">
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span
+                                            class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاعدادات</span>
+                                        <img src="assest/images/Settings.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span
-                                        class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">الاعدادات</span>
-                                    <img src="assest/images/Settings.svg" alt="" class="imageBlue">
+                                <div id="collapseEat" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseEat" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
-                            <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
-                                id="accordionDiv">
-                                <div class="noneTap">
-                                    <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                            </li>
+                            <li class="collapsed accordionItem" type="button" data-bs-target="#collapseEat">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-between px-2 px-md-3 py-2 rounded-3 activeListPage hoverListMenu"
+                                    id="accordionDiv">
+                                    <div class="noneTap">
+                                        <img src="assest/images/arraRight.svg" alt="" class="imageArrawTop">
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
+                                            المساعدة</span>
+                                        <img src="assest/images/help.svg" alt="" class="imageBlue">
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
-                                        المساعدة</span>
-                                    <img src="assest/images/help.svg" alt="" class="imageBlue">
+                                <div id="collapseNine" class="accordion-collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <ul class="list-unstyled text-end mt-3 px-4">
+                                        <li class="spanColorUser fw-bold">
+                                            <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div id="collapseNine" class="accordion-collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <ul class="list-unstyled text-end mt-3 px-4">
-                                    <li class="spanColorUser fw-bold">
-                                        <a href="#" class="text-decoration-none spanColorUser">المستخدمين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
@@ -457,7 +464,7 @@
                     </div>
                 </div>
             </a>
-        </nav>
+        </menu>
         <!-- end menu -->
     </div>
 </body>

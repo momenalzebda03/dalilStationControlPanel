@@ -342,6 +342,20 @@ body nav div div .beforePoint::before {
     border-radius: 50px;
 }
 
+.menuScroll {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.menuScroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.menuScroll::-webkit-scrollbar-thumb {
+    background: $colorBlueLink;
+}
+
 // end navbar
 // start navbar defails
 body div div .navbarDetails div div .divHoverImage .hoverArraw {
@@ -369,14 +383,14 @@ body div div .navbarDetails div div .divHoverImage:hover {
 
 // end navbar defails
 // start menu
-body div nav div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
+body div menu div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
     transform: rotate(0);
     transition: 0.3s;
 }
 
-body div nav div div .alginStartMobile li .activeList,
-body div nav div div .alginStartMobile li .activeListPage,
-body div nav div div .alginStartMobile li .hoverListMenu:hover {
+body div menu div div .alginStartMobile li .activeList,
+body div menu div div .alginStartMobile li .activeListPage,
+body div menu div div .alginStartMobile li .hoverListMenu:hover {
     background-color: $colorBlue;
 
     div {
@@ -394,7 +408,7 @@ body div nav div div .alginStartMobile li .hoverListMenu:hover {
     }
 }
 
-body div nav div div .alginStartMobile li div div .sizeSpanMenu {
+body div menu div div .alginStartMobile li div div .sizeSpanMenu {
     font-size: 18px;
 }
 
