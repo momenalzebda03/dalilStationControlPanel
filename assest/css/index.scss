@@ -342,17 +342,17 @@ body nav div div .beforePoint::before {
     border-radius: 50px;
 }
 
-.menuScroll {
-    max-height: 70vh;
+body div menu div .menuScroll {
+    height: 100vh;
     overflow: auto;
 }
 
-.menuScroll::-webkit-scrollbar {
+body div menu div .menuScroll::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-.menuScroll::-webkit-scrollbar-thumb {
+body div menu div .menuScroll::-webkit-scrollbar-thumb {
     background: $colorBlueLink;
 }
 
