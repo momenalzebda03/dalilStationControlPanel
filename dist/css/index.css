@@ -325,21 +325,11 @@ body nav div div .beforePoint::before {
 }
 
 body div .menuScroll {
-  height: 80vh;
-  overflow: auto;
+  height: 100vh;
 }
 
-body div .menuScroll::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-
-body div .menuScroll::-webkit-scrollbar-thumb {
-  background: #005DBA;
-}
-
-.linkBottomMenu {
-  margin-bottom: 50px;
+body div .menuScroll .divMargin {
+  margin-top: 70px;
 }
 
 body div div .navbarDetails div div .divHoverImage .hoverArraw {
