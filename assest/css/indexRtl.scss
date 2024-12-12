@@ -58,7 +58,7 @@ body div div section div div .paddingShadow div div .stylelist .listLine::before
 
 body div div section div .rowReverseMobile div div div div .divImageSearchOverflow {
     right: unset !important;
-    left: 15px;
+    left: 20px;
 }
 
 body div div section div .rowReverseMobile div div .chatContainer .chatBox .message .messageText {
@@ -81,7 +81,13 @@ body div div section div .rowReverseMobile div div .chatContainer .chatBox .supp
 }
 
 // end containt
+// start details
+body div div section div div div div .divImageSearch {
+    right: unset;
+    left: 32px;
+}
 
+// end details
 // start form user
 body div .widthSignIn div form div .buttonNavbarlanguageSignIn div .divTextInput {
     right: unset;
