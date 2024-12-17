@@ -353,6 +353,11 @@ body div div .navbarDetails div div .divHoverImage:hover .hoverArraw {
   transform: rotate(362deg);
 }
 
+body div menu .divBoxMenu {
+  overflow: auto;
+  height: 90vh;
+}
+
 body div menu div div .alginStartMobile li .hoverListMenu div .imageArrawTop {
   transform: rotate(0);
   transition: 0.3s;
