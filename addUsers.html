@@ -235,7 +235,7 @@
                 </form>
             </section>
             <!-- end form user -->
-            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
+            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3" onclick="logOut()">
                 <div class="text-center overflow-hidden w-100">
                     <div
                         class="rounded-3 flex-center text-decoration-none border text-white fw-bold buttonAdd colorButtonLogOut">
@@ -256,8 +256,7 @@
                     <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
                         id="accordionExample">
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <!-- activeListPage -->
+                            <a href="index.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -269,8 +268,8 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
+                            <a href="addUsers.html" class="text-decoration-none">
+                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu activeListPage"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
                                         <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">ادارة
@@ -353,7 +352,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="helpCenter.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -368,7 +367,7 @@
                 </div>
             </div>
             <div>
-                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
+                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3" onclick="logOut()">
                     <div class="text-center position-relative overflow-hidden w-100">
                         <div
                             class="rounded-3 text-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd">
@@ -386,6 +385,15 @@
 <script src="assest/js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    function logOut() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "logIn.html";
+    }
+
     AOS.init({
         duration: 800,
         delay: 200,

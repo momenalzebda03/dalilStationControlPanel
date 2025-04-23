@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="" method="" class="widthForm stringSignIn">
+                <form action="index.html" method="" class="widthForm stringSignIn" id="loginForm">
                     <div class="mt-4 d-flex flex-column gap-5">
                         <div class="position-relative buttonNavbarlanguageSignIn rounded-5" data-aos="zoom-in">
                             <div class="position-relative">
@@ -55,7 +55,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <input type="email" required class="pt-1 text-end pe-3 rounded-5 w-100 inputSignIn"
+                            <input type="email" id="email" required
+                                class="pt-1 text-end pe-3 rounded-5 w-100 inputSignIn"
                                 placeholder="ادخل البريد الالكتروني">
                         </div>
                         <div class="position-relative buttonNavbarlanguageSignIn w-100 rounded-5" data-aos="zoom-in-up">
@@ -67,8 +68,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <input type="password" required class="pt-1 text-end pe-3 rounded-5 w-100 inputSignIn"
-                                placeholder="ادخل كلمة المرور">
+                            <input type="password" id="password" required
+                                class="pt-1 text-end pe-3 rounded-5 w-100 inputSignIn" placeholder="ادخل كلمة المرور">
                             <div class="d-flex justify-content-between mt-3 mx-3">
                                 <div class="stylePass">
                                     <a class="text-decoration-none fw-bold" href="forgatePass.html">نسيت كلمة المرور
@@ -98,6 +99,18 @@
 <script src="assest/js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        if (email === "momen@gmail.com" && password === "Momen!12345678900") {
+            localStorage.setItem("isLoggedIn", "true");
+            window.location.href = "index.html";
+        } else {
+            alert("البريد الإلكتروني أو كلمة المرور غير صحيحة");
+        }
+    });
+
     AOS.init({
         duration: 800,
         delay: 200,

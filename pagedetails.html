@@ -77,7 +77,7 @@
                 <div class="row mt-4 gap-4 gap-lg-0">
                     <div class="col-lg-3" data-aos="flip-right">
                         <div class="d-flex justify-content-end justify-content-lg-start">
-                            <a href="#">
+                            <a href="addPagedetails.html">
                                 <button
                                     class="overflow-hidden px-4 py-2 rounded-5 buttonAdd border border-0 text-white position-relative">
                                     <div class="position-relative d-flex gap-2 align-items-center">
@@ -167,7 +167,8 @@
                                 <img src="assest/images/imageTable.svg" alt="">
                             </th>
                             <th class="thPadding py-4 tagNormal">
-                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
+                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative"
+                                    onclick="if(this.checked) window.location.href = '/details.html';">
                             </th>
                         </tr>
                         <tr class="text-center text-nowrap hoverTr">
@@ -199,7 +200,8 @@
                                 <img src="assest/images/imageTable.svg" alt="">
                             </th>
                             <th class="thPadding py-4 tagNormal">
-                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative">
+                                <input type="checkbox" id="checkbox" class="doubleBorderCheckbox position-relative"
+                                    onclick="if(this.checked) window.location.href = '/details.html';">
                             </th>
                         </tr>
                     </tbody>
@@ -251,7 +253,7 @@
                 <!-- end modal -->
             </div>
             <!-- end table -->
-            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
+            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3" onclick="logOut()">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div
                         class="rounded-3 text-center text-decoration-none border text-white fw-bold buttonAdd colorButtonLogOut">
@@ -272,8 +274,7 @@
                     <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
                         id="accordionExample">
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <!-- activeListPage -->
+                            <a href="index.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -285,7 +286,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="addUsers.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -298,7 +299,7 @@
                         </li>
                         <li class="accordionItem">
                             <a href="pagedetails.html" class="text-decoration-none">
-                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
+                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu activeListPage"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
                                         <span
@@ -369,7 +370,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="helpCenter.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -384,7 +385,7 @@
                 </div>
             </div>
             <div>
-                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
+                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3" onclick="logOut()">
                     <div class="text-center position-relative overflow-hidden w-100">
                         <div
                             class="rounded-3 text-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd">
@@ -402,6 +403,15 @@
 <script src="assest/js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    function logOut() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "logIn.html";
+    }
+
     AOS.init({
         duration: 800,
         delay: 200,

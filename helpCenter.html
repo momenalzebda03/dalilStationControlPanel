@@ -238,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
+            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3" onclick="logOut()">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div
                         class="rounded-3 text-center text-decoration-none border text-white fw-bold buttonAdd colorButtonLogOut">
@@ -259,8 +259,7 @@
                     <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
                         id="accordionExample">
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <!-- activeListPage -->
+                            <a href="index.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -272,7 +271,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="addUsers.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -356,8 +355,8 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
+                            <a href="helpCenter.html" class="text-decoration-none">
+                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu activeListPage"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
                                         <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
@@ -371,7 +370,7 @@
                 </div>
             </div>
             <div>
-                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
+                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3" onclick="logOut()">
                     <div class="text-center position-relative overflow-hidden w-100">
                         <div
                             class="rounded-3 text-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd">
@@ -392,6 +391,68 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script>
+    const inputField = document.getElementById("chatInput");
+    const sendButton = document.getElementById("sendBtn");
+    const chatBox = document.querySelector(".chatBox");
+    const messageTextElement = document.querySelector(".messageStay .messageText");
+    function updateMessageTextPosition() {
+        inputField.value.trim() !== ""
+            ? messageTextElement.classList.add("messageStayRight")
+            : messageTextElement.classList.remove("messageStayRight");
+    }
+
+    inputField.addEventListener("input", updateMessageTextPosition);
+    function sendMessage() {
+        const messageText = inputField.value.trim();
+
+        if (messageText) {
+            const messageElement = document.createElement("div");
+            messageElement.classList.add("message", "userMessage");
+            const messagesHTML = `
+            <div class="d-flex flex-column gap-2 align-items-start w-100">
+                <div class="messageText fw-bold p-3">${messageText}</div>
+                <div>
+                    <img src="assest/images/check.svg" alt="">
+                    <span>12:15</span>
+                </div>
+            </div>
+        `;
+            messageElement.innerHTML = messagesHTML;
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            inputField.value = "";
+            updateMessageTextPosition();
+        }
+    }
+
+    sendButton.addEventListener("click", sendMessage);
+    inputField.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            sendMessage();
+        }
+    });
+
+    const divPoints = document.querySelectorAll(".messageText .divPoint");
+    function restartAnimation() {
+        divPoints.forEach((div) => {
+            div.style.animation = "none";
+        });
+        void divPoints[0].offsetWidth;
+        divPoints.forEach((div, index) => {
+            div.style.animation = `showAndHide 0.5s forwards ${index}s`;
+        });
+    }
+    setInterval(restartAnimation, 7000);
+
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    function logOut() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "logIn.html";
+    }
+
     AOS.init({
         duration: 800,
         delay: 200,

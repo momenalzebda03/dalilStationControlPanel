@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.ltr.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <title>DALIL STATION CONTROL PANEL</title>
@@ -532,7 +532,7 @@
                 </div>
             </section>
             <!-- end containt -->
-            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3">
+            <a href="logIn.html" class="d-block d-md-none text-decoration-none mt-3" onclick="logOut()">
                 <div class="text-center position-relative overflow-hidden w-100">
                     <div
                         class="rounded-3 text-center text-decoration-none border text-white fw-bold buttonAdd colorButtonLogOut">
@@ -553,8 +553,7 @@
                     <ul class="list-unstyled d-flex flex-column alginStartMobile gap-2 gap-lg-3 px-2 overflow-hidden"
                         id="accordionExample">
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <!-- activeListPage -->
+                            <a href="index.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 activeListPage hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -566,7 +565,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="addUsers.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -650,19 +649,7 @@
                             </a>
                         </li>
                         <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
-                                <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
-                                    id="accordionDiv">
-                                    <div class="d-flex gap-3">
-                                        <span class="fw-bold sizeSpanMenu spanColorUser noneTap text-nowrap">مركز
-                                            المساعدة</span>
-                                        <img src="assest/images/help.svg" alt="" class="imageBlue">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="accordionItem">
-                            <a href="#" class="text-decoration-none">
+                            <a href="helpCenter.html" class="text-decoration-none">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end px-lg-3 py-2 rounded-3 hoverListMenu"
                                     id="accordionDiv">
                                     <div class="d-flex gap-3">
@@ -677,7 +664,7 @@
                 </div>
             </div>
             <div>
-                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3">
+                <a href="logIn.html" class="d-none d-md-block text-decoration-none px-3" onclick="logOut()">
                     <div class="text-center position-relative overflow-hidden w-100">
                         <div
                             class="rounded-3 text-center text-decoration-none border colorButtonLogOut text-white fw-bold buttonAdd">
@@ -720,13 +707,14 @@
         ];
 
         dateInputs.forEach(({ input, icon, boxId }) => {
-            const datepicker = flatpickr(input, {
-                dateFormat: "d/m/Y",
-                allowInput: true,
-                onClose: () => toggleDropdown(boxId),
-            });
-
-            icon.addEventListener("click", () => datepicker.open());
+            if (input && icon) {
+                const datepicker = flatpickr(input, {
+                    dateFormat: "d/m/Y",
+                    allowInput: true,
+                    onClose: () => toggleDropdown(boxId),
+                });
+                icon.addEventListener("click", () => datepicker.open());
+            }
         });
     });
 
@@ -746,6 +734,15 @@
             ],
         },
     });
+
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    function logOut() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "logIn.html";
+    }
 
     AOS.init({
         duration: 800,
